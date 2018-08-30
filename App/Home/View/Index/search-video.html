@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/seach.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<title>搜索</title>
+<style>
+			#money{
+				font-size: 30px;
+				color: #ff9933;
+			}
+		.fenye{
+	height:30px;
+	text-align:center;
+	margin:0 auto;
+
+}
+
+.fenye div{
+	margin:0 auto;
+}
+.fenye span{
+	color: #fff;
+	background-color: #00d3d4;
+	border:1px solid #00d3d4;
+	padding:5px 10px;
+}
+.fenye a{
+	color:#bbb;
+	padding:5px 10px;
+}
+.fenye a:hover{
+	color: #fff;
+	background-color: #00d3d4;
+}     
+</style>
+	</head>
+
+	<body class="bg-f8">
+
+		<!--导航开始-->
+			<include file="Public/naodai" />
+		
+		<!--导航结束-->
+<block name="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 margin_t20">
+					<div class="tab">
+						<p class="classification">类别：</p>
+						<ul class="tab-hd">
+
+							<li  style="margin-left: 100px;"><a href="{:U('index/live?search='.$search)}" style="color:#666"><span>直播</span></a></li>
+							<li class="active"><a href="{:U('index/video?search='.$search)}" style="color:#47C88A"><span>视频</span></a></li>
+							<li><a href="{:U('index/ketang?search='.$search)}" style="color:#666"><span>课堂</span></a></li>
+						</ul>
+						<ul class="tab-bd">
+							<!-- <li class="thisclass" style="display:none">
+								<ul class="news-list">
+								<foreach name="live" item="v">
+								<a  href="{:U('courses/course?pid='.$v['liveb_id'])}">
+									<li>
+										<div class="s-l">
+											<img src="__ROOT__{$v.img}" width="220px" height="134px"/ >
+										</div>
+										<div class="s-c">
+											<p>{$v.name}</p>
+											<br/>
+											<br/>
+											<br/>
+											<p style="color:#666666">{$v.introduce}</p>
+											<br/>
+											<br/>
+											<br/>
+											<p style="color:#666666">开课时间：{$v.time|date='Y-m-d H:i',###}</p>
+										</div>
+										<div class="s-r">
+											<eq name="v.money" value="0">
+											<p>免费</p>
+											<else/>
+											<p id="money">{$v.money}</p>
+											</eq>
+										</div>
+									</li>
+									</a>
+									</foreach>
+								</ul>
+								<div class="pagination-self">
+									<ul>
+										<li class="fenye">
+											{$show1}
+										</li>
+							
+										
+							
+									</ul>
+								</div>
+							</li> -->
+
+							<li class="dis_none" style="display:block">
+								<ul class="news-list">
+									<foreach name="video" item="x">
+									<a  href="{:U('courses/course?id='.$x['video_id'])}">
+									<li>
+										<div class="s-l">
+											<img src="__ROOT__{$x.img}" width="220px" height="134px"/>
+										</div>
+										<div class="s-c">
+											<p>{$x.name}</p>
+											<br/>
+											<br/>
+											<br/>
+											<p>{$x.introduce}</p>
+											<br/>
+											<br/>
+											<br/>
+											<p>开课时间：{$x.time|date='Y-m-d',###}</p>
+										</div>
+										<div class="s-r">
+											<eq name="x.money" value="0">
+											<p>免费</p>
+											<else/>
+											<p id="money">{$x.money}</p>
+											</eq>
+										</div>
+									</li>
+									</a>
+									</foreach>
+								</ul>
+								<div class="pagination-self">
+									<ul>
+										<li class="fenye">
+											{$show2}
+										</li>
+
+										
+
+									</ul>
+								</div>
+							</li>
+
+							<!-- <li class="dis_none" style="display:none">
+								<ul class="news-list">
+									<foreach name="class" item="c">
+									<a  href="{:U('courses/student?id='.$c['user_id'])}">
+									<li>
+										<div class="s-l">
+											<img src="__ROOT__{$c.img}" width="220px" height="134px"/>
+										</div>
+										<div class="s-c">
+											<p>{$c.name}</p>
+											<br/>
+											<br/>
+											<br/>
+											<p>{$c.roomcard}</p>
+											
+										</div>
+										
+									</li>
+									</a>
+									</foreach>
+								</ul>
+							<div class="pagination-self">
+									<ul>
+										<li class="fenye">
+											{$show3}
+										</li>
+							
+										
+							
+									</ul>
+								</div>
+							</li> -->
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+			<include file="Public/jiaoyazi" />
+		
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/news.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/boostrap/js/bootstrap.min.js"></script>
+
+	</body>
+	<script>
+$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+$('.fenye .next').html('下一页');
+$('.fenye .prev').html('上一页');
+</script>
+</html>

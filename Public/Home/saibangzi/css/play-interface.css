@@ -1,0 +1,157 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#header{
+	background: #14191e;
+	height: 80px;
+	line-height: 80px;
+	width: 100%;
+}
+.head-l{
+	float: left;
+}
+.title1 i{
+	text-decoration: none !important;
+	margin-left: 30px;
+	color: #b5b9bc;
+}
+.title2{
+	color: #b5b9bc;
+	font-size: 16px;
+	margin: 0px 20px;
+}
+.title3{
+	color: #b5b9bc;
+	font-size: 12px;
+}
+.title4{
+	color: #b5b9bc;
+	font-size: 16px;
+	margin: 0px 20px;
+	margin-left: 50px;
+	
+	
+}
+.title4 i{
+	padding: 5px;
+	font-size: 22px;
+}
+.title4 i:hover{
+	color: #47C88A;
+	cursor: pointer;
+}
+.head-r{
+	float: right;
+}
+.head-r img{
+	height: 36px;
+	width:36px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+.content{
+    position: relative;
+    width: 100%;
+   
+    
+}
+#c-left{
+height: 400px;
+width: 100%;
+background-color:#000;
+position: absolute;
+top: 0;
+left: 0;
+border-top: 1px solid transparent;
+}
+#c-right{
+position: absolute;
+top: 0;
+right: 0;
+}
+.operator{
+	padding-top: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: #363c40;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	left: -50px;
+	top:100px;
+	color: #b5b9bc;
+}
+#trump_main_unique_1 {
+	width: 100% !important;
+	height: 100% !important;
+}
+object {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.operator:hover{
+	cursor: pointer;
+}
+
+.operator p{
+	font-size: 14px;
+	cursor: pointer;
+}
+.operator i{
+	font-weight: 800;
+}
+.menu{
+	display: none;
+	padding: 0px 30px;
+	width: 310px;
+    height: 100%;
+	overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    right: 0px;
+    background: #14191E;
+    position: relative;
+    border-top:1px solid grey;
+	z-index:9999;
+	}
+.menu h3{
+	margin-bottom: 20px;
+	margin-top: 30px;
+	font-weight: 500;
+	color: #b5b9bc;
+}
+.menu ul li{
+list-style-type:none;
+font-size: 12px;
+width: 100%;
+margin: 3px 0px;
+color: #b5b9bc;
+}
+.menu ul li:hover{
+color: #F39232;
+cursor: pointer;
+}
+
+
+.menu ul li i{
+font-size: 14px;
+margin-right: 10px;
+}
+.menu ul li span{
+font-size: 12px;
+margin-right: 10px;
+float: right;
+color: #b5b9bc;
+}
+#id_test_video{
+	background: white;
+	width: 100%;
+	height:100%;
+	margin: 0 auto;
+}

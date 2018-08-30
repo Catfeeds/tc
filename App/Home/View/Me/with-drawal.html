@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/per-data/per-data.css" />
+		<title>提现</title>
+<style>
+.fenye{
+	height:30px;
+	margin-top:20px;
+	margin-left:30%;
+
+}
+
+.fenye div{
+	margin-left:30%;
+}
+.fenye span{
+	color: #fff;
+	background-color: #00d3d4;
+	border:1px solid #00d3d4;
+	padding:5px 10px;
+}
+.fenye a{
+	color:#bbb;
+	padding:5px 10px;
+}
+.fenye a:hover{
+	color: #fff;
+	background-color: #00d3d4;
+}
+	.sign-out{
+		    background: #ccc;
+		    color: white;
+		    font-size: 18px;
+		    line-height: 36px;
+		    width: 100px;
+		    height: 36px;
+		    text-align: center;
+		    vertical-align: middle;
+		    display: inline-block;
+		    border-radius: 6px;
+		}
+		
+		.sign-out span{
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+</style>
+	</head>
+
+	<body class="bg-f8">
+		<!--导航开始-->
+		<include file="Public/naodai" />
+		<!--导航结束-->
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="perd-t">
+					<div class="container position_rel">
+						<div class="row">
+							<div class="img-bg"></div>
+							<img src="__ROOT__{$user.image}" class="img-p" />
+							<div class="inform">
+								<div class="name">
+									<span>{$name} </span>
+									<i class="iconfont" id="sexicon">&#xe76e;</i>
+								<input type="hidden" value="{$user.sex}" id="sex">	
+								</div>
+								<div class="autograph" style="width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+									<span>{$user.profile}</span>
+								</div>
+								<if condition="$sign_status eq 1">
+								<a class="sign-out">
+									<span>已签到</span>
+								</a>
+								<else />
+								<a class="sign-up" onclick="sign()">
+									<span>签到</span>
+								</a>
+								</if>
+							</div>
+							<div class="integral">
+								<p>{$user.integral}</p>
+								<span>&nbsp;积分</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container margin_t50">
+
+			<div class="col-md-3-a bg-white">
+				<ul class="u-nav" id="user_menu">
+					<li class="item" id="user_menu_my" name="user_menu_my">
+						<ul class="sub">
+							<li>
+									<i class="iconfont ">&#xe638;</i>
+									<a href="{:U('Me/index')}">个人资料</a>
+									<i class="iconfont ">&#xe607;</i>
+								</li>
+								<li>
+									<i class="iconfont"> &#xe601;</i>
+									<a href="{:U('Me/subscribe')}">我的收藏</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+
+								<li>
+									<i class="iconfont"> &#xe615;</i>
+									<a href="{:U('Me/course')}">我的课程</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+								<li>
+									<i class="iconfont current"> &#xe6e5;</i>
+									<a href="{:U('Me/account')}"  class="current">我的账户</a>
+									<i class="iconfont current">&#xe607;</i>
+								</li>
+								<li>
+									<i class="iconfont"> &#xe639;</i>
+									<a href="{:U('Me/order')}">订单管理</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+								<li style="border-bottom: none;">
+									<i class="iconfont"> &#xe788;</i>
+									<a href="{:U('Me/point')}">我的积分</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+								<li style="border-bottom: none;">
+								<i class="iconfont">&#xe683;</i>
+								<a href="{:U('Me/address')}">收货地址</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			<!-- /.u-menu -->
+			<div class="col-md-9-a bg-white">
+				<div class="panel-t">
+					<div class="line-g"></div>
+					<p>我的账户>提现</p>
+				</div>
+				<hr />
+				<div class="padding20">
+					<span class="cc-tit"><i class="iconfont">&#xe6e6;</i>你好，为保护您的账户资金安全，只能提现到本人的储蓄卡。</span>
+					<div class="margin30">
+						<form class="form-horizontal" method="post" action="{:U('Me/addti')}">
+							<div class="form-group">
+								<label class="col-sm-2 col-sm-offset-2 control-label">可提现金额：</label>
+								<div class="col-sm-4">
+									<label class="control-label">{$class.profit}</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 col-sm-offset-2 control-label">提现银行卡：</label>
+								<div class="col-sm-4">
+									<label class="control-label">尾号{$ka}<span class="margin_l20" >(交通银行)</span></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 col-sm-offset-2 control-label">可提现额度：</label>
+								<div class="col-sm-3">
+									<input class="form-control" name="yue" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" maxlength="18" type="text">
+								</div>
+								<label id="edu" class="col-sm-3 control-label">提款额度：100-3000</label>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 col-sm-offset-2 control-label">支付密码：</label>
+								<div class="col-sm-3">
+									<input class="form-control" name="pass" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" maxlength="6" type="password"/>
+								</div>
+								<a href="{:U('Me/mima')}">
+								<label class="col-sm-3 control-label forg-p">忘记支付密码</label>
+								</a>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-10 col-sm-offset-1 text_c">
+									<button type="submit" class="btn btn-47c" class="margin_r10" id="tix">　提现　</button>
+									<span>(每周可提现一次)</span>
+								</div>
+
+							</div>
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+		<include file="Public/jiaoyazi" />
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script>
+		var a=$('#sex').val();
+if(a=='男'){
+	$('#sexicon').html('&#xe76d;');
+}else{
+	$('#sexicon').html('&#xe62d;');
+}
+function sign(){
+	$.ajax({
+		type:'post',
+		url:"{:U('Me/sign')}",
+		success:function(date){
+			if(date=='200'){
+				alert('签到成功');
+				window.location.href="javascript:location.replace(location.href);"	
+			}else if(date=='202'){
+				alert('网络异常');
+			}else{
+				alert('今日已签到');
+			}
+		},
+		error:function(err){
+			alert('网络异常');
+		}
+	});
+}
+
+
+$('.fenye .next').html('下一页');
+$('.fenye .prev').html('上一页');
+$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+var f1=false;
+$('[name=yue]').blur(function(){
+	var v=$(this).val();
+	
+	if(v>=100&&v<=3000){
+		$(this).css('borderColor', 'green');
+		$("#edu").html('格式正确');
+		$("#edu").css({
+				"color": "green",
+				"display": "block"
+			});
+		f1=true;
+	}else{
+		$(this).css('borderColor', 'red');
+		$("#edu").html('提款额度：100-3000');
+		$("#edu").css({
+				"color": "red",
+				"display": "block"
+			});
+		f1=false
+	}
+})
+$('.form-horizontal').submit(function(){
+	$('input').trigger('blur');
+	if (f1) {
+		return true;
+	}
+	return false;
+})
+/*$('#tix').click(function(){
+	var money=$('[name=yue]').val();
+	var pass=$('[name=pass]').val();
+	
+	$.post('{:U('Me/addti')}}',{'money':money,'pass':pass},function(data){
+		
+		if(data=='提现申请提交，请等待'){
+			alert(data);
+			window.location.href="{:U('Me/index')}";
+		}else{
+			alert(data);
+		}
+	})
+})*/
+		</script>
+</body>
+</html>

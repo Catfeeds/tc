@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <link href="css/m/mui.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/m/style.css" type="text/css" />	   
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a class=" mui-icon mui-icon-bars mui-pull-left" href="javascript:;" id="menu-btn"></a>
+		    <h1 class="mui-title">排行榜</h1>
+		</header>
+		<!--显示下拉-->
+		<div id="menu-wrapper" class="menu-wrapper ">
+				<div id="menu" class="menu">
+					<a class="current" href="index.html">首页</a>
+					<a href="evaluation.html">测评</a>
+					<a href="special.html">专题</a>
+					<a href="ranking.html">排行榜</a>
+					<a href="category.html">类别</a>
+				</div>
+		</div>
+		<div id="menu-backdrop" class="menu-backdrop"></div>
+		<div class="mui-content ranking">
+		    <div class="mui-row ranking-title">
+		        <div class="mui-col-sm-2  mui-col-xs-2">
+		            <li>排名</li>
+		        </div>
+		        <div class="mui-col-sm-4 mui-col-xs-4">
+		            <li>图标</li>
+		        </div>
+		        <div class="mui-col-sm-3 mui-col-xs-3">
+		            <li>名称</li>
+		        </div>
+		        <div class="mui-col-sm-3 mui-col-xs-3">
+		            <li>体验</li>
+		        </div>
+		    </div>
+		    <ul class="ranking-table">
+		    	<li class="mui-col-sm-2  mui-col-xs-2 fl">
+		    		<span class="order color">1<i></i></span>
+		    	</li>
+		    	<li class="mui-col-sm-4  mui-col-xs-4 fl">
+		    		<a href="storedetail.html" class="icon"><img src="images/jx2.jpg"/></a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="storedetail.html" class="name">洽总日签</a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="#bottomPopover" class="enter">进入</a>
+		    	</li>
+		    </ul>
+		    <ul class="ranking-table">
+		    	<li class="mui-col-sm-2  mui-col-xs-2 fl">
+		    		<span class="order color">2</span>
+		    	</li>
+		    	<li class="mui-col-sm-4  mui-col-xs-4 fl">
+		    		<a href="storedetail.html" class="icon"><img src="images/sj1.jpg"/></a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="storedetail.html" class="name">车来了精准的实时公交</a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="#bottomPopover1" class="enter">进入</a>
+		    	</li>
+		    </ul>
+		    <ul class="ranking-table">
+		    	<li class="mui-col-sm-2  mui-col-xs-2 fl">
+		    		<span class="order color">3</span>
+		    	</li>
+		    	<li class="mui-col-sm-4  mui-col-xs-4 fl">
+		    		<a href="storedetail.html" class="icon"><img src="images/yl5.png"/></a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="storedetail.html" class="name">洽总日签</a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="#bottomPopover2" class="enter">进入</a>
+		    	</li>
+		    </ul>
+		    <ul class="ranking-table">
+		    	<li class="mui-col-sm-2  mui-col-xs-2 fl">
+		    		<span class="order">4</span>
+		    	</li>
+		    	<li class="mui-col-sm-4  mui-col-xs-4 fl">
+		    		<a href="storedetail.html" class="icon"><img src="images/yl.jpg"/></a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="storedetail.html" class="name">洽总日签</a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="#bottomPopover3" class="enter">进入</a>
+		    	</li>
+		    </ul>
+		    <ul class="ranking-table">
+		    	<li class="mui-col-sm-2  mui-col-xs-2 fl">
+		    		<span class="order">5</span>
+		    	</li>
+		    	<li class="mui-col-sm-4  mui-col-xs-4 fl">
+		    		<a href="" class="icon"><img src="images/yl2.png"/></a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="" class="name">洽总日签</a>
+		    	</li>
+		    	<li class="mui-col-sm-3  mui-col-xs-3 fl">
+		    		<a href="#bottomPopover4" class="enter">进入</a>
+		    	</li>
+		    </ul>
+		</div>
+		<!--进入弹出二维码-->
+		<div id="bottomPopover" class="mui-popover mui-popover-bottom">
+            <div class="enter-con">
+            	<img src="images/ewm_01.png" />
+            	<p>长按识别二维码</p>
+            	<p>打开小程序</p>
+            </div>
+		</div>
+		<div id="bottomPopover1" class="mui-popover mui-popover-bottom">
+            <div class="enter-con">
+            	<img src="images/jx1.PNG" />
+            	<p>长按识别二维码</p>
+            	<p>打开小程序</p>
+            </div>
+		</div>
+		<div id="bottomPopover2" class="mui-popover mui-popover-bottom">
+            <div class="enter-con">
+            	<img src="images/ewm_01.png" />
+            	<p>长按识别二维码</p>
+            	<p>打开小程序</p>
+            </div>
+		</div>
+		<div id="bottomPopover3" class="mui-popover mui-popover-bottom">
+            <div class="enter-con">
+            	<img src="images/ewm_01.png" />
+            	<p>长按识别二维码</p>
+            	<p>打开小程序</p>
+            </div>
+		</div>
+		<div id="bottomPopover4" class="mui-popover mui-popover-bottom">
+            <div class="enter-con">
+            	<img src="images/ewm_01.png" />
+            	<p>长按识别二维码</p>
+            	<p>打开小程序</p>
+            </div>
+		</div>
+		<!--广告-->
+		<div class="h60"></div>
+		<div class="eva-adv">
+			<a href=""><img src="images/adv.png"/></a>
+			<div class="close"><img src="images/close-white.png"/></div>
+		</div>
+		<script type="text/javascript" src="js/m/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js/m/mui.min.js"></script>
+		<script type="text/javascript" src="js/m/app.js"></script>
+		<script type="text/javascript" src="js/wyk/Initialize.js"></script>
+	</body>
+</html>

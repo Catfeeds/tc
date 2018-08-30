@@ -1,0 +1,256 @@
+			
+/*浮动菜单样式开始*/
+            .font-size14{
+            	font-size: 14px;
+            }
+			.lunbofenlei {
+				position: absolute;
+				left: 224px;
+				top: 0px;
+				height: 400px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				border-left: 0px;
+				border-top: 0px;
+				z-index: 999;
+			}
+			
+			.float_menu {
+				height: 400px;
+				position: relative;
+			}
+			
+			.float_menuin {
+				left: -5px;
+				width: 224px;
+				height: 400px;
+				position: absolute;
+				float: left;
+				background-color: rgba(36, 39, 43, .8);
+			}
+			
+			.tab {
+				width: 100%;
+				float: left;
+			}
+			
+			.left_menu {
+				width: 100%;
+				float: left;
+				text-align: center;
+				height: 80px;
+				line-height: 80px;
+				color: #FFFFFF;
+				background-color: rgba(36,39,43,.0000001);
+				padding: 0 10px;
+			}
+			
+			.left_menuin {
+				width: 100%;
+				float: left;
+				text-align: left;
+				height: 80px;
+				line-height: 80px;
+				color: #FFFFFF;
+				border-bottom: 1px solid rgba(208, 207, 207, 0.47);
+				font-size: 16px;
+				color: #CCCCCC;
+			}
+			
+			.right_menu {
+				width: 550px;
+				float: left;
+				display: none;
+				background-size: 100% 100%;
+				-moz-background-size: 14% 100%;
+				/* 老版本的 Firefox */
+				background-repeat: no-repeat;
+				/*position: relative;
+				top: -80px;*/
+			}
+			
+			.right_menuin {
+				width: 100%;
+				float: left;
+				padding: 40px;
+			}
+			
+			.right_menuin ul {
+				padding-left: 0px;
+			}
+			
+			.left_menuin_two {
+				line-height: 20px;
+				padding-top: 15px;
+			}
+			
+			.left_menuin_two ul {
+				float: left;
+				padding-left: 0px;
+				list-style: none;
+				color: #CCCCCC;
+			}
+			
+			.left_menuin_two ul li {
+				float: left;
+				cursor: default;
+			}
+			
+			.left_menuin_two ul li a {
+				font-size: 12px;
+				padding: 0px 10px;
+				color: #CCCCCC;
+				cursor: default;
+			}
+			
+			.left_menuin_two_pad {
+				padding: 0px 10px;
+			}
+			
+			.right_menuin_one {
+				width: 100%;
+				float: left;
+				margin-bottom: 40px;
+			}
+			
+			.right_menuin_one span {
+				width: 100%;
+				color: #333;
+				font-size: 16px;
+				float: left;
+				margin-bottom: 20px;
+			}
+			
+			.right_menuin_one a {
+				color: #666;
+			}
+			
+			.right_menuin_one a:hover {
+				color: #37c88a;
+			}
+			
+			.right_menuin_one ul {
+				width: 100%;
+				float: left;
+				cursor: default;
+				margin-right: 10px;
+			}
+			
+			.right_menuin_one ul li {
+				float: left;
+				padding: 0px 10px;
+				list-style: none;
+			}
+			
+			.pad_left0 {
+				padding-left: 0PX !important;
+			}
+			
+			.pad_left10 {
+				padding-left: 10PX !important;
+			}
+			
+			.right_menuin_two span {
+				width: 100%;
+				color: #333;
+				font-size: 16px;
+				float: left;
+				margin-bottom: 20px;
+			}
+			
+			.right_menuin_two a {
+				color: #666;
+			}
+			
+			.right_menuin_two a:hover {
+				color: #47C88A;
+			}
+			
+			.right_menuin_two li {
+				list-style: none;
+				cursor: default;
+				padding: 5px 0px;
+			}
+			
+			.right_menuin img{
+				position: absolute;
+				top: 200px;
+				left: 300px;
+			}
+			
+/*浮动菜单样式结束*/
+
+/*轮播样式开始*/
+			 .banner{
+	            width: 100%;
+	            /*height: 400px;*/
+	            /*background: black;*/
+	            /*子绝父相*/
+	            position: relative;
+	            /*超出部分全部隐藏，解决横向滚动条*/
+	            overflow: hidden;
+	        }
+	        .banner ul{
+	            position: absolute;
+	        }
+	        .banner ul li{
+	            /*这个100%是相对于父盒子的（会把父盒子的宽度继承过来,如父盒子300%,这这里的100%就会相当于300%）*/
+	            width: 100%;
+	            height: 400px;
+	            float: left;
+	            background:  no-repeat center center;
+	        }
+	        /*.banner ul li:nth-child(1){*/
+	            /*background: url('./1.jpg') no-repeat center center;*/
+	        /*}*/
+	        /*.banner ul li:nth-child(2){*/
+	            /*background: url('./2.jpg') no-repeat center center;*/
+	        /*}*/
+	        /*.banner ul li:nth-child(3){*/
+	            /*background: url('./3.jpg') no-repeat center center;*/
+	        /*}*/
+	        .banner ol{
+	            /*width: 60px;*/
+	            height: 20px;
+	         /*   background: rgba(0,0,0,0.5);*/
+	            position: absolute;
+	            left:50%;
+	            /*margin-left: -40px;*/
+	            bottom: 30px;
+	            border-radius: 10px;
+	        }
+	        .banner ol li{
+	            width: 10px;
+	            height: 10px;
+	            float: left;
+	            margin: 5px 5px;
+	            background: rgba(255,255,255,0.5);
+	            border-radius: 50%;
+	            cursor: pointer;
+	        }
+	        .banner ol .current{
+	            background: rgba(255,255,255,1);
+	        }
+	        .banner i{
+	            width: 58px;
+	            height: 120px;
+	            position: absolute;
+	            top: 50%;
+	            margin-top: -60px;
+	            cursor: pointer;
+	            border-radius: 5px;
+	            display: none;
+	        }
+	        .banner .left{
+	            left: 60px;
+	            background: url('../img/left_right.png') no-repeat 0 0px;
+	        }
+	        .banner .right{
+	            right: 60px;
+	            background: url('../img/left_right.png') no-repeat 0px -120px;
+	        }
+	        .banner .left:hover , .banner .right:hover{
+	            background-color: rgba(0, 0, 0, 0.31);
+	        }
+/*轮播样式结束*/
+

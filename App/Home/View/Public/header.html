@@ -1,0 +1,166 @@
+<block name="head">
+</block>
+<div class="container-fluid bg-white">
+			<div class="container bg-white">
+				<div class="nav-1">
+				<a href="{:U('index/index')}">
+					<img src="__PUBLIC__/Home/saibangzi/img/logo.jpg" />
+					</a>
+				</div>
+				<div class="nav-2">
+					<a href="{:U('index/index')}">首页</a>
+					<a id="xiazai">下载APP</a>
+					<div class="download-app">
+						<img src="__PUBLIC__/Home/saibangzi/img/erweima.png" />
+						<div class="symbol_1"></div>
+						<div class="symbol_11"></div>
+					</div>
+				    <a href="{:U('courses/index')}">全部课程</a>
+				<if  condition="$dian['uid'] neq null">
+						<a href="{:U('courses/teacher')}">我要讲课</a>
+						<else/>
+						<a href="{:U('Prove/index')}">我要讲课</a>
+						</if>
+				</div>
+				<div class="nav-4">
+					<if condition="$_SESSION['H_user_id'] neq null">
+					<li id="touxiang1">
+						<img src="__ROOT__{$user.image}" />
+						<div class="touxiang-list" id="t-l-1">
+							<ul>
+								<li class="bor-bot"><a  target="_blank">{$user.name}</a></li>
+								<li><a href="{:U('Me/index')}" target="_blank">个人资料</a></li>
+								<li><a href="{:U('Me/course')}" target="_blank">我的课程</a></li>
+								<li><a href="{:U('Me/subscribe')}" target="_blank">我的收藏</a></li>
+								<li class="bor-bot"><a href="{:U('Me/jifen')}" target="_blank">积分商城</a></li>
+								<if  condition="$dian['uid'] neq null">
+								<li class="bor-bot"><a href="{:U('courses/teacher')}" target="_blank">我的店铺</a></li>
+								</if>
+							<li><a id="outlogin" target="_blank">退出 </a></li>
+							</ul>
+							<div class="symbol_3"></div>
+							<div class="symbol_33"></div>
+						</div>
+					</li>
+					<else/>
+					<li id="touxiang">
+						<a id="ll" class="p-tx" href="{:U('Login/index')}">登录|注册</a>
+
+					</li>
+					</if>
+					<input type="hidden" value="{$_SESSION['H_user_id']}" id="session">
+					<if condition="$_SESSION['H_user_id'] neq null">
+					<li style="position: relative;" id="xx">
+							<i class="iconfont">&#xe61b;</i>
+							<if condition="$list[0]['uid'] neq null">
+							<div style="height: 8px;width:8px;background: red;border-radius: 100%;position: absolute;top: 20px;right: 60px;"></div></if>
+								<div class="touxiang-list" id="t-l-2" style="right: 80px;">
+								<ul>
+									<li class="bor-bot"><a href="{:U('News/index')}" target="_blank">个人消息</a></li>
+									<li><a href="{:U('News/news1')}" target="_blank">系统消息</a></li>
+									<li><a href="{:U('News/news2')}" target="_blank">交易消息</a></li>
+									<li><a href="{:U('News/news3')}" target="_blank">活动</a></li>
+								</ul>
+								<div class="symbol_3"></div>
+								<div class="symbol_33"></div>
+							</div>
+						</li>
+					</if>
+						<li id="icon-history">
+							<i class="iconfont">&#xe70c;</i>
+						<!--消息-->
+						<div class="icon-history" >
+							<if condition="$_SESSION['H_user_id'] neq null">
+								<div class="icon-his-top">
+									<p>近期学习记录</p>
+								</div>
+								<div class="icon-his-bottom" >
+								<if condition="($pin neq null) OR ($bo neq null)">
+									<ul>
+									<foreach name="pin" item="v">
+									<a href="{:U('courses/course?id='.$v['video_id'])}">
+										<li>
+											<img src="__ROOT__{$v.img}" />
+											<div>
+												<p>{$v.name}</p>
+											</div>
+										</li>
+									</a>	
+									</foreach>	
+									<foreach name="bo" item="x">
+									<a href="{:U('courses/course?pid='.$x['liveb_id'])}">
+										<li>
+											<img src="__ROOT__{$x.img}" />
+											<div>
+												<p>{$x.name}</p>
+											</div>
+										</li>
+										</a>
+									</foreach>
+									</ul>
+									<else/>
+									<ul>
+										<li>
+											<div>
+												<p>没有历史记录</p>
+											</div>
+										</li>
+									</ul>
+									</if>
+									<div class="symbol_2"></div>
+									<div class="symbol_22"></div>
+								</div>
+								
+								<else />
+								<div class="icon-his-bottom">
+								你还没有登录！！
+								</div>
+								</if>
+						</div>
+					</li>
+				</div>
+				<div class="nav-3">
+				<form action="{:U('index/search')}" method="post">
+					<input  id="search" name="sousuo" class="search-inp" type="text" placeholder="请输入关键字" />
+					<button type="submit" class="glyphicon glyphicon-search search but-icon">
+					</button>
+					</form>
+					<span class="remen_1">前端入门</span>
+					<span class="remen_2">java入门</span>
+				</div>
+			</div>
+		</div>
+		<block name="main">
+		</block>
+			<!--页脚开始-->
+			<div class=" bg-white">
+				<div class="container footer">
+					<div class="footer-top">
+						<a href="{:U('feedback/lianxi')}">
+						<span>联系我们</span>
+						</a>
+						<span>|</span>
+						<a href="{:U('feedback/index')}">
+						<span>意见反馈</span>
+						</a>
+						<span>|</span>
+						<a href="{:U('feedback/wenti')}">
+						<span>常见问题</span>
+						</a>
+						<span>|</span>
+						<a href="{:U('feedback/xieyi')}">
+						<span>服务协议</span>
+						</a>
+						<span>|</span>
+						<a href="{:U('feedback/about')}">
+						<span>关于我们</span>
+						</a>
+					</div>
+					<div class="footer-bottom">
+						<span>津ICP备18000463号-1</span>
+					</div>
+				</div>
+			</div>
+			<!--页脚结束-->
+			<block name="foot">
+			</block>

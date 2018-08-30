@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/t-footer/t-footer.css" />
+		<title>{$list.title}</title>
+		<style>
+			.arg h3 {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.arg p {
+		    text-indent:24px 
+	    	}
+	    	
+		</style>
+	</head>
+
+	<body class="bg-f8">
+		
+		<!--导航开始-->
+			<include file="Public/naodai" />
+		
+		<!--导航结束-->
+
+		<div class="container margin_t50">
+
+			<div class="col-md-3-a bg-white">
+				<ul class="u-nav" id="user_menu">
+					<li class="item" id="user_menu_my" name="user_menu_my">
+						<ul class="sub">
+							<li>
+								<i class="iconfont">&#xe664;</i>
+								<a href="{:U('feedback/lianxi')}">联系我们</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+							<li>
+								<i class="iconfont"> &#xe663;</i>
+								<a href="{:U('feedback/index')}">意见反馈</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+
+							<li>
+								<i class="iconfont"> &#xe6ad;</i>
+								<a href="{:U('feedback/wenti')}">常见问题</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+							<li>
+								<i class="iconfont "> &#xe662;</i>
+								<a href="{:U('feedback/about')}">关于我们</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+							<li>
+								<i class="iconfont current">&#xe659;</i>
+								<a href="{:U('feedback/xieyi')}" class="current">用户协议</a>
+								<i class="iconfont current">&#xe607;</i>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-9-a bg-white">
+				<div class="c-p-r">
+					<div class="c-r-t">
+						<p>{$list.content}</p>
+					</div>
+
+					<div class="c-r-b arg">
+				
+						
+						
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+				<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+				<a id="moquu_top" href="javascript:void(0)"></a>
+			</div>
+		</div>
+		<!--页脚开始-->
+		
+			<include file="Public/jiaoyazi" />
+       
+		
+		<!--页脚结束-->
+
+			<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script>
+			$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,73 @@
+	.adr {
+	padding: 0px 20px;
+	width: 330px;
+	border-top: 2px solid #F39232;
+	border-bottom: 2px solid #F39232;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	margin: 30px;
+	margin-bottom: 300px !important;
+	float: left;
+}
+
+.adr ul {
+	margin-bottom: 0px;
+}
+
+.adr ul li {
+	padding: 10px 0px;
+	border-bottom: 1px solid #eee;
+	float: left;
+	width: 100%;
+}
+
+.adr ul li i {
+	padding-right: 10px;
+	color: #ddd;
+}
+
+.btn-c {
+	padding: 2px 5px;
+	float: right;
+}
+
+.adr-l {
+	display: inline;
+	width: 90%;
+	float: right;
+}
+
+.btn-primary {
+	background-color: #f39232;
+	border: 1px solid #f39232;
+}
+
+.btn-primary:hover {
+	background-color: #ff9933;
+	border: 1px solid #ff9933;
+}
+
+.btn-green {
+	background-color: #47C88A;
+	color: #fff;
+}
+
+.btn-green:hover {
+	background-color: #339966;
+	border: 1px solid #339966;
+	color: #fff;
+}
+
+.d-n {
+	display: none;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.btn-add{
+	float: left;
+	margin: 30px;
+}
+	

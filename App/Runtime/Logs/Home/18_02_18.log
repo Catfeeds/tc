@@ -1,0 +1,2364 @@
+[ 2018-02-18T00:41:27+08:00 ] 123.125.71.57 /Home/Courses/student/id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T00:41:27+08:00 ] 123.125.71.55 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-02-18T00:44:04+08:00 ] 47.93.180.168 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0065s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0075s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0078s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0079s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0079s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0078s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0079s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0093s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-02-18T01:14:47+08:00 ] 123.125.71.108 /Home/courses/course/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T01:14:47+08:00 ] 123.125.71.58 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-02-18T01:23:37+08:00 ] 47.93.112.232 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+
+[ 2018-02-18T01:50:27+08:00 ] 89.146.35.186 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-02-18T03:59:25+08:00 ] 220.181.108.76 /Home/courses/course/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T03:59:25+08:00 ] 220.181.108.121 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2018-02-18T05:06:05+08:00 ] 220.181.108.139 /Home/courses/baoming/pid/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T05:06:05+08:00 ] 220.181.108.86 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-02-18T05:39:25+08:00 ] 220.181.108.85 /Home/courses/course/pid/99.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T05:39:25+08:00 ] 220.181.108.147 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-02-18T05:57:21+08:00 ] 106.11.225.31 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-02-18T06:12:45+08:00 ] 220.181.108.97 /Home/courses/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T06:12:45+08:00 ] 220.181.108.109 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-02-18T07:39:22+08:00 ] 164.52.24.140 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2018-02-18T07:40:16+08:00 ] 106.11.226.97 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-02-18T08:23:03+08:00 ] 47.92.2.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-02-18T08:51:57+08:00 ] 220.181.108.112 /Home/courses/course/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T08:51:57+08:00 ] 220.181.108.187 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-02-18T09:25:17+08:00 ] 123.125.71.14 /Home/courses/baoming/pid/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T09:25:18+08:00 ] 123.125.71.84 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-02-18T09:58:37+08:00 ] 123.125.71.101 /Home/courses/lei/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T09:58:38+08:00 ] 123.125.71.42 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-02-18T10:31:57+08:00 ] 220.181.108.110 /Home/courses/course/pid/98.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T10:31:58+08:00 ] 220.181.108.111 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2018-02-18T10:43:00+08:00 ] 175.149.183.28 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2018-02-18T10:43:21+08:00 ] 175.149.183.28 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-02-18T10:43:36+08:00 ] 175.149.183.28 /Home/Login/passlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `user` WHERE ( phone=13804976190 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: UPDATE `user` SET `login_time`='1518921816',`login_num`='70' WHERE ( user_id=6 ) [ RunTime:0.0045s ]
+
+[ 2018-02-18T10:43:37+08:00 ] 175.149.183.28 /Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0026s ]
+SQL: SELECT u.*,ud.image FROM user as u,userdata as ud WHERE ( u.user_id=6 and u.user_id=ud.uid ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2018-02-18T10:43:41+08:00 ] 175.149.183.28 /Home/Me/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sign` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `user` WHERE `user_id` = 6 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `sex`,`image`,`address`,`profile`,`integral` FROM `userdata` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2018-02-18T10:43:46+08:00 ] 175.149.183.28 /Home/Me/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `user` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `userdata` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `pay` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `pay` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `withdraw` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `withdraw` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sign` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `payrecord` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payrecord` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `payrecord` WHERE ( uid=6 ) LIMIT 0,5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-02-18T10:43:53+08:00 ] 175.149.183.28 /Home/Me/sign.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sign` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: UPDATE `sign` SET `time`='1518921833',`signday`='1' WHERE ( sign_id=1 ) [ RunTime:0.0020s ]
+SQL: UPDATE `userdata` SET `integral`=integral+5 WHERE ( uid=6 ) [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `integral` [ RunTime:0.0027s ]
+SQL: INSERT INTO `integral` (`uid`,`type`,`source`,`num`,`time`) VALUES ('6','1','签到','5','1518921833') [ RunTime:0.0022s ]
+
+[ 2018-02-18T10:43:55+08:00 ] 175.149.183.28 /Home/Me/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `user` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `userdata` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `pay` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `pay` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `withdraw` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `withdraw` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sign` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `payrecord` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payrecord` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `payrecord` WHERE ( uid=6 ) LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-02-18T10:44:00+08:00 ] 58.246.221.75 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-02-18T10:44:00+08:00 ] 175.149.183.28 /Home/Me/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sign` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `user` WHERE `user_id` = 6 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `sex`,`image`,`address`,`profile`,`integral` FROM `userdata` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-02-18T10:44:03+08:00 ] 175.149.183.28 /Home/Me/subscribe.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sign` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `user` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `userdata` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `subscribe` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `subscribe` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `subscribe` WHERE ( uid=6 ) LIMIT 0,6   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( liveb_id=3 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( liveb_id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `video` WHERE ( video_id=4 ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2018-02-18T10:44:10+08:00 ] 175.149.183.28 /Home/Me/course.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `user` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `userdata` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sign` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sign` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `liveb` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( uid=6 ) ORDER BY time asc LIMIT 0,5   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2018-02-18T10:44:21+08:00 ] 223.166.151.191 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-02-18T10:44:21+08:00 ] 175.149.183.28 /Home/courses/teacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT u.*,ud.image FROM user as u,userdata as ud WHERE ( u.user_id=6 and u.user_id=ud.uid ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `history` WHERE ( uid=6 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT v.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,video as v,user as u,teacher as t,userdata as ud WHERE ( v.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and v.video_id in (5,3) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0027s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id in (5,6,1) )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `payrecord` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `class` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0027s ]
+SQL: SELECT t.name as tname,t.abstract,c.*,u.image FROM teacher as t,class as c,userdata as u WHERE ( c.uid=6 and t.uid=6 and u.uid=6 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( class_id=5 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `video` WHERE ( class_id=5 )  [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payrecord` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-02-18T10:44:28+08:00 ] 175.149.183.28 /Home/Liveb/teacher/livebid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE `user_id` = 6 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-02-18T10:44:36+08:00 ] 58.247.212.140 /Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-02-18T10:44:41+08:00 ] 58.247.212.61 /Home/Me/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+
+[ 2018-02-18T10:44:46+08:00 ] 223.167.152.14 /Home/Me/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-02-18T10:45:03+08:00 ] 58.247.212.69 /Home/Me/subscribe.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-02-18T10:45:21+08:00 ] 58.247.212.69 /Home/courses/teacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T10:45:28+08:00 ] 112.65.193.14 /Home/Liveb/teacher/livebid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-02-18T10:45:29+08:00 ] 175.149.183.28 /Home/Liveb/teacher/livebid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+
+[ 2018-02-18T10:45:29+08:00 ] 175.149.183.28 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2018-02-18T10:46:05+08:00 ] 175.149.183.28 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2018-02-18T10:46:41+08:00 ] 175.149.183.28 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-02-18T10:51:11+08:00 ] 123.125.67.215 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-02-18T11:14:31+08:00 ] 158.69.229.69 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2018-02-18T11:25:53+08:00 ] 123.30.235.19 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-02-18T11:26:08+08:00 ] 123.30.235.19 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2018-02-18T11:38:37+08:00 ] 220.181.108.93 /Home/courses/lei/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T11:38:37+08:00 ] 220.181.108.149 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-02-18T12:11:57+08:00 ] 220.181.108.85 /Home/courses/lei/id/62.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T12:11:58+08:00 ] 220.181.108.83 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-02-18T13:00:40+08:00 ] 220.181.51.74 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-02-18T13:44:03+08:00 ] 220.181.108.108 /Home/courses/baoming/pid/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T13:44:03+08:00 ] 220.181.108.177 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-02-18T16:27:08+08:00 ] 47.93.90.175 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+
+[ 2018-02-18T17:01:57+08:00 ] 106.11.227.247 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2018-02-18T17:02:55+08:00 ] 220.181.108.143 /Home/courses/lei/id/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T17:02:55+08:00 ] 220.181.108.78 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-02-18T18:22:06+08:00 ] 221.11.5.53 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-02-18T19:19:37+08:00 ] 140.205.225.185 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-02-18T19:46:43+08:00 ] 140.205.225.185 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2018-02-18T20:08:49+08:00 ] 140.205.225.185 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-02-18T21:34:24+08:00 ] 140.205.201.44 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: yuyan_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 79 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: qinzi_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: bangong_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 97 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: zhiye_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 106 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: chanpin_id /var/www/web/test/App/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: dian /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /var/www/web/test/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-02-18T23:26:22+08:00 ] 123.125.71.24 /Home/courses/baoming/pid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with that of Think\Controller::show() /var/www/web/test/App/Home/Controller/CoursesController.class.php 第 6 行.
+
+[ 2018-02-18T23:26:22+08:00 ] 123.125.71.57 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+

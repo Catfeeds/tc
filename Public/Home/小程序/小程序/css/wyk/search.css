@@ -1,0 +1,30 @@
+	.hot-search {
+				padding: .0rem 1.0rem;
+			}
+			
+			.hot-search li a {
+				color: #333;
+				font-size: .25rem;
+				padding: .08rem 0;
+				display: block;
+			}
+			
+			.hot-search h2 {
+				color: #999;
+				font-size: .3rem
+			}
+			
+			.search-r {
+				float: left;
+				border: 1px solid #999;
+				border-radius: 1.0rem;
+				margin-right: 0.65rem;
+			}
+			
+			.search-r a {
+				font-size: .3 rem !important;
+				padding: 0.04rem 0.35rem !important;
+			}
+			
+			.mar-r {
+				margin-right: 0.0rem;

@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+ 
+<title>产品管理</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 产品管理 <span class="c-gray en">&gt;</span>直播审核<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="text-c" style="padding: 20px;">
+		<form class="Huiform" method="post" action="" target="_self">
+			<input type="text" placeholder="输入课堂名称" value="" id="serchWord" class="input-text" style="width:200px">		
+			<!--<span class="select-box" style="width:150px">
+				<select class="select" name="brandclass" size="1">
+					<option value="1" selected>全部</option>
+					<option value="1" selected>上线</option>
+					<option value="0">下线</option>
+				</select>
+			</span>-->
+			
+			<button type="button" class="btn btn-success" id="" name="" onClick="picture_colume_add(this);"style="margin:0px 0px 2px 20px;"> 查询</button>
+		</form>
+		
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+				<tr class="text-c">
+					<!--<th><input name="" type="checkbox" value=""></th>-->
+					<th>课程id</th>
+					<th>直播封面</th>
+					<th>课堂名称</th>
+					<th>课程名称</th>
+					<th>直播介绍</th>
+					<th>上传时间</th>
+					<th>开始直播</th>
+					<th>结束直播</th>
+					<th>直播类型</th>
+					<th>价格</th>				
+					<th>是否推荐</th>
+					<th>状态</th>
+					<th>审核状态</th>
+					<th>销售状态</th>
+					<th>操作</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="row" item="model">
+					<tr class="text-c">
+						<!--<td><input name="" type="checkbox" value=""></td>-->
+						<td>{$model.goods_id}</td>
+						<td>
+							<img alt="" height="100px" src="{$img}{$model.img}">
+						</td>
+						<td>{$model.uname}</td>
+						<td>{$model.name}</td>
+						<td>{$model.introduce}</td>
+						
+						<td>{$model.time|date='Y-m-d G:i:s',###}</td>
+						<td>{$model.starttime|date='Y-m-d G:i:s',###}</td>
+						<td>{$model.endtime|date='Y-m-d G:i:s',###}</td>
+						<td>
+							<if condition="$model.type eq 1 "> 
+					     		1V1
+							<else />  
+					     		1V多
+							</if>
+						</td>
+						<td>{$model.money}</td>			    
+						<td class="td-status">
+					     	<if condition="$model.recommend eq 1 "> 
+					     		<span class="label label-success radius">是</span>
+							<else />  
+					     		<span class="label label-danger radius">否</span>
+							</if>
+				     	</td>				    
+						<td class="td-status">
+					     	<if condition="$model.liveb_status eq 1 "> 
+					     		<span class="label label-success radius">正在直播</span>
+							<else />  
+					     		<span class="label label-danger radius">未直播</span>
+							</if>
+				     	</td>
+				     	<td class="td-status">
+					     	<if condition="$model.astatus eq 0 "> 
+					     		<span class="label label-success radius">审核中</span>
+							<elseif  condition="$model.astatus eq 1 "/>  
+					     		<span class="label label-success radius">已通过</span>
+					     	<else/>
+					     	<span class="label label-danger radius">已拒绝</span>
+							</if>
+				     	</td>
+				     	<td class="td-status">
+					     	<if condition="$model.status eq 0 "> 
+					     		<span class="label label-success radius">在售</span>
+							<else />  
+					     		<span class="label label-danger radius">下架</span>
+							</if>
+				     	</td>
+						<td class="td-manage">
+						<!-- <if condition="strpos($res,'32') !== false"> 
+						<a title="编辑" href="javascript:;" onclick="liveb_edit('编辑','{:U('Play/dataEdit',array('id'=>$model['liveb_id']))}','4','1500','800')" style="text-decoration:none">
+									<button class="Hui-iconfont" style="padding: 3px 5px;">编辑</button>
+								</a> 
+								</if> -->
+							<if condition="$model.recommend eq 0 ">
+								<a title="推荐" id="buttonXiajia" onclick="xianshi(this,'{$model.goods_id}')"  href="javascript:;" >
+									<button class="Hui-iconfont" style="padding: 3px 5px;">推荐</button>
+								</a>
+							<else />
+								<a title="取消推荐" id="buttonXiajia" onclick="yincang(this,'{$model.goods_id}')"  href="javascript:;" >
+									<button class="Hui-iconfont" style="padding: 3px 5px;">取消推荐</button>
+								</a>
+							</if>	 
+							<if condition="$model.status eq 0 ">
+								<a title="下架" id="buttonXiajia" onclick="xiaxian(this,'{$model.goods_id}')"  href="javascript:;" >
+									<button class="Hui-iconfont" style="padding: 3px 5px;">下架</button>
+								</a>
+							
+							<!-- <if condition="strpos($res,'32') !== false">
+								<a title="上架" id="buttonXiajia" onclick="shangxian(this,'{$model.goods_id}')"  href="javascript:;" >
+									<button class="Hui-iconfont" style="padding: 3px 5px;">上架</button>
+								</a>
+								</if>-->
+							</if> 
+							<if condition="$model.astatus eq 0 ">
+								<a title="通过" id="buttonXiajia" onclick="pass(this,'{$model.goods_id}')"  href="javascript:;" > 
+								<!-- <a title="通过" id="buttonXiajia"   href="{:U('pass?id='.$model['goods_id'])}" > -->
+									<button class="Hui-iconfont" style="padding: 3px 5px;">通过</button>
+								</a>
+								<a title="拒绝" id="buttonXiajia" onclick="auditm_refuse('拒绝','{:U('play/lshowrefuse',array('pid'=>$model['goods_id']))}','4','','200')"  href="javascript:;" >
+									<button class="Hui-iconfont" style="padding: 3px 5px;">拒绝</button>
+								</a>
+							<elseif condition="$model.astatus eq 1 "/>
+									<button class="Hui-iconfont" style="padding: 3px 5px;">已通过</button>
+								</a>
+							<else/>
+									<button class="Hui-iconfont" style="padding: 3px 5px;">已拒绝</button>
+								</a>
+							</if>
+
+							<eq name="model.liveb_status" value="1">
+							<a title="关闭" id="buttonXiajia" onclick="dataDel(this,'{$model.roomid}')"  href="javascript:;" >
+									<button class="Hui-iconfont" style="padding: 3px 5px;">关闭</button>
+							</a>
+							</eq>
+
+
+						</td>
+					</tr>
+				</foreach>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>  
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+/*表格初始化*/
+$(function(){
+	$('.table-sort').dataTable({
+		//"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+		"bStateSave": true,//状态保存
+		"ordering":false,
+		"aLengthMenu": [10],//设置每页显示数据条数
+		"aoColumnDefs": [
+		  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		  {"orderable":false,"aTargets":[2,3,4,5,6,7]}// 制定列不参与排序
+		],
+		"searching": true,//搜索功能
+		"bLengthChange":true,//关闭选择每页显示条数功能
+	});
+
+});
+
+
+/*编辑*/
+function liveb_edit(title,url,id,w,h){
+	layer_show(title,url,w,h);
+}
+
+function auditm_refuse(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+/*取消推荐*/
+function yincang(obj,id){
+	layer.confirm('确认取消推荐该主播吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Play/yincang')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonXiajia").hide()
+				$("#buttonShangjia").show()*/
+				//layer.msg('已下架!',{icon:1,time:1000});
+				window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+/*推荐*/
+function xianshi(obj,id){
+	layer.confirm('确认推荐该主播吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Play/xianshi')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonShangjia").hide()
+				$("#buttonXiajia").show()*/
+				//layer.msg('已上架!',{icon:1,time:1000});
+				window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});	
+	});
+}
+
+
+/*上线*/
+function shangxian(obj,id){
+	layer.confirm('确认上架吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Play/shangxian')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonXiajia").hide()
+				$("#buttonShangjia").show()*/
+				//layer.msg('已下架!',{icon:1,time:1000});
+				window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+/*下线*/
+function xiaxian(obj,id){
+	layer.confirm('确认下架吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Play/xiaxian')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonShangjia").hide()
+				$("#buttonXiajia").show()*/
+				//layer.msg('已上架!',{icon:1,time:1000});
+				window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+/*删除*/
+function dataDel(obj,id){
+	
+		
+		$.ajax({
+			data:{roomid:id},
+			type: 'POST',
+			url: "{:U('Play/close_room')}",
+			//dataType: 'json',
+			success: function(data){
+				console.log(data);
+			alert(data);
+		 	window.location.href="javascript:location.replace(location.href);"
+				/*$("#buttonShangjia").hide()
+				$("#buttonXiajia").show()*/
+			//layer.msg('已关闭!',{icon:1,time:1000});
+							
+			},
+			error:function(data) {
+				console.log(data);
+			},
+		});	
+		
+	
+}
+
+
+//关键字搜索
+function picture_colume_add(){
+	window.location.href="{:U('Play/showlist')}/serchWord/"+$("#serchWord").val()
+}
+//通过
+function pass(obj,id){
+	layer.confirm('确认通过吗？',function(index){
+		
+		$.post("{:U('Play/pass')}",{'id':id},function(data){
+			//alert(data)
+            if(data!=1 && data!=2){
+            var firstIndex = data.indexOf("{");
+            var lastIndex = data.lastIndexOf("}");
+            var jsonStr = data.substring(firstIndex,lastIndex+1);
+            var jsonObj = eval("("+jsonStr+")");
+            if(jsonObj.ret=='SUCCESS'){
+                
+                    alert('已通过,已通知用户');
+                    window.location.href="{:U('Play/showlist')}";
+                }else{
+                    alert('通过失败');
+                    window.location.href="{:U('Play/showlist')}";
+                }
+        }else{
+            if(data==1){
+              alert('已通过');
+              window.location.href="{:U('Play/showlist')}";    
+            }
+            if(data==2){
+                alert('通过失败');
+                window.location.href="{:U('Play/showlist')}";
+            }
+        }
+       });		
+	});
+}
+//拒绝
+function refuse(obj,id){
+	layer.confirm('确认拒绝吗？',function(index){
+		/*$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Play/refuse')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonXiajia").hide()
+				$("#buttonShangjia").show()*/
+				//layer.msg('已下架!',{icon:1,time:1000});
+				/*window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		*/
+		
+	});
+}
+</script>
+</body>
+</html>

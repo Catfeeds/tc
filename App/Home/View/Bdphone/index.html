@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="generator" content="辽宁天成浩联科技有限公司" />  
+ 		<meta name="author" content="辽宁天成浩联科技有限公司" />  
+		<meta name="keywords" content="辽宁天成浩联科技有限公司，直播，视频，网约课" />  
+		<meta name="description" content="辽宁天成浩联科技有限公司" />  
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/submit-order.css" />
+		<title>绑定手机号</title>
+		<style>
+
+		</style>
+
+	</head>
+
+	<body class="bg-f8">
+		<!--导航开始-->
+		<div class="container-fluid bg-white p-10">
+			<div class="container bg-white">
+				<div class="nav-1">
+					<a href="{:U('index/index')}">
+						<img src="__PUBLIC__/Home/saibangzi/img/logo.jpg" />
+					</a>
+				</div>
+
+				<div class="nav-b" style="margin-top:12px;">
+					<a>手机号绑定</a>
+				</div>
+				<div class="nav-r" style="margin-top:12px;">
+					<a>你好，欢迎来到网约课&nbsp;&nbsp;|&nbsp;&nbsp;<i class="glyphicon glyphicon-earphone">400-0063088</i></a>
+				</div>
+
+			</div>
+		</div>
+		<!--导航结束-->
+
+		<div class="container margin_t50">
+
+			<div class="row s-p-b">
+				<div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-2">
+					<!-- <form class="form-horizontal"> -->
+
+						<div class="form-group">
+							<label class="col-sm-11 control-label">请输入手机号完成绑定，可以使用网页课更多功能。</label>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-4 control-label">手机号：</label>
+							<div class="col-sm-8">
+								<input type="text" name="tel" class="form-control" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" maxlength="11" p="/^(((13|14|15|18|17|19)\d{9}))$/" id="phone">
+								<span class="tel"></i>请输入正确手机号</span>
+							</div>
+						</div>
+
+						<div class="form-group" >
+							<label class="col-sm-4 control-label" style="margin-top:20px;">验证码：</label>
+							<div class="col-sm-8" style="margin-top:20px;">
+								<input type="text" name="yzm" class="form-control" id="yzm">
+								<span class="v-c">请输入正确验证码</span>
+								<div class="col-sm-12">
+									<img src="{:U('Bdphone/verify')}" class="v-img" style="width:200px;height:80px;" id="verify"/>
+									<span class="s-n" onclick="yzm();">看不清，换一张</span>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-4 control-label" style="margin-top:20px;">校验码：</label>
+							<div class="col-sm-4" style="margin-top:20px;">
+								<input onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" name="jym" class="form-control" placeholder="" maxlength="6" p="/^\d{6}$/" id="dxyzm">
+								<span class="c-v">请输入正确校验码</span>
+							</div>
+							<div class="col-sm-4" style="margin-top:20px;">
+								<input id="btnSendCoda" type="button" value="获取验证码" onClick="doverify()" />
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-offset-5 col-sm-10">
+								<button type="button" class="btn btn-success" onclick="tijiao();">确定</button>
+							</div>
+						</div>
+					<!-- </form> -->
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+		<div style="width:100%;height:50px;"></div>
+		<include file="Public/jiaoyazi" />
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/set-tel.js"></script>
+<script>
+function yzm(){
+	$('#verify').attr('src',"__MODULE__/Bdphone/verify");
+}
+
+function doverify(){
+	var yzm=$('#yzm').val();
+	var phone=$('#phone').val();
+	var tenet=/^(((13[0-9]{1})|(14[0-9]{1})|(17[0-9]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+	var p_t= tenet.test(phone);
+	if(yzm==""){
+		alert('验证码不能为空');
+	}else{
+		if(phone==""){
+			alert('手机号不能为空');
+		}else{
+			if(p_t==false){
+
+			}else{
+				$.ajax({
+				url:"{:U('Bdphone/doverify')}",
+				data:{code:yzm},
+				type:'post',
+				success:function(date){
+					if(date==false){
+						alert('验证码不正确');
+					}else{
+						sendMessage();
+						$.ajax({
+							url:"{:U('Verify/verify')}",
+							data:{phone:phone},
+							type:'post',
+							success:function(rel){
+								if(rel=='发送成功'){
+									alert('短信发送成功');
+								}else{
+									alert('发送失败');
+								}
+							},
+							error:function(){
+
+							}
+						});
+					}
+				},
+				error:function(){
+					alert('网络错误');
+				}
+				});
+			}
+		}
+	}
+}
+
+function tijiao(){
+	var phone=$('#phone').val();
+	var dxyzm=$('#dxyzm').val();
+	$.ajax({
+		url:"{:U('Bdphone/bdphone')}",
+		data:{phone:phone,verify:dxyzm},
+		type:'post',
+		success:function(date){
+			if(date.code=='202'){
+				alert(date.mes);
+				window.location.href="javascript:location.replace(location.href);"
+			}else if(date.code=='203'){
+				alert(date.mes);
+				window.location.href="javascript:location.replace(location.href);"
+			}else if(date.code=='204'){
+				alert(date.mes);
+				window.location.href="javascript:location.replace(location.href);"
+			}else if(date.code=='201'){
+				alert(date.mes);
+				window.location.href="javascript:location.replace(location.href);"
+			}else{
+				alert(date.mes);
+				window.location.href="http://www.wyuek.com"
+			}
+		},
+		error:function(err){
+			alert('网络异常');
+			window.location.href="javascript:location.replace(location.href);"
+		}
+	});
+}
+</script>
+	</body>
+
+</html>

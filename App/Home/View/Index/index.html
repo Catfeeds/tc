@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xml:lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<title>网约课-个性化直播教育平台</title>
+ 		<meta name="generator" content="辽宁天成浩联科技有限公司" />  
+ 		<meta name="author" content="辽宁天成浩联科技有限公司" />  
+		<meta name="keywords" content="网约课堂,远程教育,公开课,网络公开课,在线学习,在线教育,在线培训,在线课堂,名师讲堂,视频课程" />  
+		<meta name="description" content="网约课-是天成集团旗下优秀的在线教育平台，整合了海量优质教育机构和教育专家，包括职业培训、育儿教育、英语口语、韩语日语、公务员考试、托福雅思、中小学教育等众多在线直播学习课程，打造 老师在线上课教学、学生及时互动学习的环境。打造极致个性化学习体验，学习成就未来！" />  
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/slider/css/slide.css" />
+		<style>
+			.ck-slide-dir ul li a img{
+			height: 400px !important;
+		}
+		.thumbnail{
+			position:relative;
+			background-color: transparent;
+		}
+		.video-label-item{
+			position:absolute;
+			top:0px;
+			left:0px;
+			border-bottom-right-radius:8px;
+		}
+
+		</style>
+	</head>
+
+	<body>
+			<include file="Public/naodai" />
+
+
+		<!--轮播开始	-->
+		
+
+			<div class="ck-slide">
+				<ul class="ck-slide-wrapper">
+				<foreach name="lunbo_list" item="val">
+					<li>
+						<a href="{$val.url}"><img src="__ROOT__{$val['img']}" alt=""></a>
+					</li>
+				</foreach>
+				
+				</ul>
+				<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+				<div class="ck-slidebox">
+					<div class="slideWrap">
+						<ul class="dot-wrap">
+							<li class="current"><em>1</em></li>
+							<li><em>2</em></li>
+							<li><em>3</em></li>
+							<li><em>4</em></li>								
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="width: 1200px;margin: 0 auto;">
+				<div class="float_menu">
+					<div class="float_menuin font-size14">
+					<foreach name='list' item='val'>
+						<div class="tab_qiehuan tab">
+							<div class="left_menu bianhuabeijing">
+								<div class="left_menuin" style="overflow:hidden;">
+									<div class="left_menuin_two" style="line-height:25px;">
+										<ul>
+											<li class="pad_left10">{$val.name}</li>
+										</ul>
+										<ul>
+											<foreach name="val['cate_son']" item="v">
+										<li><a href="{:U('courses/lei?id='.$v['cate_id'])}" style="width:10px;overflow:hidden;">{$v.name}</a></li>
+											</foreach>
+										</ul>
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="right_menu lunbofenlei">
+								<div class="right_menuin">
+									<div class="right_menuin_one">
+										<span>{$val.name}</span>
+										<ul class="pad_left0">
+										<foreach name="val['cate_sons']" item='vv'>
+											<li ><a href="{:U('courses/lei?id='.$vv['cate_id'])}">{$vv.name}</a></li>
+											<li>|</li>
+										</foreach>
+										</ul>
+									</div>
+									<div class="right_menuin_two">
+										<span>推荐</span>
+										<ul>
+										<foreach name="val['course']" item="cval">
+											<li><a href="{:U('Courses/course',array('pid'=>$cval['liveb_id']))}">课程 | {$cval.name}</a></li>
+										</foreach>
+										</ul>
+									</div>
+									<!-- < img src="__PUBLIC__/Home/saibangzi/img/tuijian.png" /> -->
+								</div>
+							</div>
+						</div>
+					</foreach>
+					</div>
+				</div>
+			</div>
+			<h1 style="display:none">
+			网约课 语言学习 语言学习 英语口语 英语四级 托福考试 外语早教 英语六级 韩语学习 雅思考试 俄语学习 文化教育 英语启蒙 认知早教 小学教育 初中教育 高中教育 大学教育 考研教育 家庭教育 办公效率 办公软件 思维导图 基础操作 沟通技巧 常用工具 办公习惯 时间管理 思维方法 直播教育 
+			</h1>
+		
+		<!--轮播结束-->
+
+		<!--实战荐开始-->
+		<div class="bg-f8">
+			<div class="container">
+				<div class="row">
+					<div class="recommend">
+						<img alt="" src="__PUBLIC__/Home/saibangzi/img/home_icon_hot.png" />
+						<span class="fon_siz18">　　实战推荐　　</span>
+						<img alt="" src="__PUBLIC__/Home/saibangzi/img/home_icon_hot.png" />
+					</div>
+				</div>
+				<div class="row">
+				<foreach name="liveb_list" item="val">
+					<div class="col-xs-6 col-md-03 edit">
+						<a class="thumbnail" href="{:U('courses/course?pid='.$val['liveb_id'])}">
+							<div class="photo">
+								<img alt="" src="__ROOT__{$val.img}">
+							</div>
+							<div class="caption">
+								<p>{$val.name}</p>
+								<eq name="val.money" value="0">
+													<span class="subhead-titie">免费</span>
+													<else/>
+													<span class="subhead-titie" style="color:#ff9933">{$val.money}</span>
+								</eq>
+								<div class="pull-right">
+									<span class="video-label-item label-color-0">直播</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</foreach>
+				</div>
+				<div class="row">
+					<a href="">
+						<img alt="" src="__PUBLIC__/Home/saibangzi/img/yaotu.jpg" class="yaotu" />
+						<!-- <img src="__ROOT__{$advert_img}" class="yaotu" /> -->
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--实战推荐结束-->
+		<!--语言学习开始-->
+		<div class="container">
+			<div class="row margin_t30">
+				<div class="col-xs-6 col-md-03 edit">
+					<div class="thumbnail">
+						<div class="yuyan fenlei-yuyan">
+							<h1 style="font-size: 24px;margin: 0"><a class="fltitle-one">语言学习</a></h1>
+							<div class="fltitle-two">
+								<ul>
+								<foreach name="yuyan" item='v'>
+									<li style="padding:5px;"><a href="{:U('courses/lei?id='.$v['cate_id'])}">{$v.name}</a></li>
+								</foreach>
+								</ul>
+							</div>
+							<div class="fltitle-three">
+								<ul>
+									<li class="more-one"><a href="{:U('courses/show?id='.$v['pid'])}">更多　>></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-08 edit">
+				<foreach name='yuyan_liveb' item='v'>
+				
+					<div class="col-xs-6 col-md-025 edit">
+						<a class="thumbnail" href="{:U('courses/course?pid='.$v['liveb_id'])}">
+							<div class="photo">
+								<img alt="" src="__ROOT__{$v.img}">
+							</div>
+							<div class="caption">
+								<p>{$v.name}</p>
+								<eq name="v.money" value="0">
+													<span class="subhead-titie">免费</span>
+													<else/>
+													<span class="subhead-titie" style="color:#ff9933">{$v.money}</span>
+													</eq>
+								<div class="pull-right">
+									<span class="video-label-item label-color-0">直播</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				
+				</foreach>
+				</div>
+			</div>
+		</div>
+		<!--语言学习结束-->
+
+		<!--文化教育开始-->
+		<div class="bg-f8">
+			<div class="container">
+				<div class="row margin_t30">
+					<div class="col-xs-6 col-md-03 edit">
+						<div class="thumbnail">
+							<div class="yuyan fenlei-wenhua">
+								<h1 style="font-size: 24px;margin: 0"><a class="fltitle-one">文化教育</a></h1>
+								<div class="fltitle-two">
+									<ul>
+									<foreach name='qinzi' item='v'>
+										
+										<li style="padding:5px;"><a href="{:U('courses/lei?id='.$v['cate_id'])}">{$v.name}</a></li>
+										
+									</foreach>
+									</ul>
+								</div>
+								<div class="fltitle-three">
+									<ul>
+										<li class="more-two"><a href="{:U('courses/show?id='.$v['pid'])}">更多　>></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-md-08 edit">
+					<foreach name='qinzi_liveb' item='v'>
+						<div class="col-xs-6 col-md-025 edit">
+							<a class="thumbnail" href="{:U('courses/course?pid='.$v['liveb_id'])}">
+								<div class="photo">
+									<img alt="" src="__ROOT__{$v.img}">
+								</div>
+								<div class="caption">
+									<p>{$v.name}</p>
+									<eq name="v.money" value="0">
+													<span class="subhead-titie">免费</span>
+													<else/>
+													<span class="subhead-titie" style="color:#ff9933">{$v.money}</span>
+													</eq>
+									<div class="pull-right">
+										<span class="video-label-item label-color-0">直播</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</foreach>
+						
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+		<!--文化教育结束-->
+		<!--办公效率开始-->
+		<div class="container">
+			<div class="row margin_t30">
+				<div class="col-xs-6 col-md-03 edit">
+					<div class="thumbnail">
+						<div class="yuyan fenlei-bangong">
+							<h1 style="font-size: 24px;margin: 0"><a class="fltitle-one">办公效率</a></h1>
+							<div class="fltitle-two">
+								<ul>
+									<foreach name='bangong' item='v'>
+										
+										<li style="padding:5px;"><a href="{:U('courses/lei?id='.$v['cate_id'])}">{$v.name}</a></li>
+										
+									</foreach>
+								</ul>
+							</div>
+							<div class="fltitle-three">
+								<ul>
+									<li class="more-three"><a href="{:U('courses/show?id='.$v['pid'])}">更多　>></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-08 edit">
+					<foreach name='bangong_liveb' item="v">
+					<div class="col-xs-6 col-md-025 edit">
+						<a class="thumbnail" href="{:U('courses/course?pid='.$v['liveb_id'])}">
+							<div class="photo">
+								<img alt="" src="__ROOT__{$v.img}">
+							</div>
+							<div class="caption">
+								<p>{$v.name}</p>
+								<eq name="v.money" value="0">
+													<span class="subhead-titie">免费</span>
+													<else/>
+													<span class="subhead-titie" style="color:#ff9933">{$v.money}</span>
+													</eq>
+								<div class="pull-right">
+									<span class="video-label-item label-color-0">直播</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					</foreach>
+				</div>
+
+			</div>
+		</div>
+		<!--办公效率结束-->
+		<!--职业发展开始-->
+		<div class="bg-f8">
+			<div class="container">
+				<div class="row margin_t30">
+					<div class="col-xs-6 col-md-03 edit">
+						<div class="thumbnail">
+							<div class="yuyan fenlei-zhiye">
+								<h1 style="font-size: 24px;margin: 0"><a class="fltitle-one">职业发展</a></h1>
+								<div class="fltitle-two">
+									<ul>
+									<foreach name="zhiye" item='v'>
+										<li style="padding:5px;"><a href="{:U('courses/lei?id='.$v['cate_id'])}">{$v.name}</a></li>
+									</foreach>
+									</ul>
+								</div>
+								<div class="fltitle-three">
+									<ul>
+										<li class="more-four"><a href="{:U('courses/show?id='.$v['pid'])}">更多　>></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-md-08 edit">
+						<foreach name='zhiye_liveb' item='v'>
+						<div class="col-xs-6 col-md-025 edit">
+							<a class="thumbnail" href="{:U('courses/course?pid='.$v['liveb_id'])}">
+								<div class="photo">
+									<img alt="" src="__ROOT__{$v.img}">
+								</div>
+								<div class="caption">
+									<p>{$v.name}</p>
+									<eq name="v.money" value="0">
+													<span class="subhead-titie">免费</span>
+													<else/>
+													<span class="subhead-titie" style="color:#ff9933">{$v.money}</span>
+													</eq>
+									<div class="pull-right">
+										<span class="video-label-item label-color-0">直播</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						</foreach>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--职业发展结束-->
+		<!--产品开发开始-->
+		<div class="container">
+			<div class="row margin_t30">
+				<div class="col-xs-6 col-md-03 edit">
+					<div class="thumbnail">
+						<div class="yuyan fenlei-chanpin">
+							<h1 style="font-size: 24px;margin: 0"><a class="fltitle-one">产品开发</a></h1>
+							<div class="fltitle-two">
+								<ul>
+								<foreach name='chanpin' item='v'>
+									<li style="padding:5px;"><a href="{:U('courses/lei?id='.$v['cate_id'])}">{$v.name}</a></li>
+								</foreach>
+								</ul>
+							</div>
+							<div class="fltitle-three">
+								<ul>
+									<li class="more-five"><a href="{:U('courses/show?id='.$v['pid'])}">更多　>></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-08 edit">
+					<foreach name='chanpin_liveb' item="v">
+					<div class="col-xs-6 col-md-025 edit">
+						<a class="thumbnail" href="{:U('courses/course?pid='.$v['liveb_id'])}">
+							<div class="photo">
+								<img alt="" src="__ROOT__{$v.img}">
+							</div>
+							<div class="caption">
+								<p>{$v.name}</p>
+								<eq name="v.money" value="0">
+													<span class="subhead-titie">免费</span>
+													<else/>
+													<span class="subhead-titie" style="color:#ff9933">{$v.money}</span>
+													</eq>
+								<div class="pull-right">
+									<span class="video-label-item label-color-0">直播</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					</foreach>
+				</div>
+			</div>
+		</div>
+		<!--产品开发结束-->
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+		<!--页脚开始-->
+			<include file="Public/jiaoyazi" />
+		
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/slider/js/slide.min.js"></script>
+			<script>
+				$(function () {
+					$('.ck-slide').ckSlide({
+						autoPlay: true, //默认为不自动播放，需要时请以此设置
+						dir: 'x', //默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+						interval: 6000 //默认间隔2000毫秒
+					});
+
+					$('form').submit(function() {
+							var search=$('[name=sousuo]').val();
+							if (search) {
+								return true;
+							}
+							
+							return false;
+						})
+					$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post("{:U('Login/outlogin')}",{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+					var pwe=$(".ck-slide-dir").width()
+		     		$(".ck-slide-dir ul li").width($(".ck-slide-dir").width());
+		     		$(".ck-slide-dir ul li img").width($(".ck-slide-dir").width());
+				});
+				</script>
+
+	</body>
+
+</html>

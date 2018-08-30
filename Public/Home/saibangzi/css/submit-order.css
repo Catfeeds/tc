@@ -1,0 +1,470 @@
+             body {
+				background-color: #f4f4f4 !important;
+			}
+			
+			.contby {
+				width: 100%;
+				padding: 2.5rem;
+				background-color: #fff;
+				float: left;
+				border-radius: 6px;
+			}
+			
+			.s-order {
+				display: block;
+				color: #333;
+				font-size: 16px;
+				margin-bottom: 0.833rem;
+			}
+			
+			.bgf5 {
+				background-color: #eee;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				text-align: center;
+				border-radius: 4px;
+			}
+			
+			.n-b {
+				padding: 1.5rem 0.84rem;
+				border-bottom: 1px solid #eee;
+			}
+			
+			.i-mg {
+				height: 6.67rem;
+				width: 12.5rem;
+				float: left
+			}
+			
+			.t-tit {
+				float: left;
+				width: 14.1rem;
+				padding-left: 1.25rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			
+			.t-name {
+				float: left;
+				margin-top: 2.6rem;
+				padding-left: 1.25rem;
+			}
+			
+			.t-b {
+				text-align: center;
+				margin-top: 2.4rem;
+			}
+			
+			.recharge {
+				background: #f39232;
+				color: white;
+				font-size: 18px;
+				line-height: 30px;
+				width: 80px;
+				vertical-align: middle;
+				display: inline-block;
+				border-radius: 6px;
+				margin-left: 40px;
+				text-align: center;
+			}
+			
+			.recharge a {
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			.save {
+				background: #ff3333;
+				color: white;
+				font-size: 18px;
+				line-height: 30px;
+				width: 80px;
+				vertical-align: middle;
+				display: inline-block;
+				border-radius: 6px;
+				margin-left: 40px;
+				text-align: center;
+			}
+			.save:hover {
+				background: #cc3333;
+				color: white;
+				font-size: 18px;
+				line-height: 30px;
+				width: 80px;
+				vertical-align: middle;
+				display: inline-block;
+				border-radius: 6px;
+				margin-left: 40px;
+				text-align: center;
+			}
+			
+			.save a {
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			
+			.t-btn {
+				text-align: right;
+				margin-top: 2.0rem;
+			}
+			
+			.prices {
+				display: block;
+				color: #333;
+				margin-bottom: 10px;
+			}
+			
+			.prices span {
+				font-size: 20px;
+				color: #F39232;
+			}
+			
+			.row {
+				margin: 0px !important;
+			}
+			
+			.i-set {
+				background: #47C88A;
+				color: white;
+				font-size: 18px;
+				line-height: 30px;
+				width: 80px;
+				vertical-align: middle;
+				display: inline-block;
+				border-radius: 6px;
+				text-align: center;
+			}
+			
+			.i-set a {
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			
+			.layui-layer-title {
+				background-color: #47C88A !important;
+				color: #fff !important;
+			}
+			
+			.layui-layer-ico {
+				color: #fff !important;
+			}
+			#s-o{
+				text-align: center;
+				display: none;	
+				}
+				
+			#s-o span{
+				display:block;
+				padding: 3.0rem;
+				}		
+				
+
+/*pay order开始*/
+	        .pay-amount {
+				font-size: 14px;
+				color: #333;
+				margin-bottom: 0.833rem;
+				display: block;
+			}
+			
+			.pay-amount span {
+				font-size: 18px;
+				color: #F39232;
+			}
+			
+			.c-p-m {
+				float: left;
+				margin-top: 30px;
+				margin-bottom: 10px;
+				display: block;
+			}
+			
+			.c-p-b {
+				width: 100%;
+				background-color: #e9fff4;
+				float: left;
+				padding: 1.666rem;
+				border-radius: 4px;
+				border: 1px solid #b0e4ca;
+			}
+			
+			.a-b {
+				font-size: 14px;
+				color: #333;
+			}
+			
+			.a-m {
+				color: #f39232;
+				font-size: 14px;
+				padding-left: 10px;
+			}
+			
+			.a-g {
+				font-size: 12px;
+				color: #333;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			
+			.a-i {
+				color: #f39232;
+				cursor: pointer;
+				text-decoration: underline;
+		    	font-size: 12px;
+			}
+			
+			.a-p {
+				color: #333;
+				font-size: 12px;
+			}
+			
+			.nav-a img {
+				height: 80px;
+				width: 150px;
+				border-radius: 50%;
+				line-height: 80px;
+				margin-right: 20px;
+			
+			}
+			.p-10{
+				
+			}
+            .nav-a {
+			    height: 80px; 
+			    float: left; 
+			}
+			.nav-b {
+			    height: 60px;
+			    line-height: 60px;
+			    float: left;
+			    position: relative;
+			    border-left: 1px solid #ccc;
+			    margin-top: 10px;
+			}
+			.nav-b a{
+			  margin: 20px;
+			  font-size: 18px;
+			  font-weight: 600px;
+			  color: #333;
+			}
+			.i-p{
+				border-radius:4px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+            #p-o{
+				text-align: center;
+				display: none;	
+				font-size: 16px;
+				font-weight: 500;
+				}
+				
+			#p-o span{
+				display:block;
+				padding: 3.0rem;
+				}		
+				
+
+/*layer样式设置*/
+	        .layui-layer-dialog .layui-layer-content {
+				text-align: center;
+			}
+			
+			.layui-layer-btn .layui-layer-btn0 {
+				border-color: #47C88A !important;
+				background-color: #47C88A !important;
+				color: #fff;
+			}
+			
+			.layui-layer-btn {
+				text-align: center !important;
+			}
+			
+			.layui-layer-title {
+				background-color: #47C88A !important;
+				color: #47C88A !important;
+			}
+			/*set password css begin*/
+				.btn-success {
+				color: #fff;
+				background-color: #47C88A;
+				border-color: #47C88A;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-top: 20px;
+			}
+			
+			.btn-success:hover {
+				color: #fff;
+				background-color: #339966;
+				border-color: #339966;
+			}
+			
+			.t-tit {
+				color: #F39232;
+				padding-top: 5px;
+				float: left;
+				font-size: 12px;
+				display: none;
+				padding-left: 0px !important;
+			}
+			
+			.t-tit i {
+				padding-right: 10px;
+		
+			}
+			.t-tit2{
+				color: green;
+				padding-top: 5px;
+				float: left;
+				font-size: 12px;
+				display: none;
+			}		
+			
+			.t-tit2 i {
+				padding-right: 10px;
+		
+			}
+			
+			.t-tit3{
+				color: #F39232;
+				padding-top: 5px;
+				float: left;
+				font-size: 12px;
+				display: none;
+			}		
+			
+			.t-tit3 i {
+				padding-right: 10px;
+		
+			}
+			
+			.t-tit4{
+				color: green;
+				padding-top: 5px;
+				float: left;
+				font-size: 12px;
+				display: none;
+			}		
+			
+			.t-tit4 i {
+				padding-right: 10px;
+		
+			}
+			
+			.nav-r {
+				float: right;
+				height: 80px;
+				line-height: 80px;
+			}
+			
+			.nav-r a {
+				color: #333;
+				font-size: 14px;
+			}
+			.prompt{
+				color: #333;
+				font-size: 12px;
+				padding-top: 5px;
+				float: left;
+			}
+			.s-p-b{
+				background-color: #FFF;
+				padding:30px 20px;
+			}
+			
+			
+/*set-tel css begin*/		
+			.tel{
+				font-size:12px;
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}	
+			
+			.v-c{
+				font-size:12px;
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}
+			.c-v{
+				font-size:12px;
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}
+			.g-v-c{
+				background: #f39232;
+				color: white;
+				font-size: 14px;
+				 line-height: 32px;
+				width: 100px;
+				text-align: center;
+				vertical-align: middle;
+				display: inline-block;
+				border-radius: 6px;
+			}
+			.s-n{
+				font-size: 12px;
+				float:right;
+				cursor: pointer;
+				margin-top: 10px;
+			}
+			.s-n:hover{
+				color: #F39232;
+			}
+			.v-img{
+			height:40px;
+			width: 100px;
+			margin: 10px 20px 0px 0px;
+			}
+
+
+/*forget-password   css  bengin*/
+
+            .fp-t1 {
+				padding-top: 5px;
+				float: left;
+			}
+			
+			.fp-t2 {
+				padding-top: 5px;
+				float: left;
+				display: none;
+			}
+			
+			.fp-t3 {
+				padding-top: 5px;
+				float: left;
+				display: none;
+			}
+			.tel-phone{
+				padding-top:7px;
+				float: left;
+				color: #47C88A;
+			}
+			#btnSendCode{
+				background: #f39232;
+			    color: white;
+			    font-size: 14px;
+			    line-height: 28px;
+			    width: 110px;
+			    text-align: center;
+			    vertical-align: middle;
+			    display: inline-block;
+			    border-radius: 6px;
+			    border: 1px solid #f39232;
+			}
+			 #btnSendCoda{
+				background: #f39232;
+			    color: white;
+			    font-size: 14px;
+			    line-height: 28px;
+			    width: 110px;
+			    text-align: center;
+			    vertical-align: middle;
+			    display: inline-block;
+			    border-radius: 6px;
+			    border: 1px solid #f39232;
+			}

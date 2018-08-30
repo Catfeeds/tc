@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/per-data/per-data.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/per-data/for-record.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<title>兑换记录</title>
+	<style>
+	
+	.fenye{
+	height:30px;
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-left:10%;
+
+}
+.fenye div{
+	margin-left:40%;
+}
+.fenye span{
+	color: #fff;
+	background-color: #00d3d4;
+	border:1px solid #00d3d4;
+	padding:5px 10px;
+}
+.fenye a{
+	color:#bbb;
+	padding:5px 10px;
+}
+.fenye a:hover{
+	color: #fff;
+	background-color: #00d3d4;
+}
+	</style>
+	</head>
+
+	<body class="bg-f8">
+
+		<!--导航开始-->
+		<include file="Public/naodai" />
+		<!--导航结束-->
+
+		<!--公用开始-->
+
+		<div class="container margin_t50">
+
+			<div class="col-md-12 bg-white">
+				<div class="panel-t">
+					<div class="line-g"></div>
+					<p>兑换记录</p>
+				</div>
+				<foreach name="dui" item="v">
+				<div class="jygb">
+					<div class="Order">
+						<p class="Order-num">订单号：{$v.num}</p>
+						<if  condition="$v['order_id'] neq null">
+						<p class="Order-num">　　快递单号：{$v.order_id}</p>
+						<p class="Order-num">　　快递名称：{$v.kuaidi}</p>
+						</if>
+					</div>
+					<div class="con">
+						<img src="{$v['img']}" />
+						<div class="con-det">
+							<p class="con-tit">{$v.name}</p>
+							<p class="con-tim">下单日期：{$v.time|date='Y-m-d H:i:s',###}</p>
+						</div>
+						<div class="r-pay">
+							<p>{$v.money}积分</p>
+						</div>
+						<input type="hidden" value="{$v.idrecord_id}" name="id">
+						<eq name="v.status" value="2">
+						<div class="d-c-d">
+							<a class="i-pay" href="{:U('shouhuo?id='.$v['idrecord_id'])}">
+								<span>确认收货</span>
+							</a>
+						</div>
+						</eq>
+						<eq name="v.status" value="1">
+						<div class="d-c-d">
+							<a class="p-dd">
+								<span>待发货</span>
+							</a>
+						</div>
+						</eq>
+						<eq name="v.status" value="3">
+						<div class="d-c-d">
+							<a class="p-dd">
+								<span>已完成</span>
+							</a>
+						</div>
+						</eq>
+					</div>
+				</div>
+				</foreach>
+				
+
+			</div>
+
+		</div>
+		<!-- 返回顶部开始 -->
+		<div class="col-md-12-a  fenye" style="">{$show}</div>
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+		<include file="Public/jiaoyazi" />
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script>
+		$('#que').click(function(){
+			var id=$('[name=id]').val();
+			$.post('{:U('duihuai')}',{'id':id},function(data){
+				if(data=='收货成功'){
+					alert(data);
+					window.location.href="{:U('Me/jifen')}";
+				}else{
+					alert(data);
+				}
+			})
+		})
+
+$('.fenye .next').html('下一页');
+$('.fenye .prev').html('上一页');
+$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					});
+		</script>
+	</body>
+
+</html>

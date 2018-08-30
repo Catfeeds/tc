@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/m/jquery-1.10.1.min.js"></script>
+		<script>
+			$(function(){
+                window.onload = function()
+                {
+                        var $li = $('.tab-menu li');
+                        var $ul = $('.tab-content ul');
+                        $li.click(function(){
+                                var $this = $(this);
+                                var $t = $this.index();
+                                $li.removeClass();
+                                $this.addClass('current');
+                                $ul.css('display','none');
+                                $ul.eq($t).css('display','block');
+                        })
+                }
+              });
+
+		</script>
+		<style>
+		    .tab{ width: 720px; margin: 0 auto; border: 1px solid #ddd;}
+			.tab-menu{ overflow: hidden; width: 720px; background: #eee;}
+			.tab-menu li{ width: 240px; float: left; list-style: none; height: 40px; text-align: center; line-height: 40px;}
+			.tab-content{ width: 720px;}
+			.current{ color:#fff; background: #2f8eef; }
+		</style>
+	</head>
+	<body>
+		<div class="tab">
+			<div class="tab-menu" id="tab">
+				<li class="current">个人信息</li>
+				<li>图书馆</li>
+				<li>教学楼</li>
+			</div>
+			<div class="tab-content">
+				<ul>
+					<li>个人信息信息</li>
+					<li>个人信息信息</li>
+					<li>个人信息信息</li>
+					<li>个人信息信息</li>
+					
+				</ul>
+				<ul style="display: none;">
+					<li>图书馆信息</li>
+					<li>图书馆信息</li>
+					<li>图书馆信息</li>
+					<li>图书馆信息</li>
+					
+				</ul>
+				<ul style="display: none;">
+					<li>教学楼信息</li>
+					<li>教学楼信息</li>
+					<li>教学楼信息</li>
+					<li>教学楼信息</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

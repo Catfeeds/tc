@@ -1,0 +1,109 @@
+/*tab切换部分开始*/
+.tab{ width:100%;}
+.tab-hd {  overflow:hidden; zoom:1;border-bottom:1px solid #EEEEEE;margin-bottom: 0px;height: 60px;background: #FFFFFF; position: relative;}
+.tab-hd li{ float:left; width:70px;text-align:center; cursor:pointer;margin-left: 0px;}
+.tab-hd div{ float:left; margin-left: 40px;}
+.tab-hd div p{ font-size: 16px;padding:17px 0px 18px;}
+.tab-hd li.active{ border-bottom: 2px solid #47C88A;color: #47C88A;}
+/*.tab-bd li{padding:0px; border-top:1px solid #DDDDDD; font-size:24px;float: left;}*/
+.tab-bd li.thisclass{ display:list-item;}
+.tab-hd li span {font-size: 16px;}
+.tab-hd li{padding: 17px 0px 18px;}
+.tab-hd li span:hover{color: #47C88A;font-size: 16px;}
+.tab-bd{
+	float: left;
+	margin-bottom: 0px;
+	width: 100%;
+
+}
+.news-list{	
+	width: 100%;
+	float: left;
+}
+.news-list li{
+	float: left;
+	width: 100%;
+	padding: 20px 0px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.s-l{
+	height: 110px;
+	width: 200px;
+	overflow: hidden;
+	float: left;
+	margin-right: 30px;
+}
+
+.s-l img:hover {
+    transform: scale(1.4);
+}
+.s-l img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+
+
+.pagination-self{
+	width: 100%;
+	float: left;
+	margin-bottom: 0px !important;
+	margin-top: 50px !important;
+}
+.s-c{
+	width: 500px;
+	float: left;
+	word-break: break-all; 
+	word-wrap:break-word;
+}
+.s-c p{
+	float: left;
+	
+}
+.s-c  p:nth-child(1) {
+	font-size: 14px;
+	color: #333333;
+}
+.s-c p:nth-child(2) {
+	font-size: 12px;
+	color: #999999;
+	margin-bottom: 23px;
+}
+.s-c p:nth-child(3) {
+	font-size: 12px;
+	color: #999999;
+}
+.s-r{
+	height: 110px;
+	line-height: 110px;
+	width: 100px;
+	float: right;
+	margin-right: 200px;
+
+}
+.s-r p{
+	font-size: 22px;
+	color: #47C88A;
+}
+.classification{
+	 position: absolute;
+	 left: 60px;
+	 top:17px;
+	 z-index: 999999;
+	 font-size: 16px;
+}
+.tab-hd li.active {
+    border-bottom: none;
+    color: #47C88A;
+}
+/*tab切换部分结束*/
+.search-imp{
+	color:#999;
+	font-size: 12px;
+	padding: 20px 15px 0px 15px;
+	float: left;
+}
+.search-imp span{
+	color: #FF9933;
+}

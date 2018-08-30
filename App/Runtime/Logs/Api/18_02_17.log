@@ -1,0 +1,161 @@
+[ 2018-02-17T15:00:06+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0030s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-02-17T15:02:11+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0031s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2018-02-17T15:44:00+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0031s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-02-17T15:44:07+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0030s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2018-02-17T19:09:23+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0030s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2018-02-17T19:10:37+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0031s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0028s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-02-17T19:12:22+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0029s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-02-17T19:14:25+08:00 ] 60.17.253.20 /Api/Index/column
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0031s ]
+SQL: SELECT `cate_id`,`name` FROM `category` WHERE ( pid=0 ) ORDER BY cate_id asc  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-02-17T19:14:25+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0028s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-02-17T19:15:42+08:00 ] 60.17.253.20 /Api/Index/column
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,`name` FROM `category` WHERE ( pid=0 ) ORDER BY cate_id asc  [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-02-17T19:15:43+08:00 ] 60.17.253.20 /Api/Class/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `cad` [ RunTime:0.0028s ]
+SQL: SELECT `img`,`play_id`,`type` FROM `cad` ORDER BY time desc LIMIT 4   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`time` FROM `video` ORDER BY number desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+

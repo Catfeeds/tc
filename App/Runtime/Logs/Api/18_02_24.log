@@ -1,0 +1,28 @@
+[ 2018-02-24T18:28:07+08:00 ] 175.167.130.189 /Api/Order/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE `token` = '18c602aa0c597bad961c0a5e51b8a55d' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order` WHERE `time` < 1519466287 AND `status` = '0' AND `uid` = 6  [ RunTime:0.0011s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=76 ) [ RunTime:0.0046s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=77 ) [ RunTime:0.0029s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=81 ) [ RunTime:0.0027s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=82 ) [ RunTime:0.0027s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=83 ) [ RunTime:0.0027s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=84 ) [ RunTime:0.0027s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=86 ) [ RunTime:0.0027s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=87 ) [ RunTime:0.0030s ]
+SQL: UPDATE `order` SET `status`='3' WHERE ( order_id=98 ) [ RunTime:0.0029s ]
+SQL: SELECT * FROM `order` WHERE `status` = '0' AND `uid` = 6 AND `type` = '0'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 6 AND `status` = '0' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `order_id`,`num`,`time`,`money`,`play_id`,`type`,`status` FROM `order` WHERE `uid` = 6 AND `status` = '0' LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+

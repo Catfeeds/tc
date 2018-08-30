@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/per-data/per-data.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/per-data/integral-gift.css" />
+		<title>积分礼品</title>
+		<style>
+	
+		</style>
+	</head>
+
+	<body class="bg-f8">
+		<include file="Public/naodai" />
+		<!--导航结束-->
+		<div class="container margin_t30">
+			<div class=" col-md-9 bg-white">
+				<div class="panel-t">
+					<div class="line-g"></div>
+					<p>积分商城</p>
+				</div>
+				<hr />
+				<div class="ig-t">
+					<img src="{$good['img']}" height="220px"/>
+					<div class="ig-t-r">
+						<p>{$good.name}</p>
+						<p>{$good.price}积分</p>
+						<if condition="$address neq null">
+						<a class="Immediately-c" data-toggle="modal" data-target="#myModal"><span>立即兑换</span></a>
+						<else/>
+						<a class="Immediately-c" data-toggle="modal" data-target="#myModal2"><span>立即兑换</span></a>
+						</if>
+						<p>库存：{$good.stock}</p>
+					</div>
+				</div>
+				<input type="hidden" value="{$good['good_id']}" name="good">
+				<input type="hidden" value="{$good['price']}" name="price">
+				<div class="u-main margin_l0" style="width:100%">
+					<div class="panel-t">
+						<div class="line-g"></div>
+						<p>商品介绍</p>
+					</div>
+					<hr />
+					<div class="ig-c">
+						<p>
+							{$good.details}
+						</p>
+					</div>
+
+				</div>
+				<div class="u-main margin_l0" style="width:100%">
+					<div class="panel-t">
+						<div class="line-g"></div>
+						<p>兑换规则</p>
+					</div>
+					<hr />
+					<div class="ig-b">						
+						{$good.rule}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 bg-white padding0">
+				<div class="P-for">
+					<img src="__ROOT__{$user.image}" />
+					<div class="p-t">
+						<p>{$user.name}</p>
+						<p>积分:<span> {$user.integral}</span></p>
+					</div>
+					<div class="p-r">
+						<a href="{:U('duihuai')}" class="f-record"><p>兑换记录</p></a>
+					</div>
+				</div>
+
+				<div class="p-c"></div>
+				<div class="p-b">
+					<div class="p-b-t">
+						<p>TM都在买</p>
+					</div>
+					<div class="p-b-b">
+						<ul>
+							<foreach name="row" item="v">
+							<li>
+								<img src="{$v['img']}" />
+								<div class="e-change">
+									<p>{$v.name}</p>
+									<span>兑换了1个</span>
+								</div>
+							</li>
+							</foreach>
+							
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- myModal1 -->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">收货信息</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">收货人：</label>
+								<div class="col-sm-6">
+									<input class="form-control" name="name" maxlength="20" p="/^\s*$/" id="uname">
+									<span class="d-n">对</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">联系电话：</label>
+								<div class="col-sm-6">
+									<input class="form-control" name="tel" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" maxlength="11" p="/^(((13|14|15|18|17|19)\d{9}))$/" id="phone">
+									<span class="d-n">对</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-3 control-label">收货地址：</label>
+								<div class="col-sm-6">
+									<textarea class="form-control" rows="3" name="address"></textarea>
+								</div>
+							</div>
+
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="submit" class="btn btn-primary" id="xiu">保存</button>
+					</div></form>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">收货信息</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">收货人：</label>
+								<div class="col-sm-6">
+									<input class="form-control" name="name" maxlength="20" p="/^\s*$/" id="uname1">
+									<span class="d-n">对</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">联系电话：</label>
+								<div class="col-sm-6">
+									<input class="form-control" name="tel" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" maxlength="11" p="/^(((13|14|15|18|17|19)\d{9}))$/" id="phone1">
+									<span class="d-n">对</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-3 control-label">收货地址：</label>
+								<div class="col-sm-6">
+									<textarea class="form-control" rows="3" name="address1"></textarea>
+								</div>
+							</div>
+
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="submit" class="btn btn-primary" id="add">保存</button>
+					</div></form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">收货信息</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">收货人：</label>
+								<div class="col-sm-8">
+									<label id="uname" class="control-label">{$address.uname}</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">联系电话：</label>
+								<div class="col-sm-8">
+									<label id="phone" class="control-label">{$address.phone}</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">收货地址：</label>
+								<div class="col-sm-8">
+									<label class="control-label" style="text-align: left;" id="address">{$address.name}</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-green edit" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">编辑</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="mai">购买</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+	<include file="Public/jiaoyazi" />
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/boostrap/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/per-data/integral-gift.js"></script>
+		<script>
+			$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+			
+			$('#add').click(function(){
+				var uname=$('#uname1').val();
+				var phone=$('#phone1').val();
+				var address=$('[name=address1]').val();
+				var good=$('[name=good]').val();
+				var money=$('[name=price]').val();
+				if(uname=='' || phone=='' || address==''){
+					return false;
+				}
+				if(f1==false && f2==false){
+					return false;
+				}
+				$.post('{:U('add')}',{'name':address,'phone':phone,'uname':uname,'good':good,'money':money},function(data){
+                      if(data=='购买成功'){
+                      		alert(data);
+                      		window.location.href="{:U('Me/jifen')}";
+
+                      }else{
+                      	alert(data);
+                      	window.location.href="{:U('Me/jifen')}";
+                      }
+				})
+			})
+			$('#xiu').click(function(){
+				var uname=$('#uname').val();
+				var phone=$('#phone').val();
+				var good=$('[name=good]').val();
+				var money=$('[name=price]').val();
+				var address=$('[name=address]').val();
+				if(uname=='' || phone=='' || address==''){
+					return false;
+				}
+				if(f1==false && f2==false){
+					return false;
+				}
+				$.post('{:U('xiu')}',{'name':address,'phone':phone,'uname':uname,'good':good,'money':money},function(data){
+                      if(data=='购买成功'){
+                      		alert(data);
+                      		window.location.href="{:U('Me/jifen')}";
+
+                      }else{
+                      	alert(data);
+                      	window.location.href="{:U('Me/jifen')}";
+                      }
+				})
+			})
+			$('#mai').click(function(){
+				var address=$('#address').text();
+				var good=$('[name=good]').val();
+				var money=$('[name=price]').val();
+				$.post('{:U('mai')}',{'name':address,'good':good,'money':money},function(data){
+                      if(data=='购买成功'){
+                      		alert(data);
+                      		window.location.href="{:U('Me/jifen')}";
+
+                      }else{
+                      	alert(data);
+                      	window.location.href="{:U('Me/jifen')}";
+                      }
+				})
+			})
+		</script>
+	</body>
+
+</html>

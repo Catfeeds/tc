@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>注册</title>
+		<link href="__PUBLIC__/Home/saibangzi/css/login.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+	</head>
+
+	<body class="b-log">
+		<div class="login_wrap">
+			<img src="__PUBLIC__/Home/saibangzi/img/login.png" class="log-img" />
+			<div id="login_body">
+
+				<div class="login_border lll dis-n" style="display:block">
+					<div class="login dis-b">
+						<ul class="login-tab">
+							<li class="login-on">注册</li>
+						</ul>
+						<div class="p-g">
+							<dl>
+								<dd><input name="zphone" type="text" id="zhuphone" placeholder="您的手机号码"   message="请输入正确的手机号格式" p="/^(((13|14|15|18|17|19)\d{9}))$/"/></dd>
+								<small></small>
+							</dl>
+							<dl>
+								<dd><input type="text" name="zverify" id="reverify" style="width: 133px;" placeholder="短信验证码" /><input type="button" id="zbtn" class="btn_mfyzm" value="获取动态密码" /></dd>
+								<small></small>
+							</dl>
+							<dl>
+								<dd><input name="zpass" type="password" id="repwd" placeholder="请输入您的密码" message="请输入正确的密码格式" p="/^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-A0-9]{6,18}$/" /></dd>
+								<small></small>
+							</dl>
+							<dl>
+								<dd><input  name="zrepass" type="password" placeholder="请确认密码" message="两次密码不一致"/></dd>
+								<small></small>
+							</dl>
+							<dl><input type="checkbox" name="vehicle1" value="Car" style="margin-right: 10px;">
+						     <a href="{:U('xieyi1')}" >已阅读《 用户注册协议》</a></dl>
+							<button class="form-horizontal" type="submit" id="zhuce">确认</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<input type="hidden" name="xieyi" value="">
+		</div>
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/login.js"></script>
+	</body>
+<script>
+	 $('#btn').click(function(){
+      var tel = $.trim($('#phone').val());
+      $.post("{:U('Verify/verify')}", {'phone':tel},function(data){
+      	//alert(data);
+      	 
+        if(data=='发送成功'){
+        sendMessage();
+       	alert('发送成功');
+       }else{
+     	 alert(data);
+        }
+      });
+    });
+	 $('#zbtn').click(function(){
+      var tel = $.trim($('#zhuphone').val());
+      $.post("{:U('Verify/verify')}", {'phone':tel},function(data){
+       //alert(data);
+        
+        if(data=='发送成功'){
+        	sendMessage();
+       	alert('发送成功');
+       }else{
+     	 alert(data);
+        }
+      });
+    });
+	 $('#hbtn').click(function(){
+      var tel = $.trim($('#huiphone').val());
+      $.post("{:U('Verify/verify')}", {'phone':tel},function(data){
+       //alert(data);
+       
+        if(data=='发送成功'){
+        	 sendMessage();
+       	alert('发送成功');
+       }else{
+     	 alert(data);
+        }
+      });
+    });
+	var f1 = false;    //用户名
+	var f2 = false;
+	var f3 = false;
+	$('[name=zpass]').blur(function(){
+		//得到用户输入内容
+		var v = $(this).val();
+		//判断正则
+		eval('var p = '+$(this).attr('p'));
+
+		if(p.test(v)){
+			//成功 
+			$(this).css('borderColor','green');
+			$(this).parent().next().html('格式正确');
+			$(this).next().css('color','green');
+			f1 = true;
+		}else{
+			//没通过正则
+			$(this).css('borderColor','red');
+			$(this).parent().next().html('请输入以数字字母组成的6到18位密码，必须有数字和字母');
+			$(this).next().css('color','red');
+					f1 = false;
+		}
+	})
+	$('[name=zrepass]').blur(function(){
+		//得到用户输入内容
+		var v = $(this).val();
+		//判断正则
+		var pass=$('[name=zpass]').val();
+		if(v==pass){
+			//成功 
+			$(this).css('borderColor','green');
+			$(this).parent().next().html('两次密码一致');
+			$(this).next().css('color','green');
+			f2 = true;
+		}else{
+			//没通过正则
+			$(this).css('borderColor','red');
+			$(this).parent().next().html('两次密码不一致');
+			$(this).next().css('color','red');
+					f2 = false;
+		}
+	})
+	$('[name=zphone]').blur(function(){
+		//得到用户输入内容
+		var v = $(this).val();
+		//判断正则
+		eval('var p = '+$(this).attr('p'));
+
+		if(p.test(v)){
+			//成功 
+			
+			var t = $(this);
+			//alert(v);
+			$.get("{:U('yanzheng')}",{'phone':v},function(data){
+				if(data == 2){
+					//成功 
+					t.css('borderColor','green');
+					t.parent().next().html('格式正确');
+					t.next().css('color','green');
+					f3 = true;
+				}else{
+					//重复
+					//没通过正则
+					//alert(data);
+					t.css('borderColor','red');
+					t.parent().next().html('手机号已注册');
+					t.next().css('color','red');
+					f3 = false;
+				}
+			})
+		}else{
+			//没通过正则
+			$(this).css('borderColor','red');
+			$(this).parent().next().html('请输入正确格式的手机号码');
+			$(this).next().css('color','red');
+					f3 = false;
+		}
+	})
+
+	//如果有内容输入不正确的画  不能提交页面
+	$('#zhuce').click(function(){
+		var phone=$('#zhuphone').val();
+		var verify=$('#reverify').val();
+		var pass=$('#repwd').val();
+		var uid=$('[name=uid]').val();
+	   	if($('[name=vehicle1]').is(':checked')) {
+    // do something
+        $("[name=xieyi]").attr("value", true); 
+        }else{
+        $("[name=xieyi]").attr("value", false);  
+         }
+
+
+		var xieyi= $("[name=xieyi]").val();
+		
+		if (f1 && f2 && f3) {				
+		$.post("{:U('Login/regist')}", {'phone':phone,'pass':pass,'verify':verify,'uid':uid,'xieyi':xieyi},function(data){
+        if(data=='注册成功'){
+        	alert('注册成功!请登录');
+       	  window.location.href="{:U('login/index')}";
+       }else{
+       	 alert(data);
+     	 
+        }
+      });
+	}return false;
+	})
+	$('#login').click(function(){
+		var phone=$('#txtUser').val();
+		var pass=$('#Userpwd').val();
+		$.post("{:U('yanmi')}",{'phone':phone,'pass':pass},function(data){
+			if(data==1){
+		$.post("{:U('Login/passlogin')}", {'phone':phone,'pass':pass},function(data){
+		 	//alert(phone);
+        if(data=='登录成功'){
+        	//alert('5656565');
+       	  window.location.href="{:U('index/index')}";
+       }else{
+       	 alert(data);
+     	 window.location.href="{:U('login/index')}";
+        }
+      });
+			}else{
+
+			$('#Userpwd').css('borderColor','red');
+			$('#Userpwd').parent().next().html('密码错误，请重新输入');
+			$('#Userpwd').next().css('color','red');
+					f1 = false;
+			}
+		});
+		
+	})
+	$('#dynamicLogon').click(function(){
+		var phone=$('#phone').val();
+		var verify=$('#dynamicPWD').val();
+		$.post("{:U('Login/verifylogin')}", {'phone':phone,'verify':verify},function(data){
+		 	//alert(phone);
+        if(data=='登录成功'){
+        	//alert('5656565');
+       	  window.location.href="{:U('index/index')}";
+       }else{
+       	 alert(data);
+     	 window.location.href="{:U('login/index')}";
+        }
+      });
+	})
+	$('#huipass').blur(function(){
+		//得到用户输入内容
+		var v = $(this).val();
+		//判断正则
+		eval('var p = '+$(this).attr('p'));
+
+		if(p.test(v)){
+			//成功 
+			$(this).css('borderColor','green');
+			$(this).parent().next().html('格式正确');
+			$(this).next().css('color','green');
+			f1 = true;
+		}else{
+			//没通过正则
+			$(this).css('borderColor','red');
+			$(this).parent().next().html('请输入以数字字母组成的6到18位密码，必须有数字和字母');
+			$(this).next().css('color','red');
+					f1 = false;
+		}
+	})
+	$('#rehuipass').blur(function(){
+		//得到用户输入内容
+		var v = $(this).val();
+		//判断正则
+		var pass=$('#huipass').val();
+		if(v==pass){
+			//成功 
+			$(this).css('borderColor','green');
+			$(this).parent().next().html('两次密码一致');
+			$(this).next().css('color','green');
+			f2 = true;
+		}else{
+			//没通过正则
+			$(this).css('borderColor','red');
+			$(this).parent().next().html('两次密码不一致');
+			$(this).next().css('color','red');
+					f2 = false;
+		}
+	})
+	$('#huiphone').blur(function(){
+		//得到用户输入内容
+		var v = $(this).val();
+		var x = $(this);
+		//alert(v);
+		$.get("{:U('yanzheng')}",{'phone':v},function(data){
+				if(data == 1){
+					//成功 
+					x.css('borderColor','green');
+					x.parent().next().html('手机号正确');
+					x.next().css('color','green');
+					f3 = true;
+				}else{
+					//重复
+					//没通过正则
+					//alert(data);
+					x.css('borderColor','red');
+					x.parent().next().html('手机号未注册');
+					x.next().css('color','red');
+					f3 = false;
+				}
+			})
+		
+	})
+	
+	$('#hui').click(function(){
+		var phone=$('#huiphone').val();
+		var verify=$('#huiverify').val();
+		var pass=$('#huipass').val();
+		if (f1 && f2 && f3) {		
+		$.post("{:U('Login/mima')}", {'phone':phone,'pass':pass,'verify':verify},function(data){
+        if(data=='修改成功'){
+        	alert('修改成功!请登录');
+       	  window.location.href="{:U('login/index')}";
+       }else{
+       	 alert(data);
+     	 
+        }
+      });
+	}return false;
+	})
+	
+</script>
+</html>

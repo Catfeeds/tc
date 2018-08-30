@@ -1,0 +1,26 @@
+[ 2018-02-15T16:23:16+08:00 ] 60.19.169.12 /Api/Liveb/classdetails
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `userdata` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `liveb` WHERE `liveb_id` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `liveb_id`,`img`,`name`,`introduce`,`time`,`money`,`class_id`,`reg_status`,`cate_id` FROM `liveb` WHERE `liveb_id` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `class` WHERE `class_id` = 5 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `userdata` WHERE ( uid=6 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `token` = '18c602aa0c597bad961c0a5e51b8a55d' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `subscribe` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `subscribe` WHERE `uid` = 6 AND `cid` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0027s ]
+SQL: SELECT `video_id`,`img`,`name`,`money`,`introduce`,`time`,`url` FROM `video` WHERE `class_id` = 5  [ RunTime:0.0020s ]
+SQL: SELECT `liveb_id`,`img`,`name`,`money` FROM `liveb` WHERE `cate_id` = 2 AND `time` >= 1518682996 AND `liveb_id` <> '1'  [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+

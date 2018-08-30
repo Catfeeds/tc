@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/player-anchor.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/bootflat.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/toastr.min.css">
+
+		<!--直播-->
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<script type="text/javascript" src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/iLiveSDK.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/toastr.min.js"></script>
+		<title>学生端页面</title>
+		<style>
+			#invitedBoxx {
+				width: 500px;
+				text-align: center;
+				padding: 20px;
+				border: 1px solid #eee;
+				border-radius: 6px;
+				display: none;
+				position: absolute;
+				top: -400px;
+				background-color: #000;
+				right: 500px;
+			}
+			
+			.obj {
+				width: 100%;
+				height: 1px;
+			}
+			
+			.btnp {
+				text-align: center;
+				margin-top: 30px;
+			}
+			
+			.pad30 {
+				padding: 30px;
+			}
+			
+			.btn-err {
+				padding: 6px 14px;
+				border: 1px solid #e1e1e2;
+				border-radius: 10px;
+				color: #fff;
+				font-size: 14px;
+				background: transparent;
+			}
+			
+			.btn-suc {
+				padding: 6px 14px;
+				border: 1px solid #e1e1e2;
+				border-radius: 10px;
+				color: #2a262e;
+				font-size: 14px;
+				background: #F7F7F7;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #2a262e;">
+		<input type="hidden" id="user_token" value="{$student_token}">
+		<input type="hidden" id="user_sig" value="{$sig}">
+		<input type="hidden" id="user_roomid" value="{$roomid}">
+		<input type="hidden" id="tea_token" value="{$teacher_token}">
+		<div class="obj">
+			<object id="iLiveSDKCom" classid="CLSID:54E71417-216D-47A2-9224-C991A099C531" codebase="plugins/suixinbo/iLiveSDK.cab#version=1,5,0,1"></object>
+		</div>
+
+		<div id="header">
+			<div class="head-l">
+				<!-- <span class="title2"></span> -->
+				<span class="title3" id="room">房间号：{$roomid}</span>
+				<!-- <span class="title3" style="margin-left: 30px;">观众：xxx</span> -->
+			</div>
+			<button type="button" class="btn btn-success exit" id="quitroom">退出直播间</button>
+		</div>
+
+		<div class="container-fluid">
+
+			<div class="row" style="padding: 45px 30px;">
+				<div class="col-md-8">
+
+					<object width="100%" height="700px" id="localRender" classid="CLSID:1EA15A99-7F53-4B6F-8947-B57A0729918E"></object>
+
+				</div>
+
+				<div class="col-md-4">
+
+					<div class="row">
+						<div class="col-md-12" style="background: transparent;">
+							<object width="100%" height="350px" id="studentRender" classid="CLSID:1EA15A99-7F53-4B6F-8947-B57A0729918E"></object>
+						</div>
+					</div>
+					<div class="row pad30">
+						<div class="col-md-6 btnp"><button id="btn_open_mic" type="button" class="btn-suc"><i class="iconfont">&#xe6d3;</i>开启麦克风</button></div>
+						<div class="col-md-6 btnp"><button id="btn_close_mic" type="button" class="btn-err"><i class="iconfont">&#xe6d2;</i>关闭麦克风</button></div>
+						<div class="col-md-6 btnp"><button id="btn_open_player" type="button" class="btn-suc"><i class="iconfont">&#xe6ce;</i>开启扬声器</button></div>
+						<div class="col-md-6 btnp"><button id="btn_close_player" type="button" class="btn-err"><i class="iconfont">&#xe6cf;</i>关闭扬声器</button></div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4  col-md-offset-5">
+							<div id="invitedBoxx">
+
+								<div id="logoutContent">
+									<h5 id="logout-text">收到了主播连麦的邀请，是否连麦？</h5>
+									<button type="button" class="btn btn-danger" id="invitedBox">取消</button>
+									<button type="button" class="btn btn-success" id="invitedYes">确定</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script>
+			$(document).ready(function() {
+
+				var sdk = new ILiveSDK(1400064948, 22154, "iLiveSDKCom");
+				var id = $('#user_token').val();
+				var teacherID = $('#tea_token').val();
+				var g_localRender = null;
+				var g_studentRender = null;
+				var g_invite = null;
+				var sig = $('#user_sig').val();
+				var roomnum1 = $('#user_roomid').val(); 
+
+				//摄像头-------------------------
+				function OnBtnOpenCamera() {
+					var nRet = sdk.getCameraList();
+					if (nRet.code !== 0) {
+						toastr.warning("获取摄像头列表出错; 错误码:" + nRet);
+						return;
+					}
+
+					sdk.openCamera(nRet.devices[0].id);
+				}
+
+				function OnBtnCloseCamera() {
+					sdk.closeCamera();
+				}
+
+				//麦克风-------------------------
+				function OnBtnOpenMic() {
+					var nRet = sdk.getMicList();
+					if (nRet.code != 0) {
+						toastr.warning("获取麦克风列表出错; 错误码:" + nRet);
+						return;
+					}
+					sdk.openMic(nRet.devices[0].id);
+					toastr.success("打开麦克风成功.");
+				}
+
+				function OnBtnCloseMic() {
+					sdk.closeMic();
+					toastr.success("关闭麦克风成功.");
+				}
+
+				//播放器-------------------------
+				function OnBtnOpenPlayer() {
+					var nRet = sdk.getSpeakerList();
+					if (nRet.code != 0) {
+						toastr.warning("获取扬声器列表出错; 错误码:" + nRet);
+						return;
+					}
+					sdk.openSpeaker(nRet.devices[0].id);
+				}
+
+				function OnBtnClosePlayer() {
+					sdk.closeSpeaker();
+				}
+
+				//按钮
+
+				//关闭麦克风	
+				$("#btn_close_mic").click(function() {
+					sdk.closeMic();
+					$("#btn_open_mic").css({
+						"color": "#fff",
+						"background": "transparent"
+					})
+					$("#btn_close_mic").css({
+						"color": "#2a262e",
+						"background": "#F7F7F7"
+					})
+					toastr.success("关闭麦克风成功");
+				});
+
+				//打开麦克风	
+				$("#btn_open_mic").click(function() {
+					OnBtnOpenMic();
+					$("#btn_open_mic").css({
+						"color": "#2a262e",
+						"background": "#F7F7F7"
+					})
+					$("#btn_close_mic").css({
+						"color": "#fff",
+						"background": "transparent"
+					})
+					toastr.success("开启麦克风成功");
+				});
+
+				//关闭扬声器
+				$("#btn_close_player").click(function() {
+					sdk.closeSpeaker();
+					$("#btn_open_player").css({
+						"color": "#fff",
+						"background": "transparent"
+					})
+					$("#btn_close_player").css({
+						"color": "#2a262e",
+						"background": "#F7F7F7"
+					})
+					toastr.success("关闭扬声器成功");
+				});
+
+				//打开扬声器
+				$("#btn_open_player").click(function() {
+					OnBtnOpenPlayer();
+					$("#btn_open_player").css({
+						"color": "#2a262e",
+						"background": "#F7F7F7"
+					})
+					$("#btn_close_player").css({
+						"color": "#fff",
+						"background": "transparent"
+					})
+					toastr.success("开启扬声器成功");
+				});
+
+				function onLoginSecc() {
+					alert("登录成功")
+					sdk.joinRoom(roomnum1, E_iLiveAuthBits.AuthBit_LiveGuest, "Guest", function() {
+						//					alert(22222)
+
+						OnBtnOpenPlayer();
+						toastr.success("打开扬声器成功.");
+
+						g_localRender = new ILiveRender("localRender");
+						g_localRender.setIdentifer(teacherID); //绑定主播 id
+						g_studentRender = new ILiveRender("studentRender");
+						g_studentRender.setIdentifer(id); //绑定自己id
+
+						var elem = new ILiveMessageElem(0, 1);
+						var elems = [];
+						elems.push(elem);
+						var message = new ILiveMessage(elems);
+						sdk.sendC2CMessage(teacherID, message, function() {
+							alert("发送成功")
+						}, function() {
+							alert("发送失败")
+						})
+					}, function(errMsg) {
+						toastr.error("错误码:" + errMsg.code + " 错误信息:" + errMsg.desc);
+
+					})
+				}
+
+				function onLoginErr(errMsg) {
+					alert("登录失败")
+				}
+
+				sdk.init(function() {
+					alert("初始化成功");
+					sdk.login(id, sig, onLoginSecc, onLoginErr);
+					sdk.setMessageListener(showMessage) //消息监听
+
+				}, function(eMSg) {
+					alert("error" + eMSg.code + eMSg.desc);
+				});
+
+				function showMessage(msg) {
+					for (i in msg.elems) { //
+						if (msg.elems[i].type == 0) {
+							dealCustomMessage(msg.sender, msg.elems[i].content);
+						}
+					}
+				}
+
+				function dealCustomMessage(user, msg) {
+
+					var E_IM_CustomCmd = {
+						AVIMCMD_None: "0", // 无事件：0
+						AVIMCMD_EnterLive: "1", // 用户加入直播, Group消息 ： 1
+						AVIMCMD_ExitLive: "2", // 用户退出直播, Group消息 ： 2
+						AVIMCMD_Praise: "3", // 点赞消息, Demo中使用Group消息 ： 3
+						AVIMCMD_Host_Leave: "4", // 主播或互动观众离开, Group消息 ： 4
+						AVIMCMD_Host_Back: "5", // 主播或互动观众回来, Group消息 ： 5
+						AVIMCMD_Multi: "2048", // 多人互动消息类型 ： 2048
+						AVIMCMD_Multi_Host_Invite: "2049", // 多人主播发送邀请消息, C2C消息 ： 2049
+						AVIMCMD_Multi_CancelInteract: "2050", // 已进入互动时，断开互动，Group消息，带断开者的imUsreid参数 ： 2050
+						AVIMCMD_Multi_Interact_Join: "2051", // 多人互动方收到AVIMCMD_Multi_Host_Invite多人邀请后，同意，C2C消息 ： 2051
+						AVIMCMD_Multi_Interact_Refuse: "2052", // 多人互动方收到AVIMCMD_Multi_Invite多人邀请后，拒绝，C2C消息 ： 2052
+					};
+
+					switch (msg) {
+						case E_IM_CustomCmd.AVIMCMD_ExitLive:
+							//      退出了房间
+							alert(user + "退出")
+							break;
+						case E_IM_CustomCmd.AVIMCMD_Multi_Host_Invite:
+							$('#invitedBoxx').show();
+							break;
+						default:
+
+					}
+				}
+
+				//确定按钮  ------------------------
+				$('#invitedYes').on('click', function() {
+
+					var elem = new ILiveMessageElem(0, 2051);
+					var elems = [];
+					elems.push(elem);
+					var message = new ILiveMessage(elems);
+					sdk.sendC2CMessage(teacherID, message, function() {
+						alert("发送成功")
+					}, function() {
+						alert("发送失败")
+					})
+					OnBtnOpenCamera();
+					toastr.success("打开摄像头");
+
+					OnBtnOpenMic();
+					toastr.success("打开麦克风");
+
+					$('#invitedBoxx').hide();
+					toastr.success("连麦成功.");
+				});
+
+				//取消按钮  ------------------------
+				$('#invitedBox').on('click', function() {
+
+					var elem = new ILiveMessageElem(0, 2052);
+					var elems = [];
+					elems.push(elem);
+					var message = new ILiveMessage(elems);
+					sdk.sendC2CMessage(teacherID, message, function() {
+						alert("发送成功1")
+						$("#invitedBoxx").hide();
+					}, function() {
+						alert("发送失败2")
+					})
+
+				});
+
+				//退出房间按钮  -------------------------------------------
+				$('#quitroom').click(function(e) {
+					sdk.quitRoom(function() {
+						toastr.success("退出房间成功.");
+
+						initState();
+						history.go(-1);
+
+						history.go(-1);
+
+
+
+					}, function(errMsg) {
+						toastr.info("退出房间失败.");
+					});
+				});
+
+			});
+		</script>
+
+	</body>
+
+</html>

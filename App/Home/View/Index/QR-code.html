@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>网约课</title>
+		<style type="text/css">
+			html,body{
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				width: 100%;
+			}
+			.imgBox{
+				display: none;
+			}
+			.imgBox img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="imgBox">
+			<img alt="" src="__PUBLIC__/Home/saibangzi/img/wx-tips.jpg" />
+		</div>
+		<script src="/Public/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script>
+		window.onload = function () {
+			var ua = navigator.userAgent.toLowerCase();
+			var u = navigator.userAgent;
+			if(u.indexOf('Android') > -1 || u.indexOf('Linux') > -1){
+				if(ua.match(/MicroMessenger/i)=="micromessenger") {
+					$(".imgBox").show();
+				}else{
+					window.location.href = 'http://www.wyuek.com/Home/Download/index';
+				}
+			}else if(u.indexOf('iPhone') > -1){
+				window.location.href = 'https://itunes.apple.com/app/id1356460652';
+			}
+		}
+	</script>
+	</body>
+</html>

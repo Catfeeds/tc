@@ -1,0 +1,840 @@
+[ 2018-02-24T17:50:00+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+ERR: SQLSTATE[HY000] [2002] Connection timed out
+
+[ 2018-02-24T17:51:23+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+ERR: SQLSTATE[HY000] [2002] Connection timed out
+
+[ 2018-02-24T17:53:44+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+ERR: SQLSTATE[HY000] [2002] Connection timed out
+
+[ 2018-02-24T18:02:16+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+ERR: SQLSTATE[HY000] [2002] Connection timed out
+
+[ 2018-02-24T18:07:02+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+ERR: SQLSTATE[HY000] [1130] Host '47.104.5.229' is not allowed to connect to this MySQL server
+
+[ 2018-02-24T18:09:03+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: yuyan_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: qinzi_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 132 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: bangong_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 141 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: zhiye_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 150 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: chanpin_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 159 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2018-02-24T18:09:07+08:00 ] 175.167.130.189 /Home/courses/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `liveb` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `class` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `liveb` WHERE ( cate_id in (6,7,8,9,10,11,12,13,34,35,2) ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` WHERE ( cate_id in (6,7,8,9,10,11,12,13,34,35,2) ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `class` WHERE ( cate_id in (6,7,8,9,10,11,12,13,34,35,2) ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `video` WHERE ( cate_id in (6,7,8,9,10,11,12,13,34,35,2) ) LIMIT 0,20   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT c.*,u.user_id FROM class as c,user as u WHERE ( cate_id in (6,7,8,9,10,11,12,13,34,35,2) and c.uid=u.user_id ) LIMIT 0,20   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id in (6,7,8,9,10,11,12,13,34,35,2) ) LIMIT 0,20   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 68 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 88 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 89 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 98 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 162 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 163 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 162 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 163 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 162 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 163 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 162 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 163 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 162 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 163 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 162 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 163 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 177 行.
+NOTIC: [8] Undefined variable: active /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-02-24T18:17:23+08:00 ] 175.167.130.189 /Home/courses/course/pid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 285 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0012s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=2 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `video` WHERE ( class_id=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( name like '%听彭哥一席话，胜读十年书%'  )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 42 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 47 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 67 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 68 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 77 行.
+NOTIC: [8] Undefined variable: id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2018-02-24T18:17:24+08:00 ] 175.167.130.189 /Home/Courses/fenxiang.html?url=http%3A%2F%2Fwyuek.com%2FHome%2Fcourses%2Fcourse%2Fpid%2F2.html&pid=2&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [2] file_get_contents(jsapi_ticket.php): failed to open stream: No such file or directory /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 108 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 52 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 108 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 74 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 98 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 81 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 98 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/www.wyuek.com/ThinkPHP/Library/Vendor/Wxshare/jssdk.php 第 60 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=2 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2018-02-24T18:22:14+08:00 ] 61.189.33.149 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: yuyan_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: qinzi_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 132 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: bangong_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 141 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: zhiye_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 150 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: chanpin_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 159 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2018-02-24T18:22:17+08:00 ] 61.189.33.149 /Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-02-24T18:22:26+08:00 ] 61.189.33.149 /Home/Login/passlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE ( phone=13333333333 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `user` SET `login_time`='1519467746',`login_num`='6' WHERE ( user_id=49 ) [ RunTime:0.0049s ]
+
+[ 2018-02-24T18:22:26+08:00 ] 61.189.33.149 /Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT u.*,ud.image FROM user as u,userdata as ud WHERE ( u.user_id=49 and u.user_id=ud.uid ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `class` WHERE ( uid=49 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `history` WHERE ( uid=49 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: yuyan_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: qinzi_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 132 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: bangong_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 141 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: zhiye_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 150 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: chanpin_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 159 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: shipin /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 76 行.
+NOTIC: [8] Undefined variable: zhibo /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 76 行.
+NOTIC: [8] Undefined variable: advert_img /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2018-02-24T18:22:29+08:00 ] 61.189.33.149 /Home/courses/course/pid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT u.*,ud.image FROM user as u,userdata as ud WHERE ( u.user_id=49 and u.user_id=ud.uid ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `class` WHERE ( uid=49 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `history` WHERE ( uid=49 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0012s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=3 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `video` WHERE ( class_id=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( name like '%彭老师的在线课堂%'  )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: pin /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 81 行.
+NOTIC: [8] Undefined variable: bo /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 81 行.
+NOTIC: [8] Undefined variable: id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2018-02-24T18:22:29+08:00 ] 61.189.33.149 /Home/Courses/fenxiang.html?url=http%3A%2F%2Fwww.wyuek.com%2FHome%2Fcourses%2Fcourse%2Fpid%2F3.html&pid=3&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0012s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=3 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-02-24T18:22:35+08:00 ] 61.189.33.149 /Home/courses/course/pid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT u.*,ud.image FROM user as u,userdata as ud WHERE ( u.user_id=49 and u.user_id=ud.uid ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `class` WHERE ( uid=49 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `history` WHERE ( uid=49 )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0012s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=4 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `video` WHERE ( class_id=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( name like '%测试课程%'  )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: pin /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 81 行.
+NOTIC: [8] Undefined variable: bo /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 81 行.
+NOTIC: [8] Undefined variable: id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-02-24T18:22:35+08:00 ] 61.189.33.149 /Home/Courses/fenxiang.html?url=http%3A%2F%2Fwww.wyuek.com%2FHome%2Fcourses%2Fcourse%2Fpid%2F4.html&pid=4&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=4 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-02-24T18:23:17+08:00 ] 175.167.130.189 /Home/courses/course/pid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 285 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=2 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `video` WHERE ( class_id=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( name like '%听彭哥一席话，胜读十年书%'  )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 42 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 47 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 67 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 68 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 77 行.
+NOTIC: [8] Undefined variable: id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-02-24T18:23:18+08:00 ] 175.167.130.189 /Home/Courses/fenxiang.html?url=http%3A%2F%2Fwyuek.com%2FHome%2Fcourses%2Fcourse%2Fpid%2F2.html&pid=2&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0012s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=2 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-02-24T18:23:35+08:00 ] 58.247.212.69 /Home/courses/course/pid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 285 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=4 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `video` WHERE ( class_id=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( name like '%测试课程%'  )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 42 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 47 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 67 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 68 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 77 行.
+NOTIC: [8] Undefined variable: id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/befb17542c93d2b3b69c2518ea761657.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-02-24T18:23:42+08:00 ] 203.208.60.200 /Home/courses/lei/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 217 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( cate_id=17 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `liveb` WHERE ( cate_id=17 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` WHERE ( cate_id=17 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `class` WHERE ( cate_id=17 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( cate_id=17 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `video` WHERE ( cate_id=17 ) LIMIT 0,20   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT c.*,u.user_id FROM class as c,user as u WHERE ( cate_id=17 and c.uid=u.user_id ) LIMIT 0,20   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=17 ) LIMIT 0,20   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: arr /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 272 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 68 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 88 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 89 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2018-02-24T18:24:19+08:00 ] 175.167.130.189 /Home/Courses/fenxiang.html?url=http%3A%2F%2Fwyuek.com%2FHome%2Fcourses%2Fcourse%2Fpid%2F2.html&pid=2&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT l.*,u.user_id,t.name as tname,t.abstract,ud.image FROM class as c,liveb as l,user as u,teacher as t,userdata as ud WHERE ( l.class_id=c.class_id and c.uid=u.user_id and t.uid=u.user_id and u.user_id=ud.uid and l.liveb_id=2 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-02-24T18:28:34+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: yuyan_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: qinzi_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 132 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: bangong_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 141 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: zhiye_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 150 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: chanpin_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 159 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-02-24T18:34:35+08:00 ] 175.167.130.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lunbo` WHERE ( pc=1 ) ORDER BY num desc LIMIT 4   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE `pid` = 0 AND `name` <> '推荐' LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=2 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=3 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=4 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=5 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=14 ) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( recommend=1 ) LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=2 ) LIMIT 8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: yuyan_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','6','7','8','9','10','11','12','13') LIMIT 8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( pid=4 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: qinzi_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 132 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','18','19','20','40','41','42','43','44') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=3 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: bangong_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 141 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','15','16','17','26','27','28','36','37') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=5 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: zhiye_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 150 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','47','48','49','50','51','52','53','54') LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 ) LIMIT 8   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: chanpin_id /www/wwwroot/www.wyuek.com/App/Home/Controller/IndexController.class.php 第 159 行.
+SQL: SELECT * FROM `liveb` WHERE `name` <> '推荐' AND `cate_id` IN ('','57','58','59','60','61','62','63','64') LIMIT 8   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 36 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 41 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 62 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 72 行.
+NOTIC: [8] Undefined variable: advert_img /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-02-24T18:45:15+08:00 ] 203.208.60.155 /Home/courses/lei/id/57.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [2048] Declaration of Home\Controller\CoursesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 1041 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 217 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `category` WHERE ( cate_id=57 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `liveb` WHERE ( cate_id=57 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` WHERE ( cate_id=57 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `class` WHERE ( cate_id=57 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category` WHERE ( pid=0 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `category` WHERE ( cate_id=57 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `category` WHERE ( pid=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `video` WHERE ( cate_id=57 ) LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0012s ]
+SQL: SELECT c.*,u.user_id FROM class as c,user as u WHERE ( cate_id=57 and c.uid=u.user_id ) LIMIT 0,20   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `liveb` WHERE ( cate_id=57 ) LIMIT 0,20   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: arr /www/wwwroot/www.wyuek.com/App/Home/Controller/CoursesController.class.php 第 272 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: dian /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 63 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 68 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 88 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 89 行.
+NOTIC: [8] Undefined index: H_user_id /www/wwwroot/www.wyuek.com/App/Runtime/Cache/Home/138315e81189258811c005e129449f89.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+

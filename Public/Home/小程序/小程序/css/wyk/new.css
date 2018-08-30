@@ -1,0 +1,19 @@
+.result-text {
+			    height: 1rem;
+			    margin-right: .0rem !important;
+			    margin-left: .0rem;
+			}
+			.search-result-list li {			  
+			    padding: .3rem .1rem .0rem .1rem;			  
+			}
+			.search-result-list .enter{
+				top: .2rem;
+				border: none;
+				font-size: .25rem;
+			}
+			.result-text .t-cate{
+				margin-top: .2rem;
+			}
+			.result-text .t-cate {
+			    font-size: .23rem;			 
+			}

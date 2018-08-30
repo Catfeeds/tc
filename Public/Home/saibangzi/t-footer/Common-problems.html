@@ -1,0 +1,115 @@
+<block name="head">
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/t-footer/t-footer.css" />
+		<title>常见问题</title>
+
+	</head>
+
+	<body class="bg-f8">
+		</block>
+		<!--导航开始-->
+		<extend name="Public:header" />
+		<!--导航结束-->
+		<block name="main">
+		<div class="container margin_t50">
+			<div class="col-md-3-a bg-white">
+				<ul class="u-nav" id="user_menu">
+					<li class="item" id="user_menu_my" name="user_menu_my">
+						<ul class="sub">
+							<li>
+								<i class="iconfont">&#xe664;</i>
+								<a href="{:U('feedback/lianxi')}">联系我们</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+							<li>
+								<i class="iconfont"> &#xe663;</i>
+								<a href="{:U('feedback/index')}">意见反馈</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+
+							<li>
+								<i class="iconfont current"> &#xe6ad;</i>
+								<a href="{:U('feedback/wenti')}" class="current">常见问题</a>
+								<i class="iconfont  current">&#xe607;</i>
+							</li>
+							<li>
+								<i class="iconfont "> &#xe662;</i>
+								<a href="{:U('feedback/about')}">关于我们</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-9-a bg-white">
+				<div class="c-p-r">
+					<div class="c-r-t">
+						<p>常见问题</p>
+					</div>
+
+					<div class="c-r-b">
+						<p class="crb-t">一.我怎样才能注册登录？</p>
+						<div class="crb-d">
+							<p>你可以使用手机账号，微信登录， QQ, 微博登录。如果你还没有账号，你可以注册账号，注册成功后登录至平台。</p>
+						</div>
+
+						<p class="crb-t">二.为什么电脑访问时视频无法播放？</p>
+						<div class="crb-d">
+							<p>当您使用电脑访问时：</p>
+							<p>- 支持浏览器Chrome 10.0+ FireFox4.0+ Ie9+版本</p>
+							<p>- 安装flash10+版本</p>
+						</div>
+
+						<p class="crb-t">三.我可以在平台中开设自己的课程吗？</p>
+						<div class="crb-d">
+							<p>是的，你可以在平台中开设属于自己的课程，在此之前请在“我要讲课”栏中按照规定提交相应信息。我们的工作人员会即使与您联系。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+		
+</block>
+<block name="foot">
+		<!--页脚开始-->
+	
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script>
+			$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+		</script>
+	</body>
+
+</html>
+</block>

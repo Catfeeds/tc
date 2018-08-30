@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <link href="css/m/mui.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/m/style.css" type="text/css" />	   
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav header">
+	    <a class=" mui-icon mui-icon-bars mui-pull-left" href="javascript:;" id="menu-btn"></a>
+	    <h1 class="mui-title"><a href=""><img src="images/i4-logo.png"/></a></h1>
+	    <a class="mui-icon mui-icon-search mui-pull-right" href="search.html"></a>
+	</header>
+	<!--显示下拉-->
+	<div id="menu-wrapper" class="menu-wrapper">
+		<div id="menu" class="menu">
+			<a class="current" href="index.html">首页</a>
+			<a href="evaluation.html">测评</a>
+			<a href="special.html">专题</a>
+			<a href="ranking.html">排行榜</a>
+			<a href="category.html">类别</a>
+		</div>
+	</div>
+	<div id="menu-backdrop" class="menu-backdrop"></div>
+	<div class="mui-content">
+		  <!--图片轮播-->
+	      <div id="slider" class="mui-slider" >
+			  <div class="mui-slider-group mui-slider-loop">
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="images/banner1.jpg">
+			      </a>
+			    </div>
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/banner1.jpg">
+			      </a>
+			    </div>
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/banner2.png">
+			      </a>
+			    </div>
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/banner3.png">
+			      </a>
+			    </div>
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="images/banner4.jpg">
+			      </a>
+			    </div>
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="images/banner4.jpg">
+			      </a>
+			    </div>
+			  </div>
+			  <div class="mui-slider-indicator">
+			    <div class="mui-indicator mui-active"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			  </div>
+		</div>
+		<!--导航-->
+		<ul class="nav">
+			<li>
+				<a href="evaluation.html">
+					<img src="images/icon.png" />
+					<p>测评</p>
+				</a>
+			</li>
+			<li>
+				<a href="special.html">
+					<img src="images/icon1.png" />
+					<p>专题</p>
+				</a>
+			</li>
+			<li>
+				<a href="ranking.html">
+					<img src="images/icon2.png" />
+					<p>排行榜</p>
+				</a>
+			</li>
+			<li>
+				<a href="category.html">
+					<img src="images/icon3.png" />
+					<p>类别</p>
+				</a>
+			</li>
+		</ul>
+		<!--新鲜测评-->
+		<div class="index-title">
+			<span>新鲜测评</span>
+			<a href="">显示全部<i class="mui-icon mui-icon-arrowright"></i></a>
+		</div>
+		<ul class="mui-table-view fresh-comment">
+		    <li>
+		    	<a href="evadatail.html">
+		    		<img src="images/test.jpg" />
+		    		<div class="text">
+		    			<h2>感恩笔记本</h2>
+		    			<p>感恩笔记本：发现身边美好的人和事，让自己变得更幸福一点</p>
+		    		</div>
+		    		<div class="score">
+		    			<span>8.5</span>分
+		    		</div>
+		    	</a>
+		    </li>
+		    <li>
+		    	<a href="evadatail.html">
+		    		<img src="images/test1.jpg" />
+		    		<div class="text">
+		    			<h2>看图识字</h2>
+		    			<p>看图识字：提高宝宝独立识记兴趣，开发大脑</p>
+		    		</div>
+		    		<div class="score">
+		    			<span>8.5</span>分
+		    		</div>
+		    	</a>
+		    </li>
+		    <li>
+		    	<a href="evadatail.html">
+		    		<img src="images/test2.png" />
+		    		<div class="text">
+		    			<h2>新品有戏应用</h2>
+		    			<p>新品有戏应用：收罗全球最具设计和功能的好物</p>
+		    		</div>
+		    		<div class="score">
+		    			<span>8.5</span>分
+		    		</div>
+		    	</a>
+		    </li>
+		    <li>
+		    	<a href="evadatail.html">
+		    		<img src="images/test3.png" />
+		    		<div class="text">
+		    			<h2>爱弹唱</h2>
+		    			<p>爱弹唱：有音乐，有快乐！</p>
+		    		</div>
+		    		<div class="score">
+		    			<span>8.5</span>分
+		    		</div>
+		    	</a>
+		    </li>
+		</ul>
+		<!--广告-->
+		<div class="advantage">
+			<a href=""><img src="images/advantage.jpg"/></a>
+		</div>
+		<!--专题推荐-->
+		<div class="index-title">
+			<span>专题推荐</span>
+			<a href="">显示全部<i class="mui-icon mui-icon-arrowright"></i></a>
+		</div>
+		<div class="special">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll">
+					<a href="specialdetail.html" class="item"><img src="images/tj.png"/></a>
+					<a href="specialdetail.html" class="item"><img src="images/tj1.png"/></a>
+					<a href="specialdetail.html" class="item"><img src="images/tj2.jpg"/></a>
+					<a href="specialdetail.html" class="item"><img src="images/tj3.png"/></a>
+					<a href="specialdetail.html" class="item"><img src="images/tj4.png"/></a>
+				</div>
+			</div>
+		</div>
+		<!--每日精选-->
+		<div class="index-title">
+			<span>每日精选</span>
+			<a href="">显示全部<i class="mui-icon mui-icon-arrowright"></i></a>
+		</div>
+		<div class="classify">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll">
+					<a href="storedetail.html" class="item">
+						<img src="images/jx1.PNG" />
+						<p>极简笔记</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/jx2.jpg" />
+						<p>洽总日签</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/jx3.jpg" />
+						<p>她厨美食</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/jx4.png" />
+						<p>热点小黄历</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/jx5.jpg" />
+						<p>健康计算器</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/jx6.png" />
+						<p>名片云管家</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--社交-->
+		<div class="index-title">
+			<span>社交</span>
+			<a href="">显示全部<i class="mui-icon mui-icon-arrowright"></i></a>
+		</div>
+		<div class="classify">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll">
+					<a href="storedetail.html" class="item">
+						<img src="images/sj1.jpg" />
+						<p>群约助手</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/sj2.png" />
+						<p>角蛙动图</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/sj3.png" />
+						<p>美食天下+</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/sj4.png" />
+						<p>掌上英雄联盟lite</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/sj5.png" />
+						<p>迹忆碎片</p>
+					</a>
+					<a href="storedetail.html" class="item">
+						<img src="images/sj6.jpg" />
+						<p>厦门小鱼社区</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--主题-->
+		<div class="index-title"></div>
+		<div class="special">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll">
+					<a href="" class="item"><img src="images/tj.png"/></a>
+					<a href="" class="item"><img src="images/tj1.png"/></a>
+					<a href="" class="item"><img src="images/tj2.jpg"/></a>
+					<a href="" class="item"><img src="images/tj3.png"/></a>
+					<a href="" class="item"><img src="images/tj4.png"/></a>
+				</div>
+			</div>
+		</div>
+		<!--音乐-->
+		<div class="index-title">
+			<span>音乐</span>
+			<a href="">显示全部<i class="mui-icon mui-icon-arrowright"></i></a>
+		</div>
+		<div class="classify">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll">
+					<a href="" class="item">
+						<img src="images/yl.jpg" />
+						<p>碎乐＋</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/yl1.jpg" />
+						<p>听闻FM电台</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/yl2.png" />
+						<p>青蜻蜓</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/yl3.png" />
+						<p>荔枝FM播客</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/yl4.png" />
+						<p>铃音DIY</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/yl5.png" />
+						<p>铃音DIY</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--最新小程序-->
+		<div class="index-title">
+			<span>最新小程序</span>
+			<a href="">显示全部<i class="mui-icon mui-icon-arrowright"></i></a>
+		</div>
+		<div class="classify">
+			<div  class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll">
+					<a href="" class="item">
+						<img src="images/n1.png" />
+						<p>leanfit健身名片</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/n2.png" />
+						<p>专业P图PS图片处理修图改图在线</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/n3.png" />
+						<p>知晓鸟</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/n4.png" />
+						<p>夺宝助手</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/n5.jpg" />
+						<p>皇阿码礼记</p>
+					</a>
+					<a href="" class="item">
+						<img src="images/n6.png" />
+						<p>校内达小微</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+        <script type="text/javascript" src="js/m/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js/m/mui.min.js"></script>
+		<script type="text/javascript" src="js/m/app.js"></script>
+		<script type="text/javascript" src="js/wyk/Initialize.js"></script>
+</body>
+</html>

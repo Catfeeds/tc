@@ -1,0 +1,157 @@
+.news .news-text .date {
+				height: .24rem;
+				margin-top: .36rem;
+			}
+			
+			.news .news-text h2 {
+				font-size: 0.28rem;
+			}
+			
+		
+			.money{
+				font-size: 0.3rem;
+				color: #f39232;
+				line-height: 0.4rem;
+				float: right;	
+			}
+			
+			.free {				
+				font-size: 0.26rem;
+				color: #999;
+				line-height: 0.4rem;			
+			}
+			
+			.pay {				
+				font-size: 0.26rem;
+				color: #999;
+				line-height: 0.4rem;		
+			    float: right;
+			}
+			
+			input[type=search] {
+				margin-bottom: .0rem;
+			}
+			
+			.search-r {
+				width: 100%;
+				float: left;
+				background-color: #fff;
+				padding: 0.1rem 0.3rem;
+				border-bottom: 1px solid #efefef;
+			}
+			
+			.f-l {
+				float: left;
+			}
+			
+			.f-r {
+				float: right;
+				position: relative;
+			}
+			
+			.news .news-text h2 {
+				min-height: .5rem;
+			}
+			
+			.s-r {
+				color: #F39232;
+			}
+			
+			#s-n {
+				background-color: #fff;
+				border: 1px solid #CCC;
+				text-align: center;
+				border-radius: 4px;
+				position: absolute;
+				right: .1rem;
+				top: 0.6rem;
+				z-index: 9;
+				display: none;
+				width: 2.0rem;
+			}
+			
+			.video {
+				padding: 0.2rem;
+				border-bottom: 1px solid #ccc;				
+			}
+			
+			.live {
+				padding: 0.2rem;
+			}
+			
+			.news-text {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.c-c{
+				padding:0.025rem 0.05rem;
+				margin-top:0.1rem;
+				border: 1px solid #F39232;
+				float: right;display: inline;
+				border-radius: 0.08rem;
+			}
+            .c-c span{
+				color: #F39232;
+				font-size:0.24rem;
+			}
+           .o-n{
+           	font-size: 0.24rem;
+           	color: #999;
+           }
+           .g-p{
+           	color: #999 !important;
+           	font-size: 0.24rem !important;
+           }
+           body{
+           	background-color: #EFEFF4;
+           }
+          .intro{
+				transform:rotate(180deg);
+				-ms-transform:rotate(180deg); /* Internet Explorer */
+				-moz-transform:rotate(180deg); /* Firefox */
+				-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+				-o-transform:rotate(180deg); /* Opera */
+			}
+		    .iconfont{
+		    	display: inline-block;
+		    }
+		    #s-n {
+				background-color: #fff;
+				border: 1px solid #CCC;
+				text-align: center;
+				border-radius: 4px;
+				position: absolute;
+				right: .1rem;
+				top: 0.6rem;
+				z-index: 9;
+				display: none;
+				width: 2.0rem;
+				float: left;
+			}
+			.p-b{
+				margin-top: 0.2rem;
+				float: left;
+				width: 100%;
+			}
+			.p-b span{
+				float: left;
+				color: #F39232;
+			}
+			.p-but{
+				float: right;
+			}
+			.p-but a{
+				float:left;
+				margin-left: 0.1rem;
+				border: 1px solid #F39232;
+				padding:0.05rem 0.1rem;
+				border-radius: 0.08rem;
+			}
+			.p-but a span{
+				color: #F39232;
+				font-size: 0.24rem;
+			}
+			
+			
+			

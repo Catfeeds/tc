@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+    <title>ECharts</title>
+</head>
+<body>
+    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span>数据管理 <span class="c-gray en">&gt;</span> 用户数据 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+
+    <input type="hidden" value="{$arr['arr1']['0']}" name="arr" id="arr0" />
+    <input type="hidden" value="{$arr['arr1']['1']}" name="arr" id="arr1" />
+    <input type="hidden" value="{$arr['arr1']['2']}" name="arr" id="arr2" />
+    <input type="hidden" value="{$arr['arr1']['3']}" name="arr" id="arr3" />
+    <input type="hidden" value="{$arr['arr1']['4']}" name="arr" id="arr4" />
+    <input type="hidden" value="{$arr['arr1']['5']}" name="arr" id="arr5" />
+    <input type="hidden" value="{$arr['arr1']['6']}" name="arr" id="arr6" />
+      <input type="hidden" value="{$arr['arr2']['0']}" name="arr" id="cc0" />
+    <input type="hidden" value="{$arr['arr2']['1']}" name="arr" id="cc1" />
+    <input type="hidden" value="{$arr['arr2']['2']}" name="arr" id="cc2" />
+    <input type="hidden" value="{$arr['arr2']['3']}" name="arr" id="cc3" />
+    <input type="hidden" value="{$arr['arr2']['4']}" name="arr" id="cc4" />
+    <input type="hidden" value="{$arr['arr2']['5']}" name="arr" id="cc5" />
+    <input type="hidden" value="{$arr['arr2']['6']}" name="arr" id="cc6" />
+     <input type="hidden" value="{$arr['arr3']['0']}" name="arr" id="ss0" />
+    <input type="hidden" value="{$arr['arr3']['1']}" name="arr" id="ss1" />
+    <input type="hidden" value="{$arr['arr3']['2']}" name="arr" id="ss2" />
+    <input type="hidden" value="{$arr['arr3']['3']}" name="arr" id="ss3" />
+    <input type="hidden" value="{$arr['arr3']['4']}" name="arr" id="ss4" />
+    <input type="hidden" value="{$arr['arr3']['5']}" name="arr" id="ss5" />
+    <input type="hidden" value="{$arr['arr3']['6']}" name="arr" id="ss6" />
+     <input type="hidden" value="{$arr['arr4']['0']}" name="arr" id="ll0" />
+    <input type="hidden" value="{$arr['arr4']['1']}" name="arr" id="ll1" />
+    <input type="hidden" value="{$arr['arr4']['2']}" name="arr" id="ll2" />
+    <input type="hidden" value="{$arr['arr4']['3']}" name="arr" id="ll3" />
+    <input type="hidden" value="{$arr['arr4']['4']}" name="arr" id="ll4" />
+    <input type="hidden" value="{$arr['arr4']['5']}" name="arr" id="ll5" />
+    <input type="hidden" value="{$arr['arr4']['6']}" name="arr" id="ll6" />
+    <input type="hidden" value="{$arr['arr5']['0']}" name="arr" id="hh0" />
+    <input type="hidden" value="{$arr['arr5']['1']}" name="arr" id="hh1" />
+    <input type="hidden" value="{$arr['arr5']['2']}" name="arr" id="hh2" />
+    <input type="hidden" value="{$arr['arr5']['3']}" name="arr" id="hh3" />
+    <input type="hidden" value="{$arr['arr5']['4']}" name="arr" id="hh4" />
+    <input type="hidden" value="{$arr['arr5']['5']}" name="arr" id="hh5" />
+    <input type="hidden" value="{$arr['arr5']['6']}" name="arr" id="hh6" />
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="__PUBLIC__/Admin/lib/datatables/chart/build/dist/echarts.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>  
+    <script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> 
+    <!--/_footer /作为公共模版分离出去-->
+
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+    <script type="text/javascript">
+        var arr0=$('#arr0').val();
+        var arr1=$('#arr1').val();
+        var arr2=$('#arr2').val();
+        var arr3=$('#arr3').val();
+        var arr4=$('#arr4').val();
+        var arr5=$('#arr5').val();
+        var arr6=$('#arr6').val();
+        var cc0=$('#cc0').val();
+        var cc1=$('#cc1').val();
+        var cc2=$('#cc2').val();
+        var cc3=$('#cc3').val();
+        var cc4=$('#cc4').val();
+        var cc5=$('#cc5').val();
+        var cc6=$('#cc6').val();
+        var ss0=$('#ss0').val();
+        var ss1=$('#ss1').val();
+        var ss2=$('#ss2').val();
+        var ss3=$('#ss3').val();
+        var ss4=$('#ss4').val();
+        var ss5=$('#ss5').val();
+        var ss6=$('#ss6').val();
+        var ll0=$('#ll0').val(); 
+        var ll1=$('#ll1').val();
+        var ll2=$('#ll2').val();
+        var ll3=$('#ll3').val();
+        var ll4=$('#ll4').val();
+        var ll5=$('#ll5').val();
+        var ll6=$('#ll6').val();
+        var hh0=$('#hh0').val(); 
+        var hh1=$('#hh1').val();
+        var hh2=$('#hh2').val();
+        var hh3=$('#hh3').val();
+        var hh4=$('#hh4').val();
+        var hh5=$('#hh5').val();
+        var hh6=$('#hh6').val();
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: '__PUBLIC__/Admin/lib/datatables/chart/build/dist'
+            }
+        });
+        
+        // 使用
+        require(
+            [ 
+                'echarts',
+                'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main')); 
+                                  
+  option = {
+     title : {
+        text: '网站数据管理',
+        subtext: '单位：人'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['新增用户','启动次数','时段累计','累计用户','活跃用户']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'新增用户',
+            type:'line',
+            stack: '总量',
+            data:[arr0, arr1, arr2, arr3, arr4, arr5, arr6]
+        },
+        {
+            name:'启动次数',
+            type:'line',
+            stack: '总量',
+            data:[cc0, cc1, cc2, cc3, cc4, cc5, cc6]
+        },
+        {
+            name:'时段累计',
+            type:'line',
+            stack: '总量',
+             data:[ss0, ss1, ss2, ss3, ss4, ss5, ss6]
+        },
+        {
+            name:'累计用户',
+            type:'line',
+            stack: '总量',
+            data:[ll0, ll1, ll2, ll3, ll4, ll5, ll6]
+        },
+        {
+            name:'活跃用户',
+            type:'line',
+            stack: '总量',
+             data:[hh0, hh1, hh2, hh3, hh4, hh5, hh6]
+        }
+    ]
+};
+                                      
+    
+                    
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+    </script>
+</body>

@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"1106584215","appkey":"Vsevi2qh44Va8jGC","callback":"/saibangzi","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test","scope":null}

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+    <style>
+        /*分页样式 后期分离出去*/
+        #pager {
+            margin: 20px;
+            float: right;
+        }
+        .pager .rows{
+            margin-left: 20px;
+            float: right;
+        }
+        .pager span {
+            background: #18b6c4;
+            color: #fff;
+            border: 1px solid #2a97c4;
+            padding: 3px 10px;
+            margin-left: 8px;
+        }
+        .pager a {
+            border: 1px solid #666666;
+            padding: 3px 10px;
+            margin-left: 8px;
+            text-decoration: none;
+            color: #333;
+            outline: none;
+        }
+        /*分页样式结束*/
+    </style>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+
+    <title>管理员</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户 <span class="c-gray en">&gt;</span> 图片审核 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <div class="Hui-article">
+        <article class="cl pd-20">
+            <div class="text-c" style="padding: 20px;">
+                <form class="Huiform" method="post" action="{:U('Imgcheck/check_list')}" target="_self">
+                    <!--<input type="text" placeholder="输入姓名" value="" id="serchWord" class="input-text" style="width:200px">-->
+                    <span class="select-box" style="width:150px">
+                        <select class="select" name="selstatus" size="1">
+                            <option value="999" selected>全部</option>
+                            <option value="0" >待审核</option>
+                        </select>
+			        </span>
+                    <button type="submit" class="btn btn-success" id="" name=""  style="margin:0 0 2px 20px;"> 查询</button>
+                </form>
+
+            </div>
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover">
+                    <thead>
+                    <tr class="text-c">
+                        <!--<th width="25"><input type="checkbox" name="" value=""></th>-->
+                        <th width="80">ID</th>
+                        <th width="100">姓名</th>
+                        <th width="80">新头像</th>
+                        <th width="300">新背景</th>
+                        <th width="80">头像状态</th>
+                        <th width="80">背景状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="info" item="v">
+                        <tr class="text-c">
+                           <!-- <td><input type="checkbox" value="" name=""></td>-->
+                            <td>{$v.class_id}</td>
+                            <td>
+                               <!-- <u style="cursor:pointer" class="text-primary" onClick="article_look('查看','{:U('News/show_news',array('id'=>$v['news_id']))}','800')" title="查看">-->
+                                    {$v.name}
+                                <!--</u>-->
+                            </td>
+                            <if condition="$v.new_face eq null ">
+                                    <td onClick="alert('没有新头像')">无更新</td>
+                                <else/>
+                                    <if condition="$v.new_face_allow eq 0">
+                                        <td onClick="check_face('审核','{:U('Imgcheck/do_check',array('id'=>$v['class_id'],'type'=>'new_face'))}','500','800')"><img src="{$img}{$v.new_face}" width="100px" height="100px"></td>
+                                        <else />
+                                        <td onClick="alert('已处理')"><img src="{$img}{$v.new_face}" width="100px" height="100px"></td>
+                                    </if>
+                            </if>
+                            <if condition="$v.new_bg_img eq null ">
+                                     <td onClick="alert('没有新背景')">无更新</td>
+                                <else/>
+                                    <if condition="$v.new_bg_img_allow eq 0">
+                                        <td onClick="check_face('审核','{:U('Imgcheck/do_check',array('id'=>$v['class_id'],'type'=>'new_bg_img'))}','500','800')"><img src="{$img}{$v.new_bg_img}" width="150px" height="80px"></td>
+                                        <else />
+                                        <td onClick="alert('已处理')"><img src="{$img}{$v.new_bg_img}" width="150px" height="80px"></td>
+                                    </if>
+                            </if>
+                            <if condition="$v.new_face_allow eq 1">
+                                <td class="td-status"><span class="label label-success radius">已通过</span></td>
+                                <elseif condition="$v.new_face_allow eq 2"/>
+                                <td class="td-status"><span class="label label-danger radius">已拒绝</span></td>
+                                <else />
+                                <if condition="$v.new_face eq null">
+                                        <td class="td-status"><span>没有更新</span></td>
+                                    <else/>
+                                        <td class="td-status"><span class="label label-warning  radius">待审核</span></td>
+                                </if>
+                            </if>
+                            <if condition="$v.new_bg_img_allow eq 1">
+                                    <td class="td-status"><span class="label label-success radius">已通过</span></td>
+                                <elseif condition="$v.new_bg_img_allow eq 2"/>
+                                    <td class="td-status"><span class="label label-danger radius">已拒绝</span></td>
+                                <else />
+                                <if condition="$v.new_bg_img eq null">
+                                    <td class="td-status"><span>没有更新</span></td>
+                                    <else/>
+                                    <td class="td-status"><span class="label label-warning radius">待审核</span></td>
+                                </if>
+
+                            </if>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            <!--分页-->
+            <ul id="pager" class="paginList pager">{$page}</ul>
+        </article>
+    </div>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+    function search_title(){
+        window.location.href="{:U('News/news_list')}/serchWord/"+$("#serchWord").val();
+    }
+    /*编辑*/
+    function check_face(title,url,id,w,h){
+        layer_show(title,url,w,h);
+    }
+    function article_edit(title,url,id,w,h){
+        layer_show(title,url,w,h);
+    }
+
+    /*新闻-删除*/
+    function article_del(obj,id,url){
+        layer.confirm('确认要删除吗？',function(index){
+            $.ajax({
+                type: 'POST',
+                url:url,
+                data: {id: id },
+                dataType: 'json',
+                success: function(data){
+                    layer.msg('已删除!',{icon:1,time:1000});
+                    location.reload();
+                },
+                error:function(data) {
+                    console.log(data.msg);
+                },
+            });
+        });
+    }
+</script>
+</body>
+</html>

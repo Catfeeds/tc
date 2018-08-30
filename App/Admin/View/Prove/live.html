@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审核管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+
+
+    <!--_footer 作为公共模版分离出去-->
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+    
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+
+    <!--自己引入的js-->
+    <script type="text/javascript" src="__PUBLIC__/Admin/xd_js/jquery-1.7.1.js"></script>
+
+    <script type="text/javascript">
+
+        $(function(){
+            <!--鼠标经过放大-->
+            enlarge();
+
+            <!--实现全选全不选-->
+            checkedAllOrNot();
+                        
+        });
+
+        <!--实现全选全不选-->
+        function checkedAllOrNot(){
+            $("#checkedAll").click(function(event){
+                $("input[name='items']").prop("checked",this.checked);
+            });
+        }
+
+
+
+
+        <!--鼠标经过放大-->
+       /* function enlarge(){
+            var size = 5.0 * $('.text-c td img').width();
+            var hsize = 8.0 * $('.text-c td img').height();
+            $('.text-c td img').mouseover(function (event) {
+                var $target = $(event.target);
+                if ($target.is('img')) {
+                    $("<img id='tip' src='" + $target.attr("src") + "'>").css({
+                        "height": hsize,
+                        "width": size,
+                    }).appendTo($("#imgtest"));
+                    将当前所有匹配元素追加到指定元素内部的末尾位置。
+                }
+            }).mouseout(function () {
+                $("#tip").remove();*//*移除元素
+            })
+        }
+*/
+        /*统一处理  返回的 json数据*/
+        function processData(jsObj, okFunc, errFunc) {
+            //根据 返回 的数据 状态 执行相应的操作
+            switch (jsObj.statu) {
+                case "ok":
+                    if (okFunc) okFunc();
+                    break;
+                case "err":
+                    if (errFunc) errFunc();
+                    msgBox.showMsgErr(jsObj.msg);
+                    break;
+                case "np":
+                    msgBox.showMsgErr(jsObj.msg, function() {
+                        window.location = jsObj.nextUrl;
+                    });
+                    break;
+            }
+        }
+
+        //设置通过
+        
+        //设置拒绝
+        
+      
+        
+        
+        /*查看*/
+        function auditm_view(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+        /*拒绝*/
+        function auditm_refuse(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+        /*通过*/
+          function auditm_pass(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+        //查看图片
+        function auditm_tupian1(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+         function auditm_tupian2(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+         function auditm_tupian3(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+         function auditm_tupian4(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+         function auditm_tupian5(title,url,id,w,h){
+            layer_show(title,url,w,h);
+        }
+    </script>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户管理 <span class="c-gray en">&gt;</span>机构审核管理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <div class="text-c" style="padding: 20px;">
+        <form class="Huiform" method="post" action="__MODULE__/prove/live">
+			<span class="select-box" style="width:150px">
+				<select class="select" name="selstatus" size="1">
+                    <option value="3" selected>全部</option>
+                    <option value="0">待审核</option>
+                    <option value="1">通过</option>
+                    <option value="2">拒绝</option>
+                </select>
+			</span>
+            <input name="txtphone" type="text" placeholder="请输入老师姓名"  class="input-text" style="width:150px">
+
+            <input type="submit" value="查询" class="btn btn-success" style="margin:0px 0px 2px 20px;">
+
+           
+        </form>
+    </div>
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-sort">
+            <thead>
+            <tr class="text-c">
+                <th>序号</th>
+                <th>老师姓名</th>
+                <th>视频数量</th>
+                <th>是否缴纳保证金</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="info" item="v">
+            <tr class="text-c">
+                <td>{$v.class_id}</td>
+                <td>{$v.uname}</td>
+                <td>{$v.video_num}</td>
+                <td class="td-status">
+                    <eq name="v.bstatus" value="1">
+                        <span class="label label-success radius" >已交</span>
+                    </eq>
+                    <eq name="v.bstatus" value="2">
+                        <span class="label label-success radius" >已退</span>
+                    </eq>
+                     <eq name="v.bstatus" value="0">
+                        <span class="label label-success radius" >未交</span>
+                    </eq>
+                </td>  
+                <td class="td-status">
+                    <eq name="v.lstatus" value="0">
+                        <span class="label label-success radius" >正在审核</span>
+                    </eq>
+                    <eq name="v.lstatus" value="1">
+                        <span class="label label-success radius" >通过</span>
+                    </eq>
+                    <eq name="v.lstatus" value="2">
+                        <span class="label label-success radius" >拒绝</span>
+                    </eq>
+
+                </td>
+                <td class="td-manage">
+
+
+                    <eq name="v.lstatus" value="2">
+                        <button class="Hui-iconfont" style="padding: 3px 5px;">已拒绝</button>
+                    </eq>
+
+
+					<eq name="v.lstatus" value="1">
+                       <!--  <a title="编辑" href="javascript:;" onclick="auditm_view('拒绝','{:U('Prove/showrefuse',array('pid'=>$v['prove_id']))}','4','','200')" style="text-decoration:none;overflow-y: hidden;"> -->
+                            <button class="Hui-iconfont" style="padding: 3px 5px;">已通过</button>
+                        </a>
+                    </eq>
+
+
+                    <eq name="v.lstatus" value="0">
+                        <a title="编辑" href="javascript:;" onclick="auditm_refuse('查看','{:U('Prove/showrefuse',array('id'=>$v['livebapply_id']))}','4','','200')" style="text-decoration:none;overflow-y: hidden;">
+                            <button class="Hui-iconfont" style="padding: 3px 5px;">拒绝</button>
+                        </a>
+                         <a title="编辑" href="javascript:;" onclick="pass(this,'{$v.livebapply_id}')" style="text-decoration:none;overflow-y: hidden;">
+                            <button class="Hui-iconfont" style="padding: 3px 5px;">通过</button>
+                        </a>
+                    </eq>
+
+                </td>
+            </tr>
+            </foreach>
+            </tbody>
+        </table>
+    </div>
+    <div id="imgtest" style="text-align: center"></div><!--放大图片的位置-->
+</div>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>  
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+/*表格初始化*/
+$(function(){
+    $('.table-sort').dataTable({
+        //"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+        "bStateSave": true,//状态保存
+        "ordering":false,
+        "aLengthMenu": [10],//设置每页显示数据条数
+        "aoColumnDefs": [
+          //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+          //{"orderable":false,"aTargets":[2,3,4,5,6,7]}// 制定列不参与排序
+        ],
+        "searching": true,//搜索功能
+        "bLengthChange":true,//关闭选择每页显示条数功能
+    });
+
+});
+function pass(obj,id){
+    
+       $.post("{:U('pass')}",{'pid':id},function(data){
+            if(data!=1 && data!=2){
+            var firstIndex = data.indexOf("{");
+            var lastIndex = data.lastIndexOf("}");
+            var jsonStr = data.substring(firstIndex,lastIndex+1);
+            var jsonObj = eval("("+jsonStr+")");
+            if(jsonObj.ret=='SUCCESS'){
+                    alert('已通过,已通知用户');
+                    window.location.href="{:U('prove/live')}";
+                }else{
+                    alert('通过失败');
+                    window.location.href="{:U('prove/live')}";
+                }
+        }else{
+            if(data==1){
+              alert('已通过');
+              window.location.href="{:U('prove/live')}";    
+            }
+            if(data==2){
+                alert('通过失败');
+                window.location.href="{:U('prove/live')}";
+            }
+             
+        }
+       });
+    
+}
+
+</script>
+</body>
+</html>

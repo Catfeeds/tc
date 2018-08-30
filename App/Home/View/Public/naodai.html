@@ -1,0 +1,117 @@
+<div class="container-fluid bg-white">
+			<div class="container bg-white">
+				<div class="nav-1">
+				<a href="{:U('index/index')}">
+					<img alt="" src="__PUBLIC__/Home/saibangzi/img/logo.jpg" onerror="notLoad(this)" />
+					<h1 style="margin: 0;width: 150px;height: 80px;text-align: center;line-height: 80px;display: none;">网约课</h1>
+				</a>
+				</div>
+				<div class="nav-2">
+					<a href="/">首页</a>
+					<a id="xiazai" rel="nofollow">下载APP</a>
+					<div class="download-app">
+						<img style="width: 200px;" alt="" src="__PUBLIC__/Home/saibangzi/img/erweima.png" />
+						<div class="symbol_1"></div>
+						<div class="symbol_11"></div>
+					</div>
+				    <a href="{:U('courses/index')}">全部课程</a>
+				<if  condition="$dian['uid'] neq null">
+						<a href="{:U('courses/teacher')}" rel="nofollow">我要讲课</a>
+						<else/>
+						<a href="{:U('Prove/index')}" rel="nofollow">我要讲课</a>
+						</if>
+				</div>
+				<div class="nav-4">
+					<if condition="$_SESSION['H_user_id'] neq null">
+					<div id="touxiang1">
+						<div class="head_portrait-box"><img alt="" class="head_portrait" src="__ROOT__{$user.image}" /></div>
+						<div class="touxiang-list" id="t-l-1">
+							<ul>
+								<li><a href="{:U('Me/index')}" target="_blank" rel="nofollow">个人资料</a></li>
+								<li><a href="{:U('Me/course')}" target="_blank" rel="nofollow">我的课程</a></li>
+								<li><a href="{:U('Me/subscribe')}" target="_blank" rel="nofollow">我的收藏</a></li>
+								<li class="bor-bot"><a href="{:U('Me/jifen')}" target="_blank" rel="nofollow">积分商城</a></li>
+								<if  condition="$dian['uid'] neq null">
+								<li class="bor-bot"><a href="{:U('courses/teacher')}" target="_blank">我的店铺</a></li>
+								</if>
+							<li><a id="outlogin" target="_blank">退出 </a></li>
+							</ul>
+							<div class="symbol_3"></div>
+							<div class="symbol_33"></div>
+						</div>
+					</div>
+					<else/>
+					<div id="touxiang">
+						<a class="p-tx" href="{:U('Login/index')}" rel="nofollow">登录</a>
+						<a class="p-tx" href="{:U('Login/regist')}" rel="nofollow">注册</a>
+					</div>
+					</if>
+					<input type="hidden" value="{$_SESSION['H_user_id']}" id="session">
+					<if condition="$_SESSION['H_user_id'] neq null">
+					<div style="position: relative;" id="xx">
+						<i class="iconfont">&#xe61b;</i>
+						<if condition="$list[0]['uid'] neq null OR $ns['status'] eq 0">
+						<div style="height: 8px;width:8px;background: red;border-radius: 100%;position: absolute;top: 20px;right: 125px;"></div></if>
+							<div class="touxiang-list" id="t-l-2" style="right: 80px;">
+								<ul>
+									<li class="bor-bot"><a href="{:U('News/index')}" target="_blank" rel="nofollow">个人消息</a></li>
+									<li><a href="{:U('News/news1')}" target="_blank" rel="nofollow">系统消息</a></li>
+									<li><a href="{:U('News/news2')}" target="_blank" rel="nofollow">交易消息</a></li>
+									<li><a href="{:U('News/news3')}" target="_blank" rel="nofollow">活动</a></li>
+								</ul>
+								<div class="symbol_3"></div>
+								<div class="symbol_33"></div>
+							</div>
+					</div>
+					</if>
+					<div id="icon-history">
+						<i class="iconfont">&#xe70c;</i>
+						<div class="icon-history" style="height: 510px;">
+							<if condition="$_SESSION['H_user_id'] neq null">
+							<div class="icon-his-top">
+								<p>近期学习记录</p>
+							</div>
+							<div class="icon-his-bottom">
+							<if condition="($pin neq null) OR ($bo neq null)">
+								<ul>
+								<foreach name="pin" item="v">
+								<a href="{:U('courses/course?id='.$v['video_id'])}">
+									<li>
+										<img alt="" src="{$v.img}" />
+										<div>
+											<p>{$v.name}</p>
+										</div>
+									</li>
+								</a>	
+								</foreach>	
+								
+								</ul>
+								<else/>
+								<ul>
+									<li>
+										<div>
+											<p>没有历史记录</p>
+										</div>
+									</li>
+								</ul>
+								</if>
+								<div class="symbol_2"></div>
+								<div class="symbol_22"></div>
+							</div>
+							<else />
+							<div class="icon-his-bottom">你还没有登录！！</div>
+							</if>
+						</div>
+					</div>
+				</div>
+				<div class="nav-3">
+				<form action="{:U('index/search')}" method="post">
+					<input  id="search" name="sousuo" class="search-inp" type="text" placeholder="请输入关键字" />
+					<button type="submit" class="glyphicon glyphicon-search search but-icon">
+					</button>
+					</form>
+					<span class="remen_1">前端入门</span>
+					<span class="remen_2">java入门</span>
+				</div>
+			</div>
+		</div>

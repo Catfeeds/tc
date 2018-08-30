@@ -1,0 +1,17 @@
+.result-text {
+			    height: 1rem;
+			    margin-right: 2.5rem;
+			    margin-left: .0rem;
+			}
+			.search-result-list li {			  
+			    padding: .3rem .1rem .0rem .1rem;			  
+			}
+			.search-result-list .enter{
+				top: .4rem;
+				border: none;
+				color: #F39232;
+				font-size: .3rem;
+			}
+			.result-text .t-cate{
+				margin-top: .2rem;
+			}

@@ -1,0 +1,379 @@
+/*头部开始*/
+.iconfont{
+	color: red;
+	font-size: 18px;
+}
+.cert-c{
+	background-color:#FFFFFF ;
+	border: 1px solid #EEEEEE;
+	border-radius: 6px;
+	padding: 30px  !important;
+	float: left;
+}
+.i-aut{
+	 font-size: 16px;
+	 color:#333333; 
+	 padding-bottom: 10px;
+	 float: left;
+	 border-bottom: 1px solid #EEEEEE;
+	 
+}
+
+.line-bor{
+	height:20px;
+	line-height: 20px;
+	width: 4px;
+	border-radius: 2px;
+	background-color: #47C88A;
+	float: left;
+}
+
+.teacher-int{
+	font-size: 16px;
+	margin-left: 20px;
+	color: #666; 
+	float: left;
+	display: block;
+}
+.per-d{
+	width: 100%;
+    float: left;
+	padding: 20px 0px;
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 20px;
+}
+
+/*头部结束*/
+
+
+
+/*col-3开始*/
+
+.d-r{
+	border: 1px solid #EEEEEE;
+	border-radius: 6px;
+	padding: 0px;
+	text-align: center;
+	padding-left: 1px;
+	float: left;
+	width: 100%;
+}
+
+.d-r-p{
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+	padding: 0px;
+	background-color: #F5F5F5;
+}
+.d-r-p span{
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+}
+.d-r-c{
+	padding:20px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.d-r-1 p{
+	font-size: 16px;
+	padding: 14px 0px 0px 0px;
+	margin-bottom: 0px;
+}
+.d-r-2{
+	text-align: center;
+	width: 100%;
+	word-break: break-all;
+	 word-wrap:break-word;
+	 border-bottom: 1px solid #EEEEEE;
+}
+.d-r-2 p{
+	font-size:14px;
+	color: #999;
+	padding: 10px 0px 20px 0px;
+	
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.d-r-b{
+	padding:  20px ;
+	background-color: #FFFFFF;
+	float: left;
+	width: 100%;
+  
+}
+.d-r-part{
+margin-top:20px;
+
+}
+.zll{
+	width: 90px !important;
+	float: left;
+	text-align: center;
+}
+.zll>p{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.zlr>p{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.zlr{
+	width: 90px !important;
+	float: right;
+	text-align: center;
+}
+
+.t-int{
+	text-align: left;
+	width: 108px;
+	margin: 0 auto;
+	
+}
+.t-int p{
+	font-size: 12px;
+	color: #999;
+}
+
+/*col-3结束*/
+.col-md-9 {
+    width: 73.7% !important;
+}
+.col-md-3 {
+  width: 23.5% !important;
+    margin-left: 2.8%;
+   
+}
+.rule{
+	float: left;
+	padding: 15px 0px 0px 0px;
+	width: 200px;
+	word-wrap:break-word;
+}
+.rule span{
+	font-size: 12px;
+	color:#999;
+	display: block;
+	padding-bottom: 8px;
+}
+.examples{
+	float: left;
+	padding:0px 14px 0px 40px;
+}
+.card{
+float: left;
+padding:0px 14px 0px 20px;
+}
+/*.fileinput-exists{
+	position: relative;
+	top: 35px
+}*/
+.h-card{
+	 width: 100%;	 
+	 float: left;
+	 margin: 0px;
+}
+	.fon-s {
+			height: 110px;
+			width: 180px;
+		}
+		
+		.thumbnail img {
+			width: 100%;
+			max-height: 110px;
+		}
+		
+		.glyphicon-plus {
+			font-size: 30px;
+			position: relative;
+			top: 30px;
+			display: inline-block;
+			font-family: 'Glyphicons Halflings';
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		
+		.in-t {
+			width: 180px;
+			height: auto;
+			max-height: 110px;
+		}
+		
+		.in-t img {
+			width: 100%;
+			height: auto;
+			max-height: 100px;
+			overflow: hidden;
+		}
+		
+		.int-tt {
+			max-width: 180px;
+			max-height: 110px;
+		}
+		
+		.btn-primary {
+		/*	background-color: #eee ;*/
+			border-color: #eee;
+		}
+		
+		.btn-primary:hover {
+			background-color: rgba(0, 0, 0, .2);
+			border-color: #DDDDDD;
+		}
+		
+		.fileinput {
+			display: inline-block;
+			margin-bottom: 0px;
+		}
+		
+		.fileinput .thumbnail {
+			margin: 0px;
+		}
+		
+		.thumbnail {
+			padding: 0px;
+		}
+		
+		.sign-up {
+			background: #47C88A;
+			color: white;
+			font-size: 14px;
+			line-height: 40px;
+			width: 200px;
+			text-align: center;
+			vertical-align: middle;
+			display: inline-block;
+			border-radius: 6px;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+		
+		.sign-up:hover {
+			background: #339966;
+		}
+		
+		.sign-up span {
+			font-size: 14px;
+			color: #FFFFFF;
+		}
+		
+		.protocol {
+			text-align: center;
+		}
+		
+		.protocol p {
+			color: #666666;
+		}
+		
+		.glyphicon-ok-sign {
+			color: #FF9933 !important;
+			margin-right: 10px;
+		}
+		
+		.form-group label {
+			font-weight: normal;
+		}
+	    .in-a{
+	 	position: relative;
+	 	top: 35px;
+	    }
+       .li-tit{
+       	padding-left: 0px;
+       	padding-right: 27px;
+       	margin-right:5px;
+       	font-weight: normal;
+       }
+       .desc{
+       	color: #999999;
+       	padding-top: 10px;
+       	display: block;
+       }
+      .desc-int{
+      	color: #999999;
+       	padding-top: 50px;
+       	display: block;
+      }
+      #exampleInputUpload{
+      	padding-bottom: 20px;
+        width: 100%;
+      }
+      	.daterangepicker dropdown-menu show-calendar opensright {
+				display: block;
+			}
+			
+			.table-condensed>thead>tr>th,
+			.table-condensed>tbody>tr>th,
+			.table-condensed>tfoot>tr>th,
+			.table-condensed>thead>tr>td,
+			.table-condensed>tbody>tr>td,
+			.table-condensed>tfoot>tr>td {
+				padding: 0px;
+			}
+			
+			.daterangepicker td {
+				font-size: 12px;
+				color: #666666;
+			}
+			
+			.daterangepicker .ranges .input-mini {
+				background-color: #eee;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				color: #555;
+				display: block;
+				font-size: 11px;
+				height: 34px;
+				line-height: 34px;
+				vertical-align: middle;
+				margin: 0 0 10px 0;
+				padding: 0 6px;
+				width: 84px;
+				float: left;
+			}
+			
+			.daterangepicker .ranges {
+				width: 100%;
+				text-align: center;
+			}
+			
+			.daterangepicker td.active,
+			.daterangepicker td.active:hover {
+				background-image: -ms-linear-gradient(top, #f39293, #ff9933);
+				background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f39293), to(#ff9933));
+				background-image: -webkit-linear-gradient(top, #f39293, #ff9933);
+				background-image: -o-linear-gradient(top, #f39293, #ff9933);
+				background-image: linear-gradient(top, #f39293, #ff9933);
+				background-repeat: repeat-x;
+				color: #fff;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+			}
+			
+			.btn-success {
+				color: #fff;
+				background-color: #F39232;
+				border-color: #F39232;
+			}
+			
+			.btn-success:hover {
+				color: #fff;
+				background-color: #FF9933;
+				border-color: #FF9933;
+			}
+			
+			[for=daterangepicker_start] {
+				float: left !important;
+				padding: 10px !important;
+			}
+			
+			[for=daterangepicker_end] {
+				float: left;
+				padding: 10px;
+				padding-left: 0px;
+			}

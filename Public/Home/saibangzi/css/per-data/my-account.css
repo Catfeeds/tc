@@ -1,0 +1,84 @@
+	.p-tb-20 {
+				padding-top: 20px;
+			}
+			
+			.form-group {
+				margin-bottom: 10px;
+			}
+			
+			.ps-1 {
+				margin-top: 5px;
+				float: left;
+			}
+			
+			.ps-2 {
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}
+			
+			.ps-3 {
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}
+			
+			.ps-1-1 {
+				margin-top: 5px;
+				float: left;
+			}
+			
+			.ps-2-2 {
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}
+			
+			.ps-3-3 {
+				margin-top: 5px;
+				float: left;
+				display: none;
+			}
+			
+			.r-p-w {
+				margin-top: 10px;
+				float: left;
+				color: #47C88A;
+				cursor: pointer;
+			}
+			
+			.btn-warning {
+				color: #fff;
+				background-color: #ccc;
+				border-color: #ccc;
+			}
+			
+			.btn-warning:hover {
+				color: #fff;
+				background-color: #ccc;
+				border-color: #ccc;
+			}
+			
+			.btn-success {
+				color: #fff;
+				background-color: #47C88A;
+				border-color: #47C88A;
+			}
+			
+			.btn-success:hover {
+				color: #fff;
+				background-color: #47C88A;
+				border-color: #47C88A;
+			}
+			
+			.btn {
+				line-height: 1.0;
+			}
+			
+			.change-1 {
+				display: none;
+			}
+			
+			.change-2 {
+				display: none;
+			}

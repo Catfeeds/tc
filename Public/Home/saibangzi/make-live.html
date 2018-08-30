@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>预约直播</title>
+
+
+
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="plugins/boostrap/css/bootstrap.min.css" />
+		
+		<link rel="stylesheet" href="plugins/boostrap-fileinput/css/bootstrap-fileinput.css">
+		<link rel="stylesheet" href="css/make-live.css" />
+	
+		<link rel="stylesheet" href="plugins/rili/daterangepicker-bs3.css" />
+		<link rel="stylesheet" href="plugins/rili/daterangepicker-1.3.7.css" />
+		
+		
+		
+		
+	</head>
+
+	<body class="bg-f8">
+		<!--导航开始-->
+				<div class="container-fluid bg-white">
+			<div class="container bg-white">
+				<div class="nav-1">
+					<img src="img/logo.png" />
+				</div>
+				<div class="nav-2">
+					<a>首页</a>
+					<a id="xiazai">下载APP</a>
+					<div class="download-app">
+						<img src="img/erweima.png" />
+						<div class="symbol_1"></div>
+						<div class="symbol_11"></div>
+					</div>
+					<a>全部课程</a>
+					<a>我要讲课</a>
+				</div>
+				<div class="nav-4">
+					<li id="touxiang">
+						<img src="img/touxiang-png.png" class="p-tx" />
+						<div class="touxiang-list">
+							<ul>
+								<li class="bor-bot"><a href="" target="_blank">一点一滴</a></li>
+								<li><a href="" target="_blank">个人资料</a></li>
+								<li><a href="" target="_blank">我的课程</a></li>
+								<li><a href="" target="_blank">我的订阅</a></li>
+								<li class="bor-bot"><a href="" target="_blank">预约直播</a></li>
+								<li><a href="" target="_blank">退出 </a></li>
+							</ul>
+							<div class="symbol_3"></div>
+							<div class="symbol_33"></div>
+						</div>
+					</li>
+
+					<li>
+						<i class="iconfont">&#xe70c;</i>
+					</li>
+
+					<li id="icon-history">
+						<i class="iconfont">&#xe61b;</i>
+						<!--消息-->
+						<div class="icon-history">
+							<div class="icon-his-top">
+								<p>近期学习记录</p>
+							</div>
+							<div class="icon-his-bottom">
+								<ul>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+								</ul>
+								<div class="symbol_2"></div>
+								<div class="symbol_22"></div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="nav-3">
+					<input class="search-inp" id="search" type="text" placeholder="" />
+					<i class="glyphicon glyphicon-search search"></i>
+					<span class="remen_1">前端入门</span>
+					<span class="remen_2">java入门</span>
+					<div class="history-search">
+						<ul>
+							<li><a href="" target="_blank">C语言</a></li>
+							<li><a href="" target="_blank">数学</a></li>
+							<li><a href="" target="_blank">数据结构</a></li>
+							<li><a href="" target="_blank">日语</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航结束-->
+
+		<div class="container">			
+			<div class="margin_t40">
+				<!--左边开始	-->
+				<div class="col-md-9 cert-c">
+					<p class="i-aut" style="width:100%;">预约直播</p>
+					<div class="clear"></div>
+
+					<form class="form-horizontal">
+						<div class="form-group margin_t10">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>直播标题：</label>
+							<div class="col-sm-3">
+								<input class="form-control" name="user" message="请输入正确的账号格式" p="/^[\w]{8,18}$/">
+							</div>
+							<div class="col-sm-5">
+								<small class="desc">请输入以数字字母下划线组成的8-18位账号</small>
+							</div>
+
+						</div>
+						<div class="fileinput fileinput-new" data-provides="fileinput" id="exampleInputUpload">
+							<label class="col-sm-2 control-label li-tit"><i class="iconfont">&#xe62a;</i>直播标题：</label>
+							<div class="float_l">
+								<span class="btn btn-primary btn-file fon-s">
+				                <span class="fileinput-new glyphicon glyphicon-plus "></span>
+								<span class="fileinput-exists in-a">换一张</span>
+								<input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png" />
+								</span>
+							</div>
+
+							<span class="examples"><i class="iconfont">&#xe62a;</i>示例</span>
+							<div class="float_l">
+								<div class="fileinput-new thumbnail in-t">
+									<img id='picImg' src="img/id_img_front.png"/>
+								</div>
+								<div class="fileinput-preview fileinput-exists thumbnail int-tt"></div>
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>直播分类：</label>
+							<div class="col-sm-3">
+								<select class="form-control">
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>							  
+								</select>
+							</div>
+							<div class="col-sm-3">
+								<select class="form-control">
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>							  
+								 </select>
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>课程介绍：</label>
+							<div class="col-sm-6">
+								<textarea class="form-control" rows="5" name="wenben"></textarea>
+							</div>
+							<div class="col-sm-4">
+								<small class="desc-int">请输入大于50字小于200字的课程介绍</small>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>时间设置：</label>
+							<div class="col-sm-6">
+								
+								
+								
+									<div class="controls">
+										<div id="reportrange" class="pull-left dateRange" style="width:350px">
+											<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+											<span id="searchDateRange"></span>
+											<b class="caret"></b>
+										</div>
+									</div>
+				
+				
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							
+
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>价格设置：</label>
+							<div class="col-sm-3">
+								<input class="form-control">
+							</div>
+						</div>
+					</form>
+
+					<div class="protocol">
+						<span class="sign-up">预约直播</span>
+					</div>
+
+				</div>
+				<!--左边结束	-->
+				<!--右边开始	-->
+				<div class="col-md-3 float_r padding0">
+
+					<div class="d-r-p">
+						<span>他们也在腮帮子</span>
+					</div>
+					<div class="d-r-b">
+						<div>
+							<div class="zll">
+								<img src="img/912706554757659664.png" />
+								<p>赵丽丽</p>
+								<div class="t-int">
+									<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+								</div>
+							</div>
+							<div class="zlr">
+								<img src="img/912706554757659664.png" />
+								<p>赵丽丽</p>
+								<div class="t-int">
+									<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="d-r-part">
+							<div class="zll">
+								<img src="img/912706554757659664.png" />
+								<p>赵丽丽</p>
+								<div class="t-int">
+									<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+								</div>
+							</div>
+							<div class="zlr">
+								<img src="img/912706554757659664.png" />
+								<p>赵丽丽</p>
+								<div class="t-int">
+									<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--右边结束	-->
+		</div>
+
+		</div>
+
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+		<div class=" bg-white margin_t50">
+			<div class="container footer">
+				<div class="footer-top">
+					<span>联系我们</span>
+					<span>|</span>
+					<span>意见反馈</span>
+					<span>|</span>
+					<span>常见问题</span>
+					<span>|</span>
+					<span>服务协议</span>
+					<span>|</span>
+					<span>关于我们</span>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2017 imooc.com  京ICP备 13046642号-2</span>
+				</div>
+			</div>
+		</div>
+		<!--页脚结束-->
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="plugins/boostrap/js/bootstrap.min.js"></script>
+		<script src="plugins/bootstrap-fileinput/js/bootstrap-fileinput.js"></script>
+		<script src="js/make-live.js"></script>
+	
+		<script src="plugins/rili/moment.min.js"></script>
+		<script src="plugins/rili/daterangepicker-1.3.7.js"></script>
+		<script type="text/javascript">
+		
+		$(document).ready(function (){
+					//时间插件
+					$('#reportrange span').html(moment().subtract('hours', 1).format('YYYY-MM-DD HH:mm:ss') + ' - ' + moment().format('YYYY-MM-DD HH:mm:ss'));
+		
+					$('#reportrange').daterangepicker(
+							{
+								// startDate: moment().startOf('day'),
+								//endDate: moment(),
+								//minDate: '01/01/2012',	//最小时间
+								maxDate : moment(), //最大时间 
+								dateLimit : {
+									days : 30
+								}, //起止时间的最大间隔
+								showDropdowns : true,
+								showWeekNumbers : false, //是否显示第几周
+								timePicker : true, //是否显示小时和分钟
+								timePickerIncrement : 60, //时间的增量，单位为分钟
+								timePicker12Hour : false, //是否使用12小时制来显示时间
+								ranges : {
+									//'最近1小时': [moment().subtract('hours',1), moment()],
+									'今日': [moment().startOf('day'), moment()],
+				                    '昨日': [moment().subtract('days', 1).startOf('day'), moment().subtract('days', 1).endOf('day')],
+				                    '最近7日': [moment().subtract('days', 6), moment()],
+				                    '最近30日': [moment().subtract('days', 29), moment()]
+								},
+								opens : 'right', //日期选择框的弹出位置
+								buttonClasses : [ 'btn btn-default' ],
+								applyClass : 'btn-small btn-primary blue',
+								cancelClass : 'btn-small',
+								format : 'YYYY-MM-DD HH:mm:ss', //控件中from和to 显示的日期格式
+								separator : ' to ',
+								locale : {
+									applyLabel : '确定',
+									cancelLabel : '取消',
+									fromLabel : '起始时间',
+									toLabel : '结束时间',
+									customRangeLabel : '自定义',
+									daysOfWeek : [ '日', '一', '二', '三', '四', '五', '六' ],
+									monthNames : [ '一月', '二月', '三月', '四月', '五月', '六月',
+											'七月', '八月', '九月', '十月', '十一月', '十二月' ],
+									firstDay : 1
+								}
+							}, function(start, end, label) {//格式化日期显示框
+				                
+			                 	$('#reportrange span').html(start.format('YYYY-MM-DD HH:mm:ss') + ' - ' + end.format('YYYY-MM-DD HH:mm:ss'));
+			               });
+
+			//设置日期菜单被选项  --开始--
+
+		      	  var dateOption ;
+		      	  if("${riqi}"=='day') {
+						dateOption = "今日";
+		          }else if("${riqi}"=='yday') {
+						dateOption = "昨日";
+		          }else if("${riqi}"=='week'){
+						dateOption ="最近7日";
+		          }else if("${riqi}"=='month'){
+						dateOption ="最近30日";
+		          }else if("${riqi}"=='year'){
+						dateOption ="最近一年";
+		          }else{
+						dateOption = "自定义";
+		          }
+		      	   $(".daterangepicker").find("li").each(function (){
+						if($(this).hasClass("active")){
+							$(this).removeClass("active");
+						}
+						if(dateOption==$(this).html()){
+							$(this).addClass("active");
+						}
+		          });
+			      	   //设置日期菜单被选项  --结束--
+		})
+
+	</script>
+	</body>
+
+</html>

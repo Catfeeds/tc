@@ -1,0 +1,223 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="Bookmark" href="/favicon.ico" >
+    <link rel="Shortcut Icon" href="/favicon.ico" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+    <!--[if IE 6]>
+    <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <!--/meta 作为公共模版分离出去-->
+
+    <link href="../lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+
+
+    <!--自己引入的js-->
+    <script type="text/javascript" src="__PUBLIC__/Admin/xd_js/jquery-1.7.1.js"></script>
+
+
+</head>
+<body>
+<div class="page-container">
+    <form action="{:U('Role/role_action')}" method="post" class="form form-horizontal">
+        <input type="hidden" value="{$role_id}" name="role_id">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>角色名称：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$auth_arr['role_name']}" placeholder=""  name="auth_name" datatype="*4-16" nullmsg="用户账户不能为空">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">备注：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$auth_arr['role_des']}" placeholder=""  name="auth_des">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">网站权限：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <dl class="permission-list">
+                    <foreach name="info" item="v">
+                        <if condition="$v.auth_pid eq 0">
+                            <dd>
+                                <dl class="cl permission-list2">
+                                    <dt>
+                                        <label class="">
+                                            <?php if(in_array($v['auth_id'],$auth)){ ?>
+                                                <input type="checkbox" value="{$v.auth_id}" name="auth[]" checked>
+                                                {$v.auth_name}
+                                            <?php }else{ ?>
+                                                <input type="checkbox" value="{$v.auth_id}" name="auth[]" >
+                                                {$v.auth_name}
+                                            <?php } ?>
+                                        </label>
+                                    </dt>
+                                    <dd>
+                                        <foreach name="info" item="v2">
+                                            <if condition="$v2['auth_pid'] eq $v['auth_id']">
+                                                <label class="">
+                                                    <?php if(in_array($v2['auth_id'],$auth)){ ?>
+                                                        <input type="checkbox" value="{$v2.auth_id}" name="auth[]" checked>
+                                                        {$v2.auth_name}
+                                                    <?php }else{ ?>
+                                                        <input type="checkbox" value="{$v2.auth_id}" name="auth[]">
+                                                        {$v2.auth_name}
+                                                    <?php } ?>
+                                                </label>
+                                            </if>
+
+                                        </foreach>
+
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </if>
+                    </foreach>
+                    <!--<dd>
+                        <dl class="cl permission-list2">
+                            <dt>
+                                <label class="">
+                                    <input type="checkbox" value="14" name="auth[]">
+                                    用户管理</label>
+                            </dt>
+                            <dd>
+                                <label class="">
+                                    <input type="checkbox" value="15" name="auth[]">
+                                    添加</label>
+                                <label class="">
+                                    <input type="checkbox" value="16" name="auth[]">
+                                    修改</label>
+                                <label class="">
+                                    <input type="checkbox" value="17" name="auth[]">
+                                    删除</label>
+                                <label class="">
+                                    <input type="checkbox" value="18" name="auth[]">
+                                    查看</label>
+                                <label class="">
+                                    <input type="checkbox" value="19" name="auth[]">
+                                    审核</label>
+                            </dd>
+                        </dl>
+                    </dd>-->
+                </dl>
+                <!--<dl class="permission-list">
+                    <dt>
+                        <label>
+                            <input type="checkbox" value="13" name="auth[]">
+                            用户中心</label>
+                    </dt>
+                    <dd>
+                        <dl class="cl permission-list2">
+                            <dt>
+                                <label class="">
+                                    <input type="checkbox" value="14" name="auth[]">
+                                    用户管理</label>
+                            </dt>
+                            <dd>
+                                <label class="">
+                                    <input type="checkbox" value="15" name="auth[]">
+                                    添加</label>
+                                <label class="">
+                                    <input type="checkbox" value="16" name="auth[]">
+                                    修改</label>
+                                <label class="">
+                                    <input type="checkbox" value="17" name="auth[]">
+                                    删除</label>
+                                <label class="">
+                                    <input type="checkbox" value="18" name="auth[]">
+                                    查看</label>
+                                <label class="">
+                                    <input type="checkbox" value="19" name="auth[]">
+                                    审核</label>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>-->
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-6 col-sm-3 col-xs-offset-7 col-sm-offset-8">
+                <button  class="btn btn-secondary radius" type="submit">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/Admin/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $(".permission-list dt input:checkbox").click(function(){
+            $(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+        });
+        $(".permission-list2 dd input:checkbox").click(function(){
+            var l =$(this).parent().parent().find("input:checked").length;
+            var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+            if($(this).prop("checked")){
+                $(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+                $(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+            }
+            else{
+                if(l==0){
+                    $(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+                }
+                if(l2==0){
+                    $(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+                }
+            }
+        });
+
+        $("#form-admin-role-add").validate({
+            rules:{
+                roleName:{
+                    required:true,
+                },
+            },
+            onkeyup:false,
+            focusCleanup:true,
+            success:"valid",
+            submitHandler:function(form){
+                $(form).ajaxSubmit();
+                var index = parent.layer.getFrameIndex(window.name);
+                parent.layer.close(index);
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

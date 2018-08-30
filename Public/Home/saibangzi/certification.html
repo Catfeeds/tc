@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>认证</title>
+
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugins/boostrap-fileinput/css/bootstrap-fileinput.css">
+		<link rel="stylesheet" href="css/certification.css" />
+	</head>
+
+	<body class="bg-f8">
+		<!--导航开始-->
+		<div class="container-fluid bg-white">
+			<div class="container bg-white">
+				<div class="nav-1">
+					<img src="img/logo.png" />
+				</div>
+				<div class="nav-2">
+					<a>首页</a>
+					<a id="xiazai">下载APP</a>
+					<div class="download-app">
+						<img src="img/erweima.png" />
+						<div class="symbol_1"></div>
+						<div class="symbol_11"></div>
+					</div>
+					<a>全部课程</a>
+					<a>我要讲课</a>
+				</div>
+				<div class="nav-4">
+					<li id="touxiang">
+						<img src="img/touxiang-png.png" class="p-tx" />
+						<div class="touxiang-list">
+							<ul>
+								<li class="bor-bot"><a href="" target="_blank">一点一滴</a></li>
+								<li><a href="" target="_blank">个人资料</a></li>
+								<li><a href="" target="_blank">我的课程</a></li>
+								<li><a href="" target="_blank">我的订阅</a></li>
+								<li class="bor-bot"><a href="" target="_blank">预约直播</a></li>
+								<li><a href="" target="_blank">退出 </a></li>
+							</ul>
+							<div class="symbol_3"></div>
+							<div class="symbol_33"></div>
+						</div>
+					</li>
+
+					<li>
+						<i class="iconfont">&#xe70c;</i>
+					</li>
+
+					<li id="icon-history">
+						<i class="iconfont">&#xe61b;</i>
+						<!--消息-->
+						<div class="icon-history">
+							<div class="icon-his-top">
+								<p>近期学习记录</p>
+							</div>
+							<div class="icon-his-bottom">
+								<ul>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/fenlei.png" />
+										<div>
+											<p>【名师直播】产品经理如何用好数据这把双刃剑</p>
+										</div>
+									</li>
+								</ul>
+								<div class="symbol_2"></div>
+								<div class="symbol_22"></div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="nav-3">
+					<input class="search-inp" id="search" type="text" placeholder="" />
+					<i class="glyphicon glyphicon-search search"></i>
+					<span class="remen_1">前端入门</span>
+					<span class="remen_2">java入门</span>
+					<div class="history-search">
+						<ul>
+							<li><a href="" target="_blank">C语言</a></li>
+							<li><a href="" target="_blank">数学</a></li>
+							<li><a href="" target="_blank">数据结构</a></li>
+							<li><a href="" target="_blank">日语</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航结束-->
+
+		<div class="container">
+			<div class="margin_t40">
+				<div class="col-md-9 cert-c">
+					<p class="i-aut">个人身份认证</p>
+					<div class="cert-1">
+						<p class="width100">温馨提示:</p>
+						<p>1.您的证件信息腮帮子将为您保密，只用于身份认证，不会挪作他用。</p>
+						<p>2.带有*的项目是必填项目。</p>
+						<p>3.照片大小不要超过300KB。</p>
+					</div>
+
+					<div class="per-d">
+						<div class="line-bor"></div>
+						<span class="teacher-int">个人资料</span>
+					</div>
+
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>姓名：</label>
+							<div class="col-sm-5">
+								<input class="form-control" name="name" message="请输入小于10位的英文或汉字" p="/^([a-zA-Z0-9\u4e00-\u9fa5\·]{1,10})$/">
+							</div>
+							<div class="col-sm-5">
+								<small class="desc">请输入小于10位的英文或汉字</small>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>身份证号：</label>
+							<div class="col-sm-5">
+								<input class="form-control" name="id" message="请输入正确身份证号" p="/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/">
+							</div>
+							<div class="col-sm-5">
+								<small class="desc">请输入正确的身份证号</small>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>手机号：</label>
+							<div class="col-sm-5">
+								<input class="form-control" name="tel" message="请输入11位手机号" p="/^1[34578]\d{9}$/">
+							</div>
+							<div class="col-sm-5">
+									<small class="desc">请输入正确的手机号码</small>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>毕业院校：</label>
+							<div class="col-sm-5">
+								<input class="form-control" name="school" message="请输入毕业院校" p="/^([a-zA-Z0-9\u4e00-\u9fa5\·]{1,10})$/">
+							</div>
+							<div class="col-sm-5">
+								<small class="desc">请输入以数字字母下划线组成的8-18位账号</small>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>学历：</label>
+							<div class="col-sm-3">
+								<select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>							  
+						  </select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><i class="iconfont">&#xe62a;</i>直播分类：</label>
+							<div class="col-sm-3">
+								<select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>							  
+						  </select>
+							</div>
+							<div class="col-sm-3">
+								<select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>							  
+						  </select>
+							</div>
+						</div>
+					</form>
+
+					<div class="per-d">
+						<div class="line-bor"></div>
+						<span class="teacher-int">个人资料</span>
+					</div>
+					<div class="fileinput fileinput-new" data-provides="fileinput" id="exampleInputUpload" style="padding: 20px;width: 100%;">
+						<span class="card"><i class="iconfont">&#xe62a;</i>身份证正面</span>
+						<div class="float_l">
+							<span class="btn btn-primary btn-file fon-s">
+		                    <span class="fileinput-new glyphicon glyphicon-plus "></span>
+							<span class="fileinput-exists in-a">换一张</span>
+							<input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png" />
+							</span>
+						</div>
+
+						<span class="examples"><i class="iconfont">&#xe62a;</i>示例</span>
+						<div class="float_l">
+							<div class="fileinput-new thumbnail in-t">
+							<img id='picImg' src="img/id_img_front.png" alt="" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail int-tt"></div>
+						</div>
+
+						<div class="rule">
+							<span>1.证件必须与手机证件一致</span>
+							<span>2.证件文字清晰可见</span>
+							<span>3.提交的照片显示300kb，支持JPG/PNG/BMP格式</span>
+						</div>
+					</div>
+					<hr class="h-card" />
+					<div class="fileinput fileinput-new" data-provides="fileinput" id="exampleInputUpload">
+						<span class="card"><i class="iconfont">&#xe62a;</i>身份证背面</span>
+						<div class="float_l">
+							<span class="btn btn-primary btn-file fon-s">
+		                    <span class="fileinput-new glyphicon glyphicon-plus "></span>
+							<span class="fileinput-exists in-a">换一张</span>
+							<input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png" />
+							</span>
+						</div>
+
+						<span class="examples"><i class="iconfont">&#xe62a;</i>示例</span>
+						<div class="float_l">
+							<div class="fileinput-new thumbnail in-t">
+							<img id='picImg' src="img/id_img_front.png" alt="" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail int-tt"></div>
+						</div>
+
+						<div class="rule">
+							<span>1.证件必须与手机证件一致</span>
+							<span>2.证件文字清晰可见</span>
+							<span>3.提交的照片显示300kb，支持JPG/PNG/BMP格式</span>
+						</div>
+					</div>
+					<hr class="h-card" />
+					<div class="fileinput fileinput-new" data-provides="fileinput" id="exampleInputUpload">
+						<span class="card"><i class="iconfont">&#xe62a;</i>手持身份证</span>
+						<div class="float_l">
+							<span class="btn btn-primary btn-file fon-s">
+		                    <span class="fileinput-new glyphicon glyphicon-plus "></span>
+							<span class="fileinput-exists in-a">换一张</span>
+							<input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png" />
+							</span>
+						</div>
+
+						<span class="examples"><i class="iconfont">&#xe62a;</i>示例</span>
+						<div class="float_l">
+							<div class="fileinput-new thumbnail in-t">
+							<img id='picImg' src="img/id_img_front.png" alt="" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail int-tt"></div>
+						</div>
+
+						<div class="rule">
+							<span>1.证件必须与手机证件一致</span>
+							<span>2.证件文字清晰可见</span>
+							<span>3.提交的照片显示300kb，支持JPG/PNG/BMP格式</span>
+						</div>
+					</div>
+					<hr class="h-card" />
+					<div class="fileinput fileinput-new" data-provides="fileinput" id="exampleInputUpload">
+						<span class="card"><i class="iconfont">&#xe62a;</i>资质证明　</span>
+						<div class="float_l">
+							<span class="btn btn-primary btn-file fon-s">
+		                    <span class="fileinput-new glyphicon glyphicon-plus "></span>
+							<span class="fileinput-exists in-a">换一张</span>
+							<input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png" />
+							</span>
+						</div>
+
+						<span class="examples"><i class="iconfont">&#xe62a;</i>示例</span>
+						<div class="float_l">
+							<div class="fileinput-new thumbnail in-t">
+							<img id='picImg' src="img/id_img_front.png" alt="" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail int-tt"></div>
+						</div>
+
+						<div class="rule">
+							<span>1.证件必须与手机证件一致</span>
+							<span>2.证件文字清晰可见</span>
+							<span>3.提交的照片显示300kb，支持JPG/PNG/BMP格式</span>
+						</div>
+					</div>
+
+					<div class="protocol">
+						<span class="sign-up">提交资料</span>
+						<p><i class="glyphicon glyphicon-ok-sign"></i>已阅读《 腮帮子直播平台协议 》</p>
+					</div>
+				</div>
+				<!--左边结束	-->
+				<!--右边开始	-->
+				<div class="col-md-3 float_r padding0">
+					<div class="d-r">
+						<div class="d-r-p">
+							<span>为什么加入我们</span>
+						</div>
+						<div class="d-r-c">
+							<div class="d-r-1">
+								<img src="img/id_icon_join_1.png" />
+								<p>讲师大牛</p>
+								<div class="d-r-2">
+									<p>你的课程会在平台上及我们的合作渠道中展示和推广，你就是未来的行业大牛</p>
+								</div>
+							</div>
+							<div class="d-r-1 margin_t10">
+								<img src="img/id_icon_join_1.png" />
+								<p>领域擅长</p>
+								<div class="d-r-2">
+									<p>如果你对本课程领域擅长、按照自己或者本求课的描述分享你的知识给互联网用户，就来应聘吧</p>
+								</div>
+							</div>
+							<div class="d-r-1 margin_t10">
+								<img src="img/id_icon_join_1.png" />
+								<p>平台奖励</p>
+								<div class="d-r-2 border-no">
+									<p>你平台还会为你支付课程津贴，让你得到既实际又实惠的回报</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="d-r margin_t40 ">
+						<div class="d-r-p">
+							<span>他们也在腮帮子</span>
+						</div>
+						<div class="d-r-b">
+							<div>
+								<div class="zll">
+									<img src="img/912706554757659664.png" />
+									<p>赵丽丽</p>
+									<div class="t-int">
+										<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+									</div>
+								</div>
+								<div class="zlr">
+									<img src="img/912706554757659664.png" />
+									<p>赵丽丽</p>
+									<div class="t-int">
+										<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="d-r-part">
+								<div class="zll">
+									<img src="img/912706554757659664.png" />
+									<p>赵丽丽</p>
+									<div class="t-int">
+										<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+									</div>
+								</div>
+								<div class="zlr">
+									<img src="img/912706554757659664.png" />
+									<p>赵丽丽</p>
+									<div class="t-int">
+										<p>超人气美女漫画家，将陪伴您捕捉生活中的创作灵感，教你如何观察生活细节，在手绘中享受生活乐趣，解析不同手绘对象的结构特征，分解提炼最便捷的学习方法，让你轻松get核心技能。</p>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--右边结束	-->
+			</div>
+		</div>
+
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+		<div class=" bg-white margin_t50">
+			<div class="container footer">
+				<div class="footer-top">
+					<span>联系我们</span>
+					<span>|</span>
+					<span>意见反馈</span>
+					<span>|</span>
+					<span>常见问题</span>
+					<span>|</span>
+					<span>服务协议</span>
+					<span>|</span>
+					<span>关于我们</span>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2017 imooc.com  京ICP备 13046642号-2</span>
+				</div>
+			</div>
+		</div>
+		<!--页脚结束-->
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/certification.js"></script>
+		<script src="plugins/boostrap-fileinput/js/bootstrap-fileinput.js"></script>
+	</body>
+
+</html>

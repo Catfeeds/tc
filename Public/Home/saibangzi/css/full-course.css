@@ -1,0 +1,111 @@
+.fc-t{
+	width: 100%;
+	background-color: #FFF !important;
+	float: left;
+	border-radius: 6px;
+	margin-top: 40PX;
+}
+.fc-t-t{
+	padding: 20px 40px;
+	float: left;
+	width: 100%;
+}
+.fc-t-o{
+	float: left;
+	width: 100%;
+}
+.fc-t-o span{
+	float: left;
+	color:#333;
+	font-size: 16PX;
+	padding: 6px 0;
+}
+.fc-t-o ul{
+	float: left;
+	margin-bottom: 0px;
+}
+.fc-t-o ul li{
+	float: left;
+	display: inline;
+	padding: 6px 20px;
+}
+.fc-t-o ul li a{
+	float: left;
+	color:#666;
+	font-size: 14PX;
+}
+.fc-c{
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 100%;
+	margin-left: 40px;
+}
+.fc-c span{
+	float: left;
+	color:#333;
+	font-size: 16PX;
+	padding-top: 12px;
+}
+.fc-c ul{
+	float: left;
+	margin-bottom: 0px;
+}
+.fc-c ul li{
+	float: left;
+	display: inline;
+	padding: 6px 20px;
+}
+.fc-c ul li a{
+	float: left;
+	color:#666;
+	font-size: 14PX;
+	padding: 6px 20px;
+}
+.full-c{
+	width: 100%;
+	float: left;
+	border-radius: 6px
+}
+.edit{
+	float: left;
+}
+.thumbnail {
+     width:auto !important; 
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+    padding: 0px !important;
+    position:relative;
+}
+.pull-right{
+	float: right!important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+.video-label-item{
+    border-bottom-right-radius:8px;
+}
+.label-color-0{
+	color:#fff !important;
+}
+.active{
+	color: #47C88A  !important;
+}
+.actives{
+	background-color: #47C88A;
+    border-radius: 16px;
+    color: #fff !important;
+    padding: 10px 15px ;
+    color: #fff !important;
+}
+
+.line{
+	width: 100%;
+	float: left;
+	padding:0px 40px !important;
+}
+.line hr{
+	width: 100%;
+}

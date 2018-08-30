@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/play-interface.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/star/css/style.css" />
+		<!-- If you'd like to support IE8 -->
+		<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+		<title>点播</title>
+		<style>
+		
+			.menu li a:hover {
+				color: red;
+			}
+			
+			.my-video-dimensions {
+				width: 100% !important;
+				height: 100% !important;
+			}
+			
+			.video-js .vjs-big-play-button {
+				position: absolute;
+				left: 50% !important;
+				top: 280px !important;
+			}
+			
+			.head-r span {
+				color: #fff;
+				margin-right: 30px;
+				cursor: pointer;
+			}
+			
+			.modal-header {
+				padding: 5px;
+				padding-left: 20px;
+				background-color: #ddd;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+			}
+			
+			.modal-content {
+				width: 500px;
+			}
+			.stati{
+				font-size: 18px !important;
+				color: #333;
+				text-decoration: none;
+			}
+			.close{
+				padding-right: 10px;
+				opacity:.8;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="head-l">
+				<a  onclick="javascript:history.back(-1);" class="title1"><i class="iconfont">&#xe6af;</i></a>
+				<span class="title2">{$list['name']}</span>
+				<span class="title3">{$list['introduce']}</span>
+				<!-- <span class="title4">分享：<i class="iconfont">&#xe6b3;</i> <i class="iconfont">&#xe6b4;</i> <i class="iconfont">&#xe6a7;</i></span> -->
+			</div>
+			<div class="head-r" id="xianshi">
+				
+				<if condition="$comment_status eq 0"> 
+				<span data-toggle="modal" data-target="#myModal">评价</span>
+				<elseif condition="$comment_status eq 2" />
+				<span></span>
+				<else />
+				<span>已评价</span>
+				</if>
+				<!-- <img src="__PUBLIC__/Home/saibangzi/img/fenlei-s.png" /> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="c-left">
+					<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+			    <source src="{$list['url']}" type='video/mp4'>
+			    <!--<source src="MY_VIDEO.webm" type='video/webm'>-->
+			    <p class="vjs-no-js">
+			      To view this video please enable JavaScript, and consider upgrading to a web browser that
+			      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+			    </p>
+			  </video>
+				
+			</div>
+			<input type="hidden" value="{$list['url']}" id="player">
+			<input type="hidden" value="{$list['video_id']}" id="videoid">
+			<!-- <div id="c-right">
+
+				<div class="operator">
+
+					<i class="iconfont">&#xe890;</i>
+					<p>目录</p>
+				</div>
+				<div class="menu">
+
+					<h3>视频目录</h3>
+					<ul>
+						<foreach name="lists" item="v">
+						<a href="{:U('player?id='.$v['video_id'])}">
+						<li><i class="iconfont">&#xe6b2;</i>{$v.name}</li>
+						</a>
+						</foreach>
+					</ul>
+				</div>
+
+			</div> -->
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close" aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">课程评价</h4>
+						</div>
+						<div class="modal-body">
+							<!--代码开始-->
+							<div class="xzw_starSys">
+								<a class="stati">课程您还满意吗?</a>
+								<div class="xzw_starBox">
+									<ul class="star stars" >
+										<li><a href="javascript:void(0)" title="1" class="one-star">1</a></li>
+										<li><a href="javascript:void(0)" title="2" class="two-stars">2</a></li>
+										<li><a href="javascript:void(0)" title="3" class="three-stars">3</a></li>
+										<li><a href="javascript:void(0)" title="4" class="four-stars">4</a></li>
+										<li><a href="javascript:void(0)" title="5" class="five-stars">5</a></li>
+									</ul>
+									<div class="current-rating showb" id="xingxing"></div>
+								</div>
+								<!--评价文字-->
+								<div class="description"></div>
+							
+								<textarea class="form-control" onKeyUp="javascript:checkWord(this);" onMouseDown="javascript:checkWord(this);" name="content" rows="5" maxlength="50" id="neirong"></textarea>
+								<button type="button" class="btn  btn-success" data-dismiss="modal" style="margin-top: 50px;" id="tijiao">　提交　</button>
+							</div>
+							<!--代码结束-->
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			<!-- Modal -->
+		</div>
+		<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+		<script src="//qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/boostrap/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/star/js/script.js"></script>
+
+		<script>
+			//		页面加载时适应宽和高
+			$(document).ready(function() {
+
+				var cht = ($(window).height() - $("#header").height()); //播放器部分的高				
+				$("#c-left").css('height', cht);
+				$("#c-right").css('height', cht);
+
+				$(".operator").click(function() {
+					if ($(".menu").is(":hidden")) {
+						$(".menu").show();
+					} else {
+						$(".menu").hide();
+					}
+
+				});
+
+			});
+
+			//浏览器窗口大小改变时适应宽和高
+			$(window).resize(function() {
+				var cht = ($(window).height() - $("#header").height()); //播放器部分的高				
+				$("#c-left").css('height', cht);
+				$("#c-right").css('height', cht);
+
+				var chw = ($(window).width()); //播放器部分的宽		
+				$("#trump_main_unique_1").css('width', chw);
+				$("#trump_main_unique_1").css('height', cht);
+			});
+
+			//  object层级问题
+			$("object param:eq(2)").attr("value", "transparent");
+		</script>
+
+<script>
+	$('#tijiao').click(function(){
+		var neirong=$('#neirong').val();
+		var xingxing=$('#xingxing').css('width');
+		var videoid=$('#videoid').val();
+		if(xingxing=='0px'){
+			alert('请选择星级');
+			return false;
+		}else if(xingxing=='30px'){
+			var num='1';
+		}else if(xingxing=='60px'){
+			var num='2'
+		}else if(xingxing=='90px'){
+			var num='3';
+		}else if(xingxing=='120px'){
+			var num='4'
+		}else if(xingxing=='150px'){
+			var num='5';
+		}
+		if(neirong==''){
+			alert('请添加评论内容');
+			return false;
+		}
+		$.ajax({
+			url:"{:U('Me/comment')}",
+			type:'post',
+			data:{'neirong':neirong,'num':num,'videoid':videoid},
+			success:function(data){
+				if(data=='1'){
+					alert('评论成功');
+					$('#xianshi').html('<span>已评价</span>');
+				}else if(data=='3'){
+					alert('您已经评论过了');
+				}else{
+					alert('网络异常');
+				}
+			},
+			error:function(){
+				alert('网络异常');
+			}
+		});
+	});
+</script>
+	</body>
+
+</html>

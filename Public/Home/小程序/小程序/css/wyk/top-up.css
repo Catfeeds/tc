@@ -1,0 +1,74 @@
+        .classify .item {
+				width: 3.27rem;
+			}
+			
+			.index-title {
+				border-bottom: none;
+			}
+			
+			.classify {
+				padding: .0rem .3rem;
+			}
+			
+			.f-l {
+				float: left;
+			}
+			
+			.f-r {
+				float: right;
+			}
+			
+			.ac {
+				display: block;
+				width: 48%;
+				border: 1px solid #999;
+				padding: 0.25rem;
+				text-align: center;
+				border-radius: 6px;
+				color: #999;
+			}
+			
+			.a-c-t {
+				margin-bottom: 0.3rem;
+				float: left;
+				width: 100%;
+			}
+			
+			.index-title a {
+				font-size: .28rem !important;
+				width: 100%;
+				line-height: 0.5rem;
+				color: #000;
+			}
+			
+			.remain {
+				color: #F39232;
+				font-size: 0.3rem;
+			}
+			
+			input[type=search] {
+				font-size: 12px !important;
+				margin-bottom: 0rem !important;
+			}
+			
+			.mui-btn-danger, .mui-btn-negative, .mui-btn-red{
+				color: #fff;
+			    border: 1px solid #47C88A;
+			    background-color: #47C88A;
+			    width: 100%;
+			    height: 1.0rem;
+						}
+            .instr{
+            	margin-top: 0.1rem;
+            	color: #999;
+            	float: left;
+            	font-size: 0.24rem;
+            }
+            .t-w{
+            	padding-top: 0.1rem;
+            	padding-bottom: 0.1rem;
+            	float: left;
+            }
+            .t-w span{
+            	color:#F39232;
+            }

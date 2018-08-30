@@ -1,0 +1,57 @@
+/*tab切换部分开始*/
+.tab{ width:100%;}
+.tab-hd {  overflow:hidden; zoom:1;border-bottom:1px solid #EEEEEE;margin-bottom: 0px;height: 60px;background: #EEEEEE;}
+.tab-hd li{ float:left; width:70px;text-align:center; cursor:pointer;margin-left: 40px;}
+.tab-hd li.active{ border-bottom: 2px solid #47C88A;color: #47C88A;}
+/*.tab-bd li{padding:0px; border-top:1px solid #DDDDDD; font-size:24px;float: left;}*/
+.tab-bd li.thisclass{ display:list-item;}
+.tab-hd li span {font-size: 16px;}
+.tab-hd li{padding: 17px 0px 18px;}
+.tab-hd li span:hover{color: #47C88A;font-size: 16px;}
+.tab-bd{
+	float: left;
+	margin-bottom: 0px;
+	width: 100%;
+	background-color: #FFFFFF
+}
+.news-list{	
+	width: 100%;
+	float: left;
+}
+.news-list li{
+	padding: 20px 40px;
+/*	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+*/	width: 100%;
+	float: left;
+}
+
+.news-list li div{
+	float:left;
+	width: 700px;
+	word-wrap: break-word;
+	line-height: 1.42857143
+}
+.news-list li div span{
+	font-size: 14px;
+	color: #666666;
+}
+.data-r{
+	float: right;
+	font-size: 14px;
+	color: #666666;
+	
+}
+.pagination-self{
+	text-align: center;
+	margin:0px;
+    background-color: #F8F8F8;
+    width: 100%;
+    float: left;
+    text-align: center;"
+}
+.pagination-self ul{
+	margin:50px 0px;
+}
+/*tab切换部分结束*/

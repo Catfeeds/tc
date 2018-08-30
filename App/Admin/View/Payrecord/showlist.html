@@ -1,0 +1,143 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+	<style>
+		/*分页样式 后期分离出去*/
+		#pager {
+			margin: 20px;
+			float: right;
+		}
+		.pager .rows{
+			margin-left: 20px;
+			float: right;
+		}
+		.pager span {
+			background: #18b6c4;
+			color: #fff;
+			border: 1px solid #2a97c4;
+			padding: 3px 10px;
+			margin-left: 8px;
+		}
+		.pager a {
+			border: 1px solid #666666;
+			padding: 3px 10px;
+			margin-left: 8px;
+			text-decoration: none;
+			color: #333;
+			outline: none;
+		}
+		/*分页样式结束*/
+	</style>
+<title>充值管理</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 资金管理 <span class="c-gray en">&gt;</span>微信充值管理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="text-c" style="padding: 20px;">
+		<form class="Huiform" method="post" action="__MODULE__/payrecord/showlist" target="_self">
+			
+			<input type="text" placeholder="请输入用户昵称" name="serchWord" value="" class="input-text" style="width:200px">
+			<button type="submit" class="btn btn-success" id="" style="margin:0px 0px 2px 20px;"> 查询</button>		
+			<button type="button" class="btn btn-success Hui-iconfont" id="" name="" onclick="Balance_adjustment('余额调整','{:U('Payrecord/add')}','4','','300')" style="margin:0px 0px 2px 20px;text-decoration:none;overflow-y: hidden;  display: none;"> 余额调整</button>
+			
+		</form>
+		
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover">
+			<thead>
+				<tr class="text-c">
+					<th>排序</th>
+					<th>用户昵称</th>
+					<th>手机号</th>
+					<th>充值金额(单位:元)</th>
+					<th>账户余额（充值后）</th>
+					<th>支付状态</th>
+					<th>类型</th>
+					<th>充值时间</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="info" item="v" key="k">
+				<tr class="text-c">
+					<td>{$v.wxpay_id}</td>
+					<td>{$v.name}</td>
+					<td>{$v.phone}</td>
+					<td>{$v.money}</td>
+					<td>{$v.umoney}</td>
+					<td>
+						<eq name="v.status" value="0">
+                        	<span class="label label-success radius" >待支付</span>
+                    	</eq>
+                    	<eq name="v.status" value="1">
+                        	<span class="label label-success radius" >已支付</span>
+                    	</eq>
+                    	<eq name="v.status" value="3">
+                        	<span class="label label-success radius" >支付失败</span>
+                    	</eq>
+					</td>
+					<td><span class="label label-success radius" >微信充值</span></td>
+					<td>{$v.time}</td>							    
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+	</div>
+	<!--分页-->
+	<ul id="pager" class="paginList pager">{$page}</ul>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>  
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.table-sort').dataTable({
+		//"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+		"bStateSave": true,//状态保存
+		"ordering":false,
+		"aLengthMenu": [10],//设置每页显示数据条数
+		"aoColumnDefs": [
+		  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		 // {"orderable":false,"aTargets":[2,3,4,5,6,7]}// 制定列不参与排序
+		],
+		"searching": false,//搜索功能
+		"bLengthChange":false,//关闭选择每页显示条数功能
+	});
+
+});
+
+
+/*余额调整*/
+function Balance_adjustment(title,url,id,w,h){
+	layer_show(title,url,w,h);
+}
+</script>
+</body>
+</html>

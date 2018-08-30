@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/Details-classroom.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<title>课程详情老师</title>
+		<style>
+			#money{
+				    font-size: 18px;
+				    color: #ff9933;
+				    margin-left: 40px;
+				    margin-bottom: 10px;
+				    float: left;
+				    width: 100%;
+}
+
+			.fenye{
+	
+	text-align:center;
+	margin:0 auto;
+
+}
+.fenye div{
+	margin:0 auto;
+}
+.fenye span{
+	color: #fff;
+	background-color: #00d3d4;
+	border:1px solid #00d3d4;
+	padding:5px 10px;
+}
+.fenye a{
+	color:#bbb;
+	padding:5px 10px;
+}
+.fenye a:hover{
+	color: #fff;
+	background-color: #00d3d4;
+}
+.modal-header {
+				padding: 5px;
+				padding-left: 20px;
+				background-color: #ddd;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+			}
+			
+			.modal-content {
+				width: 500px;
+			}
+			
+			.stati {
+				font-size: 18px !important;
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.close {
+				padding-right: 10px;
+				opacity: .8;
+				color: #fff;
+			}
+			
+			.modal-body {
+				padding: 40px;
+			}
+			
+			.text-t {
+				margin: 20px 0px;
+			}
+			
+			.modal-title {
+				font-size: 14px;
+				color: #fff;
+			}
+			
+			.btn-success {
+				color: #fff;
+				background-color: #5cb85c;
+				border-color: #4cae4c;
+			}
+			
+			.btn-success:hover {
+				color: #fff;
+				background-color: #5cb85c;
+				border-color: #4cae4c;
+			}
+			
+			.sub {
+				width: 100%;
+				text-align: center;
+				margin-top: 20px;
+			}
+			
+			.report {
+				font-size: 14px;
+				color: #666;
+				margin-left: 20px;
+			}
+			
+			.report:hover {
+				color: #f39232
+			}
+			
+			.tf-img {
+				height: 150px;
+				width: 100%;
+				background-image: url(img/tf.png);
+				overflow: hidden;
+				background-position: center 0;
+				background-color: transparent;
+			}
+			.jiathis_style{
+	position: absolute;
+    top: -30px;
+    width: 300px;
+    left: -140px;
+    display: none;
+    position: absolute;
+    top: -45px;
+	}
+	.comment-item {
+				width: 100%;
+				display: block;
+				float: left;
+				padding: 20px 0px;
+				border-bottom: 1px solid #eee;
+			}
+			
+			.item-left {
+				width: 20%;
+				float: left;
+				text-align: center;
+			}
+			
+			.item-left img {
+				height: 60px;
+				width: 60px;
+				border-radius: 50%;
+				margin-bottom: 5px;
+			}
+			
+			.item-left p {
+				font-size: 14px;
+			}
+			
+			.item-center {
+				width: 60%;
+				float: left;
+				text-align: left;
+			}
+			
+			.item-center p {
+				font-size: 14px;
+				line-height: 22px;
+				margin-top: 10px;
+			}
+			
+			.item-right {
+				text-align: center;
+			}
+			
+			.item-right p {
+				font-size: 12px;
+				color: #999;
+			}
+			.cz{
+				color: #ff9933;font-size: 30px;
+			}
+			.f3{
+				color: #ff9933;
+			}
+			.gm{
+				font-size: 12px;margin-left: 30px;color: #666;
+			}
+		</style>
+	</head>
+
+	<body>
+	
+		<!--导航开始-->
+			<include file="Public/naodai" />
+		
+		<!--导航结束-->
+			
+		<if condition="$class.tiaofu neq null">
+		<div class="p-top">
+			<img src="{$class.tiaofu}" />
+		</div>
+		<else/>
+		<div class="p-top">
+			<img src="__PUBLIC__/Home/saibangzi/img/tiaofu.jpg" />
+		</div>
+		</if>
+		<div class="container">
+			<!--顶部开始	-->
+			<div class="row">
+				<div class="col-md-12 margin_t30">
+					<div class="cour">
+						<div class="course-left">
+						<if condition="$class.img neq null">
+							<div id="preview">
+								<img id="imghead" border="0" src="__ROOT__{$class.img}" />
+							</div>
+							<else/>
+							<div id="preview">
+								<img id="imghead" border="0" src="__PUBLIC__/Home/saibangzi/img/fengmian.jpg" />
+							</div>
+						</if>
+						</div>
+						<div class="course-right">
+							<div class="course-r-1">
+								<div class="course-r-2">
+									<a title="" class="fon_siz24">{$class.name}<a  class="report" href="{:U('courses/xiuclass?id='.$class['class_id'])}">修改课堂信息</a></a></a>
+								</div>
+								<div class="course-r-3">
+									<img src="__ROOT__{$class.image}" />
+									<span>{$class.uname}</span>
+									<p><img src="__PUBLIC__/Home/saibangzi/img/xinf.png" style="height: 20px;width: 20px;margin-top: 3px;margin-right: 5px;"><span>X{$star}(星级评分)</span></p>
+									
+								</div>
+								<div class="course-r-4">
+									<p><span>老师简介:</span>{$class.profile}</p>
+								</div
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--顶部结束	-->
+
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table">
+						<tr>
+							<th>直播次数</th>
+							<th>累计收益（元）</th>
+							<th>交易次数（次）</th>
+						</tr>
+						<tr>
+							<td>
+								<i class="iconfont">&#xe66a;</i>
+								<p>{$lists}次</p>
+							</td>
+							<td>
+								<i class="iconfont">&#xe670;</i>
+								<p>{$class.profit}</p>
+							</td>
+							<td>
+								<i class="iconfont">&#xe672;</i>
+								<p>{$pay}次</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="intr-section">
+				<div class="col-md-12">
+					<div class="line-bor"></div>
+					<span class="teacher-int">主讲课堂</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 border-r6 bor">
+					<div class="tab">
+						<ul class="tab-hd">
+							<li class="active"><a href="{:U('courses/teacher?id='.$id)}" style="color:#47C88A"><span>直播列表</span></a></li>
+							<li><a href="{:U('courses/teachervideo?id='.$id)}"  style="color:#666"><span>视频列表</span></a></li>
+							<li><a href="{:U('courses/teachercomment?id='.$id)}"  style="color:#666"><span>老师评论</span></a></li>
+						</ul>
+
+						<ul class="tab-bd">
+
+							<li class="thisclass">
+								<div class="make-but">
+									<a class="make-t-l" href="{:U('add')}">预约直播</a>
+								</div>
+								<foreach name="row" item="v">
+								<div class="collect">
+								<a href="{:U('courses/course?pid='.$v['liveb_id'])}">
+									<div class="collect-l">
+										<img src="{$v.img}" width="220px" height="134px"/>
+									</div>
+									<div class="collect-r">
+										<p>{$v.name}</p>
+										<eq name="v.money" value="0"> 
+										<a>免费</a>			
+										<else/>
+										<a id="money">{$v.money}</a>
+										</eq>
+										<span class="open-time">开课时间：{$v.time|date='Y-m-d H:i',###}
+										</span>
+										<s></s>
+										</div>
+								     <if condition="($v.time elt $thattime) AND ($v.endtime gt $thistime) ">
+								     <div class="begin-live">
+									     <a href="{:U('Liveb/teacher?livebid='.$v['liveb_id'])}">
+									     <p>开始直播</p>
+									     </a> 
+								     </div>
+								     <else /> 
+								     <div class="living">
+									     <p>开始直播</p>   
+								     </div>
+								     </if>
+									</a>
+								</div>
+								</foreach>
+								<div class="row margin0">
+									<div class="pagination-self">
+										<ul>
+											<li id='one' class="fenye">
+												{$show1}
+											</li>
+										
+										</ul>
+									</div>
+								</div>
+							</li>
+						
+							<!-- <li style="display:none">
+								<div class="make-but">
+									<a class="make-t-l" href="{:U('addvideo')}">上传视频</a>
+								</div>
+							
+								<foreach name="res" item="x">
+								<div class="collect">
+								<a href="{:U('courses/course?id='.$x['video_id'])}">
+									<div class="collect-l">
+										<img src="__ROOT__{$x.img}" width="220px" height="134px"/>
+									</div>
+									<div class="collect-r">
+										<p>{$x.name}</p>
+										<eq name="x.money" value="0"> 
+										<a>免费</a>			
+										<else/>
+										<a id="money">{$x.money}</a>
+										</eq>
+										<span class="open-time">开课时间：{$x.time|date='Y-m-d',###}</span>
+										<s></s>
+							
+									</div>
+								     <div class="begin-live">
+									     <a href="{:U('Me/player?id='.$x['video_id'])}">
+									     <p>观看</p>
+									     </a> 
+								     </div>
+								</a>
+								</div>
+								</foreach>
+								<div class="row margin0">
+									<div class="pagination-self">
+										<ul>
+											<li id='one' class="fenye">
+												{$show2}
+											</li>
+										
+										</ul>
+									</div>
+								</div>	
+								
+							
+							</li>
+							<if condition="$star neq 0">
+							<li style="display:none">
+								<div class="comment-item">
+									
+									<div  style="height: 100px;width: 400px;padding: 20px;margin-right: 30px;padding-left: 100px;">
+									
+										<div style="float: left;">
+											<p style="color: #ff9933;">老师评分</p>
+										</div>
+										<div style="float: right;text-align: center;">
+											<eq name="star" value="1">
+											<p  style="font-size: 26px;line-height: 1px;color: #ff9933;">1.0</p>
+											<i class="iconfont cz">&#xe6d6;</i>
+											</eq>
+											<eq name="star" value="2">
+											<p  style="font-size: 26px;line-height: 1px;color: #ff9933;">2.0</p>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											</eq>
+											<eq name="star" value="3">
+											<p  style="font-size: 26px;line-height: 1px;color: #ff9933;">3.0</p>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											</eq>
+											<eq name="star" value="4">
+											<p  style="font-size: 26px;line-height: 1px;color: #ff9933;">4.0</p>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											</eq>
+											<eq name="star" value="5">
+											<p  style="font-size: 26px;line-height: 1px;color: #ff9933;">5.0</p>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											</eq>
+											<if condition="$star gt 5">
+											<p  style="font-size: 26px;line-height: 1px;color: #ff9933;">5.0</p>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											<i class="iconfont cz">&#xe6d6;</i>
+											</if>
+										</div>
+									</div>
+									</div>
+									</li>
+									<li style="display:none">
+									<foreach name="stars" item="v">
+									<div class="comment-item">
+									<div class="item-left">
+										<img src="/Uploads/touxiang/2.png" />
+										<p>{$v.name}</p>
+									</div>
+							
+									<div class="item-center">
+										<p>{$v.content}</p>
+									</div>
+							
+									<div class="item-right">
+										<div>
+											<eq name="v.star" value="1">
+											<i class="iconfont f3">&#xe6d6;</i>
+											</eq>
+											<eq name="v.star" value="2">
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											</eq>
+											<eq name="v.star" value="3">
+										
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											</eq>
+											<eq name="v.star" value="4">
+											
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											</eq>
+											<eq name="v.star" value="5">
+											
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											<i class="iconfont f3">&#xe6d6;</i>
+											</eq>
+											<p>{$v.time|date='Y-m-d',###}</p>
+										</div>
+									</div>
+							
+								</div>
+								</foreach>
+								<div class="fenye" style="">{$show}</div>
+							</li>
+							
+							<else/>
+							<li style="display:none">
+							<div  style="height: 100px;width: 370px;padding: 20px;margin-right: 30px;padding-left: 100px;">
+									
+											<p style="color:red;text-align: center;
+											font-size: 30px">该老师还没有评论</p>
+									
+							</div>	
+							</li>
+							</if>	 -->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+<input type="hidden" id="tongji" value="{$listcount}">
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+		<!--页脚开始-->
+			<include file="Public/jiaoyazi" />
+		
+		<!--页脚结束-->
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/boostrap/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/courses.js"></script>
+	</body>
+<script>
+	$('#outlogin').click(function(){
+		var a=$('#session').val();
+		$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+			if(data=='退出成功'){
+			alert('退出登录！');window.location.href="{:U('index/index')}";}
+		});
+	});
+
+
+$(document).ready(function(){
+	lunxun();
+});
+
+function lunxun(){
+	var count_start=$('#tongji').val();
+	$.ajax({
+		url:"{:U('Courses/teacherajax')}",
+		data:{'num':count_start},
+		type:'post',
+		success:function(data){
+			if(data=='1'){
+				setTimeout(lunxun(), 10000);
+			}else{
+				window.location.reload();
+			}
+		},
+		error:function(){
+
+		}
+	});
+}
+$('.fenye .next').html('下一页');
+$('.fenye .prev').html('上一页');					
+</script>
+</html>

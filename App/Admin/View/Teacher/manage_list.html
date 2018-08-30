@@ -1,0 +1,206 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/static/h-ui.admin/css/style.css" />
+	<style>
+		/*分页样式 后期分离出去*/
+		#pager {
+			margin: 20px;
+			float: right;
+		}
+		.pager .rows{
+			margin-left: 20px;
+			float: right;
+		}
+		.pager span {
+			background: #18b6c4;
+			color: #fff;
+			border: 1px solid #2a97c4;
+			padding: 3px 10px;
+			margin-left: 8px;
+		}
+		.pager a {
+			border: 1px solid #666666;
+			padding: 3px 10px;
+			margin-left: 8px;
+			text-decoration: none;
+			color: #333;
+			outline: none;
+		}
+		/*分页样式结束*/
+	</style>
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+
+<title>老师列表</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户管理 <span class="c-gray en">&gt;</span>老师管理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="text-c" style="padding: 20px;">
+		<form class="Huiform" method="post" action="" target="_self">
+			<input type="text" placeholder="输入手机号码查询" value="" id="serchWord" class="input-text" style="width:200px">
+			<button type="button" class="btn btn-success" id="" name="" onClick="search_phone();" style="margin:0 0 2px 20px;"> 查询</button>
+		</form>
+	</div>
+	
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-hover table-bg">
+			<thead>
+				<tr class="text-c">
+					<th width="50">id</th>
+					<th>姓名</th>
+					<th width="250">手机号码</th>
+					<th width="250">是否可以直播</th>
+					<th width="250">登录状态</th>
+					<th width="150">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="dataListArray" item="model">
+					<tr class="text-c">
+					<td>{$model.class_id}</td>
+					<td>{$model.uname}</td>
+					<td>{$model.phone}</td>
+					<td class="td-status">
+					     	<if condition="$model.grade eq 0 "> 
+					     		<span class="label label-danger radius">否</span>
+							<else />  
+					     		<span class="label label-success radius">是</span>
+							</if>
+				     </td>
+					<td class="td-status">
+					     	<if condition="$model.status eq 0 "> 
+					     		<span class="label label-success radius">正常</span>
+							<else />  
+					     		<span class="label label-danger radius">下线</span>
+							</if>
+				     	</td>
+				     <td class="td-manage">
+						 <a style="text-decoration:none" class="ml-5" onClick="teacher_datails('教师详情','{:U('Teacher/teacher_details',array('id'=>$model['class_id']))}','4','1200','800')" href="javascript:;" title="教师详情"><i class="Hui-iconfont">查看详情<!--&#xe6df;--></i></a>
+					 </td>
+				     </tr>
+					</foreach>
+			</tbody>
+		</table>
+	</div>
+	<!--分页-->
+	<ul id="pager" class="paginList pager">{$page}</ul>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.4/layer.js"></script>  
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+/*$(function(){
+	$('.table-sort').dataTable({
+		"aaSorting": [[ 0, "desc" ]],//默认第几个排序
+		"bStateSave": true,//状态保存
+		"ordering":false,
+		"aLengthMenu": [10],//设置每页显示数据条数
+		"aoColumnDefs": [
+		  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		  {"orderable":false,"aTargets":[2,3,4,5,6,7]}// 制定列不参与排序
+		],
+		"searching": true,//搜索功能
+		"bLengthChange":true,//关闭选择每页显示条数功能
+	});
+
+});*/
+function teacher_datails(title,url,id,w,h){
+    layer_show(title,url,w,h);
+}
+function search_phone(){
+    window.location.href="{:U('Teacher/manage_list')}/serchWord/"+$("#serchWord").val();
+}
+
+/*删除*/
+function member_del(obj,id){
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Notice/dataDel')}",
+			dataType: 'json',
+			success: function(data){
+				$(obj).parents("tr").remove();
+				layer.msg('已删除!',{icon:1,time:1000});
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+
+/*用户-下线*/
+function yincang(obj,id){
+	layer.confirm('确认下线用户吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Teacher/yincang')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonXiajia").hide()
+				$("#buttonShangjia").show()*/
+				//layer.msg('已下架!',{icon:1,time:1000});
+				window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+/*用户-上线*/
+function xianshi(obj,id){
+	layer.confirm('确认上线用户吗？',function(index){
+		$.ajax({
+			data:{id:id},
+			type: 'POST',
+			url: "{:U('Teacher/xianshi')}",
+			dataType: 'json',
+			success: function(data){
+				/*$("#buttonShangjia").hide()
+				$("#buttonXiajia").show()*/
+				//layer.msg('已上架!',{icon:1,time:1000});
+				window.location.href="javascript:location.replace(location.href);"			
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+//关键字搜索
+function picture_colume_add(){
+	window.location.href="{:U('Teacher/showList')}/serchWord/"+$("#serchWord").val()
+}
+</script>
+</body>
+</html>

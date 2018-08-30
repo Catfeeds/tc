@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/public.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/per-data/per-data.css" />
+		<title>我的积分</title>
+
+	</head>
+<style>
+.modal-dialog {
+    width: 350px;
+    top: 150px;
+}
+.fenye{
+	height:30px;
+	margin-top:20px;
+	margin-left:30%;
+
+}
+.fenye div{
+
+	margin-left:30%;
+	font-size:16px;
+}
+.fenye span{
+	color: #fff;
+	background-color: #00d3d4;
+	border:1px solid #00d3d4;
+	padding:5px 10px;
+}
+.fenye a{
+	color:#bbb;
+	padding:5px 10px;
+}
+.fenye a:hover{
+	color: #fff;
+	background-color: #00d3d4;
+}
+	.sign-out{
+		    background: #ccc;
+		    color: white;
+		    font-size: 18px;
+		    line-height: 36px;
+		    width: 100px;
+		    height: 36px;
+		    text-align: center;
+		    vertical-align: middle;
+		    display: inline-block;
+		    border-radius: 6px;
+		}
+		
+		.sign-out span{
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+
+.i-del{
+	background:#ff3333;
+}
+.i-del:hover{
+	background:#cc0000;
+}
+	
+		
+</style>
+	<body class="bg-f8">
+	<include file="Public/naodai" />
+
+		<!--公用开始-->
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="perd-t">
+					<div class="container position_rel">
+						<div class="row">
+							<div class="img-bg"></div>
+							<img src="__ROOT__{$user.image}" class="img-p" />
+							<div class="inform">
+								<div class="name">
+									<span>{$name} </span>
+									<i class="iconfont" id="sexicon">&#xe76e;</i>
+								<input type="hidden" value="{$user.sex}" id="sex">	
+								</div>
+								<div class="autograph" style="width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+									<span>{$user.profile}</span>
+								</div>
+								<if condition="$sign_status eq 1">
+								<a class="sign-out">
+									<span>已签到</span>
+								</a>
+								<else />
+								<a class="sign-up" onclick="sign()">
+									<span>签到</span>
+								</a>
+								</if>
+							</div>
+							<div class="integral">
+								<p>{$user.integral}</p>
+								<span>&nbsp;积分</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container margin_t50">
+
+			<div class="">
+				<div class="col-md-3-a bg-white">
+					<ul class="u-nav" id="user_menu">
+						<li class="item" id="user_menu_my" name="user_menu_my">
+							<ul class="sub">
+								<li>
+									<i class="iconfont ">&#xe638;</i>
+									<a href="{:U('Me/index')}">个人资料</a>
+									<i class="iconfont ">&#xe607;</i>
+								</li>
+								<li>
+									<i class="iconfont"> &#xe601;</i>
+									<a href="{:U('Me/subscribe')}">我的收藏</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+
+								<li>
+									<i class="iconfont"> &#xe615;</i>
+									<a href="{:U('Me/course')}">我的课程</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+								<li>
+									<i class="iconfont"> &#xe6e5;</i>
+									<a href="{:U('Me/account')}">我的账户</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+								<li>
+									<i class="iconfont current"> &#xe639;</i>
+									<a href="{:U('Me/order')}" class="current">订单管理</a>
+									<i class="iconfont current">&#xe607;</i>
+								</li>
+								<li style="border-bottom: none;">
+									<i class="iconfont"> &#xe788;</i>
+									<a href="{:U('Me/point')}">我的积分</a>
+									<i class="iconfont">&#xe607;</i>
+								</li>
+								<li style="border-bottom: none;">
+								<i class="iconfont">&#xe683;</i>
+								<a href="{:U('Me/address')}">收货地址</a>
+								<i class="iconfont">&#xe607;</i>
+							</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+				<!-- /.u-menu -->
+				<div class="col-md-9-a bg-white">
+					<div class="panel-t">
+						<div class="line-g"></div>
+						<p>我的订单</p>
+					</div>
+					<hr />
+
+					<div class="tab">
+						<ul class="tab-hd">
+							<li class="active color w-50"><a href="{:U('Me/order')}"><span>全部</span></a></li>
+							<li><a href="{:U('Me/dzf_order')}"><span>待支付</span></a></li>
+							<li><a href="{:U('Me/yzf_order')}"><span>已支付</span></a></li>
+							<li><a href="{:U('Me/yqx_order')}"><span>已取消</span></a></li>
+							<li><a href="{:U('Me/ysx_order')}"><span>已失效</span></a></li>
+						</ul>
+						<ul class="tab-bd">
+							<li class="thisclass">
+							<foreach name="qb_order" item="qb_val">
+								<div class="dzf">
+									<div class="Order">
+										<p class="Order-num">订单号：{$qb_val.num}</p>
+										<if condition="$qb_val['status'] eq 0">
+										<p class="to-paid">待支付</p>
+										<elseif condition="$qb_val['status'] eq 1" />
+										<p class="paided">已付款</p>
+										<elseif condition="$qb_val['status'] eq 2" />
+										<p class="paided">已取消</p>
+										<else />
+										<p class="paided">已失效</p>
+										</if>
+									</div>
+									<div class="con">
+										<span class="video-label-item label-color-0" style="float: left;">{:$qb_val['type']=='0'?'直播':'视频'}</span>
+										<div class="con-det">
+											<p class="con-tit">{$qb_val.name}</p>
+											<p class="con-tea">讲师：{$qb_val.teacher_name}</p>
+											<p class="con-tim">{$qb_val.strtime}</p>
+										</div>
+										<div class="r-pay">
+											<p>价格：<i class="iconfont">&#xe613;</i>{$qb_val.money}</p>
+										</div>
+										<div class="pay-d">
+										<if condition="$qb_val['status'] eq 0">
+											<a href="javascript:void(0);">
+											<span class="i-pay" data-toggle="modal" data-target="#exampleModal"  style="font-size:12px;" onclick="fuzhiorder({:$qb_val['order_id']});">立即支付</span></a>				
+											<a href="javascript:void(0);" onclick="cancelorder({$qb_val['order_id']})"><p>取消订单</p></a>
+										<else />
+											<a class="i-pay i-del" onclick="del({$qb_val['order_id']})">
+												<span>删除</span>
+											</a>
+										</if>
+										</div>
+									</div>
+								</div>
+							</foreach>
+							
+							</li>
+							
+						</ul>
+					</div>
+<input type="hidden" value="" id="dingdanid">
+				</div>
+<div class="col-md-9-a  fenye">{$qb_page}</div>
+			</div>
+		</div>
+		<!--个人资料-->
+		<!-- 返回顶部开始 -->
+		<div>
+			<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)">1<div class="moquu_wxinh"></div></a></div>
+			<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)">2<div class="moquu_wshareh"></div></a></div>
+			<a id="moquu_top" href="javascript:void(0)"></a>
+		</div>
+		<!-- 返回顶部结束 -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">请输入支付密码</h4>
+      </div>
+      <div class="modal-body">
+        
+          <div class="form-group">
+         <!--   <label for="recipient-name" class="control-label">Recipient:</label>-->
+            <input type="password" class="form-control" id="recipient-name" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" placeholder="请输入支付密码" maxlength="6" p="/^\d{6}$/" style="border:1px solid #ccc;box-shadow: 2px 2px 5px #999">
+
+            <span style="margin-left:70px;margin-top:10px;float:left">没有支付密码？<a href="{:U('Me/setpaypass')}">去设置</a></span>
+          </div>
+       
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" id="lijipay">立即支付</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<include file="Public/jiaoyazi" />
+
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/per-data/per-data.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/boostrap/js/bootstrap.min.js"></script>
+	<!-- 	<script>
+			// tab切换js		
+			$(function() {
+				function tabs(tabTit, on, tabCon) {
+					$(tabTit).children().click(function() {
+						$(this).addClass(on).siblings().removeClass(on);
+						var index = $(tabTit).children().index(this);
+						$(tabCon).children().eq(index).show().siblings().hide();
+					});
+				};
+				tabs(".tab-hd", "active", ".tab-bd");
+			});
+		</script> -->
+<script>
+function fuzhiorder(orderid){
+	$('#dingdanid').val(orderid);
+}
+$('#lijipay').click(function(){
+	var orderid=$('#dingdanid').val();
+	var paypass=$('#recipient-name').val();
+	if(paypass==''){
+		alert('请输入支付密码');
+		return false;
+	}else{
+		$.ajax({
+			url:"{:U('Me/lijizhifu')}",
+			data:{'orderid':orderid,'paypass':paypass},
+			type:'post',
+			success:function(data){
+				if(data=='1'){
+					alert('您已经购买过了');
+					window.location.href="{:U('Me/order')}";
+				}else if(data=='2'){
+					alert('您还没有设置支付密码');
+					window.location.href="{:U('Me/setpaypass')}";
+				}else if(data=='3'){
+					alert('账户余额不足');
+					window.location.href="{:U('Me/account')}";
+				}else if(data=='4'){
+					alert('购买失败');
+				}else if(data=='5'){
+					alert('支付成功');
+					window.location.href="{:U('Me/order')}";
+				}else if(data=='6'){
+					alert('支付失败');
+				}else if(data=='7'){
+					alert('支付密码不正确');
+				}else if(data=='8'){
+					alert('手慢了，你看中的课程已被其他人购买');
+					window.location.href="{:U('Me/order')}";
+				}else if(data=='9'){
+					alert('订单信息错误');
+					window.location.href="{:U('Me/order')}";
+				}else{
+					alert('网络异常');
+				}
+			},
+			error:function(){
+				alert('网络异常');
+			}
+		});
+	}
+	
+});
+function cancelorder(order_id){
+	$.ajax({
+		type:'post',
+		data:{'order_id':order_id},
+		url:"{:U('Me/cancelorder')}",
+		success:function(date){
+			if(date=='203'){
+				alert('用户不存在');
+			}else if(date=='200'){
+				alert('已取消');
+				window.location.href="javascript:location.replace(location.href);"	
+			}else{
+				alert('网络异常');
+			}
+		},
+		error:function(date){
+			alert('网络异常');
+		}
+	});
+}
+
+function del(order_id){
+	$.ajax({
+		type:'post',
+		data:{'order_id':order_id},
+		url:"{:U('Me/del_order')}",
+		success:function(date){
+			if(date=='200'){
+				alert('已删除');
+				window.location.href="javascript:location.replace(location.href);"
+			}else if(date=='203'){
+				alert('用户不存在');
+			}else{
+				alert('网络异常');
+			}
+		},
+		error:function(err){
+			alert('网络异常');
+		}
+	});
+}
+
+function sign(){
+	$.ajax({
+		type:'post',
+		url:"{:U('Me/sign')}",
+		success:function(date){
+			if(date=='200'){
+				alert('签到成功');
+				window.location.href="javascript:location.replace(location.href);"	
+			}else if(date=='202'){
+				alert('网络异常');
+			}else{
+				alert('今日已签到');
+			}
+		},
+		error:function(err){
+			alert('网络异常');
+		}
+	});
+}
+
+var a=$('#sex').val();
+if(a=='男'){
+	$('#sexicon').html('&#xe76d;');
+}else{
+	$('#sexicon').html('&#xe62d;');
+}
+
+$('.fenye .next').html('下一页');
+$('.fenye .prev').html('上一页');
+$('#outlogin').click(function(){
+						var a=$('#session').val();
+						$.post('{:U('Login/outlogin')}',{'session':a},function(data){
+							if(data=='退出成功'){
+							alert('退出登录！');window.location.href="{:U('index/index')}";}
+						})
+						
+					})
+</script>
+	</body>
+
+</html>

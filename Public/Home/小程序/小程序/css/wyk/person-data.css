@@ -1,0 +1,38 @@
+	        .result-text {
+				height: 1rem;
+				margin-right: 1.3rem;
+				margin-left: 0.8rem;
+				padding-top: .3rem
+			}
+			
+			.result-text-t {
+				height: 1rem;
+				margin-right: 1.3rem;
+				margin-left: 1.3rem;
+				padding-top: .3rem
+			}
+			
+			.result-text-t {
+				height: 1rem;
+				margin-right: 1.9rem;
+				margin-left: 1.3rem;
+			}
+			
+			.mui-h2,
+			h2 {
+				font-size: 0.35rem;
+			}
+			
+			.result-pic img {
+				border-radius: 50%;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.per-int {
+				width: 100%;
+				word-wrap: break-word;
+				word-break: normal;
+				padding-top: 0.2rem;
+				color: #000;
+			}

@@ -1,0 +1,1231 @@
+[ 2018-02-22T08:57:48+08:00 ] 61.40.192.56 /admin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载控制器:Scripts
+
+[ 2018-02-22T10:08:48+08:00 ] 61.189.33.149 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-02-22T10:08:48+08:00 ] 61.189.33.149 /admin.php/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-02-22T10:08:50+08:00 ] 61.189.33.149 /admin.php/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-02-22T10:08:58+08:00 ] 61.189.33.149 /admin.php/Login/login_Sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `admin` WHERE (  name='admin' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: UPDATE `admin` SET `name`='admin',`pass`='888',`status`='0',`role`='888',`time`='1512461286',`num`='0',`permission`='',`issuper`='0' WHERE `admin_id` = 20 [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `adminlog` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined offset: 0 /var/www/web/test/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+SQL: INSERT INTO `adminlog` (`time`,`type`,`toID`,`res`,`note`,`ip`,`uid`,`controllerName`,`actionName`,`controllerActionName`) VALUES ('2018-02-22 10:08:58','登录','0','成功','','61.189.33.149','20','Login','login_Sub','Loginlogin_Sub') [ RunTime:0.0021s ]
+
+[ 2018-02-22T10:08:59+08:00 ] 61.189.33.149 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-02-22T10:09:00+08:00 ] 61.189.33.149 /admin.php/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-02-22T10:09:14+08:00 ] 61.189.33.149 /admin.php/Data/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select count(*) from user where time between 1519228800-24*3*3600 and 1519228800+24*3600-24*3*3600 [ RunTime:0.0022s ]
+SQL: select count(*) from user where time between 1519228800-24*2*3600 and 1519228800+24*3600-24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519228800-24*3600 and 1519228800+24*3600-24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519228800 and 1519228800+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519228800+24*3600 and 1519228800+24*3600+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519228800+24*2*3600 and 1519228800+24*3600+24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519228800+24*3*3600 and 1519228800+24*3600+24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800-24*3*3600 and 1519228800+24*3600-24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800-24*2*3600 and 1519228800+24*3600-24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800-24*3600 and 1519228800+24*3600-24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800 and 1519228800+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800+24*3600 and 1519228800+24*3600+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800+24*2*3600 and 1519228800+24*3600+24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where login_time between 1519228800+24*3*3600 and 1519228800+24*3600+24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519265354-3600-24*3*3600 and 1519265354-24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519265354-3600-24*2*3600 and 1519265354-24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519265354-3600-24*3600 and 1519265354-24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519265354-3600 and 1519265354 [ RunTime:0.0022s ]
+SQL: select count(*) from user where time between 1519265354-3600+24*3600 and 1519265354+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519265354-3600+24*2*3600 and 1519265354+24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time between 1519265354-3600+24*3*3600 and 1519265354+24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time <  1519228800+24*3600-24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time <  1519228800+24*3600-24*2*3600 [ RunTime:0.0020s ]
+SQL: select count(*) from user where time <  1519228800+24*3600-24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time <  1519228800+24*3600 [ RunTime:0.0020s ]
+SQL: select count(*) from user where time <  1519228800+24*3600+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time <  1519228800+24*3600+24*2*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where time <  1519228800+24*3600+24*3*3600 [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-02-22T10:09:32+08:00 ] 61.189.33.149 /admin.php/Data/showlvechart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select user_id from user where time between 1519228800-24*3*3600 and 1519228800+24*3600-24*3*3600 [ RunTime:0.0022s ]
+SQL: select user_id from user where time between 1519228800-24*2*3600 and 1519228800+24*3600-24*2*3600 [ RunTime:0.0021s ]
+SQL: select user_id from user where time between 1519228800-24*3600 and 1519228800+24*3600-24*3600 [ RunTime:0.0022s ]
+SQL: select user_id from user where time between 1519228800 and 1519228800+24*3600 [ RunTime:0.0021s ]
+SQL: select user_id from user where time between 1519228800+24*3600 and 1519228800+24*3600+24*3600 [ RunTime:0.0021s ]
+SQL: select user_id from user where time between 1519228800+24*2*3600 and 1519228800+24*3600+24*2*3600 [ RunTime:0.0020s ]
+SQL: select user_id from user where time between 1519228800+24*3*3600 and 1519228800+24*3600+24*3*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where user_id in (55)and login_time between 1519228800+24*3600 and 1519228800+24*3600+24*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where user_id in (55)and login_time between 1519228800+24*3600+24*5*3600 and 1519228800+24*3600+24*6*3600 [ RunTime:0.0021s ]
+SQL: select count(*) from user where user_id in (55)and login_time between 1519228800+24*3600+24*28*3600 and 1519228800+24*3600+24*29*3600 [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-02-22T10:09:44+08:00 ] 61.189.33.149 /admin.php/Play/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0030s ]
+SQL: select l.*,u.name as uname from liveb as l,class ,user as u where l.class_id=class.class_id and l.status='1' and class.uid=u.user_id and 0=0  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-02-22T10:10:04+08:00 ] 61.189.33.149 /admin.php/Play/showlistYue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0031s ]
+SQL: select l.*,u.name as uname from liveb as l,class ,user as u where l.class_id=class.class_id and l.reg_status='1' and class.uid=u.user_id and 0=0  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-02-22T10:10:10+08:00 ] 61.189.33.149 /admin.php/Video/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0030s ]
+SQL: 
+		   	SELECT
+				video.video_id,
+				video.img,
+				video.`name`,
+				video.class_id,
+				video.cate_id,
+				video.money,
+				video.introduce,
+				video.recommend,
+				video.number,
+				video.url,
+				video.time,
+				video.status,
+				`user`.`name` AS uname
+			FROM
+				video,
+				class,
+				`user`
+			WHERE
+				video.class_id = class.class_id
+			AND class.uid = `user`.user_id AND  0=0 
+	   	
+	   	 [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2018-02-22T10:10:11+08:00 ] 61.189.33.149 /admin.php/Play/showlistYue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0032s ]
+SQL: select l.*,u.name as uname from liveb as l,class ,user as u where l.class_id=class.class_id and l.reg_status='1' and class.uid=u.user_id and 0=0  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2018-02-22T10:10:18+08:00 ] 61.189.33.149 /admin.php/Play/dataEdityue/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `liveb` WHERE (  liveb_id = 1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT u.name as uname FROM user as u,class as c,liveb as l WHERE ( u.user_id=c.uid and l.class_id=c.class_id and l.liveb_id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-02-22T10:10:33+08:00 ] 61.189.33.149 /admin.php/Video/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0030s ]
+SQL: 
+		   	SELECT
+				video.video_id,
+				video.img,
+				video.`name`,
+				video.class_id,
+				video.cate_id,
+				video.money,
+				video.introduce,
+				video.recommend,
+				video.number,
+				video.url,
+				video.time,
+				video.status,
+				`user`.`name` AS uname
+			FROM
+				video,
+				class,
+				`user`
+			WHERE
+				video.class_id = class.class_id
+			AND class.uid = `user`.user_id AND  0=0 
+	   	
+	   	 [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-02-22T10:10:34+08:00 ] 61.189.33.149 /admin.php/Play/showlistYue
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `liveb` [ RunTime:0.0031s ]
+SQL: select l.*,u.name as uname from liveb as l,class ,user as u where l.class_id=class.class_id and l.reg_status='1' and class.uid=u.user_id and 0=0  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-02-22T10:11:16+08:00 ] 61.189.33.149 /admin.php/Video/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0030s ]
+SQL: 
+		   	SELECT
+				video.video_id,
+				video.img,
+				video.`name`,
+				video.class_id,
+				video.cate_id,
+				video.money,
+				video.introduce,
+				video.recommend,
+				video.number,
+				video.url,
+				video.time,
+				video.status,
+				`user`.`name` AS uname
+			FROM
+				video,
+				class,
+				`user`
+			WHERE
+				video.class_id = class.class_id
+			AND class.uid = `user`.user_id AND  0=0 
+	   	
+	   	 [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2018-02-22T10:12:33+08:00 ] 61.189.33.149 /admin.php/Teacher/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0030s ]
+SQL: 
+		   	SELECT
+				teacher.teacher_id,
+				teacher.uid,
+				teacher.`name`,
+				teacher.abstract,
+				teacher.follow,
+				teacher.integral,
+				userdata.image,
+				`user`.phone,
+				`user`.`status`,
+				( SELECT COUNT(liveb.liveb_id) FROM class ,liveb WHERE class.class_id = liveb.class_id AND class.uid = teacher.uid) AS zhiboNum,
+				( SELECT COUNT(report.report_id) FROM report  WHERE report.uid = teacher.uid) AS jubaoNum
+			FROM
+				userdata ,
+				`user`,
+				teacher
+			WHERE
+				userdata.uid = teacher.uid AND
+				`user`.user_id= teacher.uid AND  0=0 
+			ORDER BY
+				teacher.teacher_id DESC
+	   	  [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2018-02-22T10:12:45+08:00 ] 61.189.33.149 /admin.php/Usermanage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select ud.image,u.name,u.phone,ud.money,ud.amount,u.time,u.status,u.user_id 
+					from user u join userdata ud on u.user_id=ud.uid
+						order by u.time desc [ RunTime:0.0025s ]
+ERR: 模板不存在:./App/Admin/View/Usermanage/showlist.html
+
+[ 2018-02-22T10:13:03+08:00 ] 61.189.33.149 /admin.php/Teacher/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0030s ]
+SQL: 
+		   	SELECT
+				teacher.teacher_id,
+				teacher.uid,
+				teacher.`name`,
+				teacher.abstract,
+				teacher.follow,
+				teacher.integral,
+				userdata.image,
+				`user`.phone,
+				`user`.`status`,
+				( SELECT COUNT(liveb.liveb_id) FROM class ,liveb WHERE class.class_id = liveb.class_id AND class.uid = teacher.uid) AS zhiboNum,
+				( SELECT COUNT(report.report_id) FROM report  WHERE report.uid = teacher.uid) AS jubaoNum
+			FROM
+				userdata ,
+				`user`,
+				teacher
+			WHERE
+				userdata.uid = teacher.uid AND
+				`user`.user_id= teacher.uid AND  0=0 
+			ORDER BY
+				teacher.teacher_id DESC
+	   	  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2018-02-22T10:13:08+08:00 ] 61.189.33.149 /admin.php/Prove/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `prove` [ RunTime:0.0030s ]
+SQL: select * from prove  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-02-22T10:13:31+08:00 ] 61.189.33.149 /admin.php/Prove/showtu/pid/43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `prove` [ RunTime:0.0031s ]
+SQL: select * from prove where prove_id = 43 [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: status /var/www/web/test/App/Runtime/Cache/Admin/cf81d13dd2439ed031c4b2a6c8182703.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2018-02-22T10:13:56+08:00 ] 61.189.33.149 /admin.php/Prove/hold/pid/44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `prove` [ RunTime:0.0030s ]
+SQL: select * from prove where prove_id = 44 [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: status /var/www/web/test/App/Runtime/Cache/Admin/058b519b364e6a5dbb29631dc1fd6cce.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-02-22T10:17:30+08:00 ] 61.189.33.149 /admin.php/Teacher/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0032s ]
+SQL: 
+		   	SELECT
+				teacher.teacher_id,
+				teacher.uid,
+				teacher.`name`,
+				teacher.abstract,
+				teacher.follow,
+				teacher.integral,
+				userdata.image,
+				`user`.phone,
+				`user`.`status`,
+				( SELECT COUNT(liveb.liveb_id) FROM class ,liveb WHERE class.class_id = liveb.class_id AND class.uid = teacher.uid) AS zhiboNum,
+				( SELECT COUNT(report.report_id) FROM report  WHERE report.uid = teacher.uid) AS jubaoNum
+			FROM
+				userdata ,
+				`user`,
+				teacher
+			WHERE
+				userdata.uid = teacher.uid AND
+				`user`.user_id= teacher.uid AND  0=0 
+			ORDER BY
+				teacher.teacher_id DESC
+	   	  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-02-22T10:17:31+08:00 ] 61.189.33.149 /admin.php/Usermanage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select ud.image,u.name,u.phone,ud.money,ud.amount,u.time,u.status,u.user_id 
+					from user u join userdata ud on u.user_id=ud.uid
+						order by u.time desc [ RunTime:0.0025s ]
+ERR: 模板不存在:./App/Admin/View/Usermanage/showlist.html
+
+[ 2018-02-22T10:17:50+08:00 ] 61.189.33.149 /admin.php/Usermanage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select ud.image,u.name,u.phone,ud.money,ud.amount,u.time,u.status,u.user_id 
+					from user u join userdata ud on u.user_id=ud.uid
+						order by u.time desc [ RunTime:0.0025s ]
+ERR: 模板不存在:./App/Admin/View/Usermanage/showlist.html
+
+[ 2018-02-22T10:17:51+08:00 ] 61.189.33.149 /admin.php/Teacher/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0030s ]
+SQL: 
+		   	SELECT
+				teacher.teacher_id,
+				teacher.uid,
+				teacher.`name`,
+				teacher.abstract,
+				teacher.follow,
+				teacher.integral,
+				userdata.image,
+				`user`.phone,
+				`user`.`status`,
+				( SELECT COUNT(liveb.liveb_id) FROM class ,liveb WHERE class.class_id = liveb.class_id AND class.uid = teacher.uid) AS zhiboNum,
+				( SELECT COUNT(report.report_id) FROM report  WHERE report.uid = teacher.uid) AS jubaoNum
+			FROM
+				userdata ,
+				`user`,
+				teacher
+			WHERE
+				userdata.uid = teacher.uid AND
+				`user`.user_id= teacher.uid AND  0=0 
+			ORDER BY
+				teacher.teacher_id DESC
+	   	  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-02-22T10:17:52+08:00 ] 61.189.33.149 /admin.php/Usermanage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select ud.image,u.name,u.phone,ud.money,ud.amount,u.time,u.status,u.user_id 
+					from user u join userdata ud on u.user_id=ud.uid
+						order by u.time desc [ RunTime:0.0025s ]
+ERR: 模板不存在:./App/Admin/View/Usermanage/showlist.html
+
+[ 2018-02-22T10:20:15+08:00 ] 61.189.33.149 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-02-22T10:20:15+08:00 ] 61.189.33.149 /admin.php/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-02-22T10:20:17+08:00 ] 61.189.33.149 /admin.php/Usermanage/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: select ud.image,u.name,u.phone,ud.money,ud.amount,u.time,u.status,u.user_id 
+					from user u join userdata ud on u.user_id=ud.uid
+						order by u.time desc [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2018-02-22T10:20:23+08:00 ] 61.189.33.149 /admin.php/Notice/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lunbo` WHERE (  0=0  ) ORDER BY  num   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2018-02-22T10:20:24+08:00 ] 61.189.33.149 /admin.php/Notice/showListXiaoxi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `news` WHERE (  0=0  ) ORDER BY  news_id desc   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2018-02-22T10:20:24+08:00 ] 61.189.33.149 /admin.php/Notice/showListHuodong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `notice` WHERE (  0=0  ) ORDER BY  time desc   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/878134a2f6f40baad5e80bc5fd9d3acc.php 第 62 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/878134a2f6f40baad5e80bc5fd9d3acc.php 第 62 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/878134a2f6f40baad5e80bc5fd9d3acc.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2018-02-22T10:20:24+08:00 ] 61.189.33.149 /admin.php/Notice/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lunbo` WHERE (  0=0  ) ORDER BY  num   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-02-22T10:20:25+08:00 ] 61.189.33.149 /admin.php/Notice/showListXiaoxi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `news` WHERE (  0=0  ) ORDER BY  news_id desc   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/ada2936761024c7fbf09359652118921.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2018-02-22T10:20:25+08:00 ] 61.189.33.149 /admin.php/Notice/showListHuodong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `notice` WHERE (  0=0  ) ORDER BY  time desc   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/878134a2f6f40baad5e80bc5fd9d3acc.php 第 62 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/878134a2f6f40baad5e80bc5fd9d3acc.php 第 62 行.
+NOTIC: [8] Undefined index: tuisong_id /var/www/web/test/App/Runtime/Cache/Admin/878134a2f6f40baad5e80bc5fd9d3acc.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-02-22T10:23:21+08:00 ] 61.189.33.149 /admin.php/Shop/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `good` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `good` WHERE (  0=0  ) ORDER BY good_id desc  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2018-02-22T10:23:23+08:00 ] 61.189.33.149 /admin.php/Shop/dataAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-02-22T10:26:19+08:00 ] 61.189.33.149 /admin.php/Shop/dataAdd_Sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/web/test/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `good` [ RunTime:0.0030s ]
+SQL: INSERT INTO `good` (`name`,`type_id`,`img`,`price`,`time`,`timeend`,`stock`,`details`,`type`,`rule`,`status`) VALUES ('火炬计划','1','/Uploads/good/2018-02-22/5a8e2a4bb64bf.jpg','55555555','2018-02-06 10:20:47','2018-01-30 10:20:44','25','hjjhjjhj','1','踝关节和关键环节','1') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `adminlog` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined offset: 0 /var/www/web/test/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+SQL: INSERT INTO `adminlog` (`time`,`type`,`toID`,`res`,`note`,`ip`,`uid`,`controllerName`,`actionName`,`controllerActionName`) VALUES ('2018-02-22 10:26:19','添加good','80','成功','','61.189.33.149','20','Shop','dataAdd_Sub','ShopdataAdd_Sub') [ RunTime:0.0021s ]
+
+[ 2018-02-22T10:26:21+08:00 ] 61.189.33.149 /admin.php/Shop/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `good` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `good` WHERE (  0=0  ) ORDER BY good_id desc  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-02-22T11:52:49+08:00 ] 61.189.33.149 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2018-02-22T11:52:49+08:00 ] 61.189.33.149 /admin.php/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-02-22T11:52:51+08:00 ] 61.189.33.149 /admin.php/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-02-22T11:52:57+08:00 ] 61.189.33.149 /admin.php/Login/login_Sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `admin` WHERE (  name='admin' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: UPDATE `admin` SET `name`='admin',`pass`='888',`status`='0',`role`='888',`time`='1512461286',`num`='0',`permission`='',`issuper`='0' WHERE `admin_id` = 20 [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `adminlog` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined offset: 0 /var/www/web/test/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+SQL: INSERT INTO `adminlog` (`time`,`type`,`toID`,`res`,`note`,`ip`,`uid`,`controllerName`,`actionName`,`controllerActionName`) VALUES ('2018-02-22 11:52:57','登录','0','成功','','61.189.33.149','20','Login','login_Sub','Loginlogin_Sub') [ RunTime:0.0021s ]
+
+[ 2018-02-22T11:52:58+08:00 ] 61.189.33.149 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-02-22T11:52:58+08:00 ] 61.189.33.149 /admin.php/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2018-02-22T11:53:02+08:00 ] 61.189.33.149 /admin.php/Shop/jifenshowlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `ierecord` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ierecord` [ RunTime:0.0027s ]
+SQL: SELECT i.*,g.img,g.name as gname,u.name FROM ierecord as i,good as g,user as u WHERE ( i.gid=g.good_id and i.uid=u.user_id and 0=0 )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: model /var/www/web/test/App/Runtime/Cache/Admin/cb0f92f37ce2fe5984c0e586dd48bb21.php 第 67 行.
+NOTIC: [8] Undefined variable: model /var/www/web/test/App/Runtime/Cache/Admin/cb0f92f37ce2fe5984c0e586dd48bb21.php 第 67 行.
+NOTIC: [8] Undefined variable: model /var/www/web/test/App/Runtime/Cache/Admin/cb0f92f37ce2fe5984c0e586dd48bb21.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2018-02-22T11:53:16+08:00 ] 61.189.33.149 /admin.php/Shop/view/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `ierecord` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ierecord` [ RunTime:0.0027s ]
+SQL: SELECT i.*,g.img,g.name as gname,u.name,u.phone FROM ierecord as i,good as g,user as u WHERE ( i.gid=g.good_id and i.uid=u.user_id and i.idrecord_id=1 ) LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2018-02-22T11:57:43+08:00 ] 61.189.33.149 /admin.php/Shop/view/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `ierecord` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ierecord` [ RunTime:0.0027s ]
+SQL: SELECT i.*,g.img,g.name as gname,u.name,u.phone FROM ierecord as i,good as g,user as u WHERE ( i.gid=g.good_id and i.uid=u.user_id and i.idrecord_id=1 ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+

@@ -1,0 +1,361 @@
+/*头部开始*/
+
+.course-topart{
+	background-color: #FFFFFF;
+	margin-top: 40px;
+	border-radius: 6px;
+	border: 1px solid #eeeeee;
+	padding: 20px;
+
+}
+.course-left{
+	width: 450px;
+	height: 250px;
+	float: left;
+	position: relative;
+	float: left;
+	
+}
+.course-left img{
+	width: 450px;
+	height: 250px;
+}
+.course-right{
+	height: 250px;
+    margin-left: 470px;
+    padding-right: 20px;
+    position: relative;
+}
+.icon{
+	float: right
+}
+.icon i{
+	cursor: pointer;
+}
+.icon i:hover{
+	color:#FF9933 !important;
+}
+.course-right-one{
+	width: 470px;
+	height: 40px;
+	line-height: 40px;
+	 padding: 0px 0px 0px 20px; 
+	 float: left;
+}
+.course-right-two{
+	/*line-height: 30px;*/
+	color: #666;
+	text-align: left;
+	width: 100%;
+}
+.course-right-two i{
+	color: #eeeeee;
+}
+.free{
+	 top: 95px;
+	 height: 80px; 
+	 position: absolute;
+	 padding-left: 20px
+}
+.free span{
+	font-size: 30px;
+	color: #47C88A;
+}
+.enrol{
+	top: 195px;
+	height: 80px; 
+	position: absolute;
+	padding-left: 20px;
+}
+.enrol a{
+    background: #ff9933;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 6px;
+}
+.enrol a:hover{
+    background: #f39232;
+}
+.timer{
+	position: absolute;
+	top: 210px;
+	right: 0px;
+	margin-right: 20px;
+}
+.timer span{
+	color: #333333;
+	font-size: 12px;
+}
+.sign-up-img{
+	position: absolute;
+	display: none;
+	left: 150px;
+	top: 80px;
+}
+.sign-up-im:hover{
+	background-color:#f39232;
+}
+.dianji{
+	font-size: 22px !important;
+}
+.sign-up-font{
+	color: #FFFFFF;
+}
+/*头部结束*/
+
+
+/*col-3开始*/
+.course-right-two a{
+	color: #333;
+	display: block;
+}
+.directory-rig{
+	border: 1px solid #eeeeee;
+	border-radius: 6px;padding: 0px;
+	text-align: center;
+}
+.directory-rigg{
+	border: 1px solid #eeeeee;
+	border-radius: 6px;padding: 0px;
+	text-align: center;
+}
+.directory-rig-one{
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+	padding: 0px;
+	background-color: #F5F5F5;
+}
+.directory-rig-one span{
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+}
+.directory-rig-two{
+	
+	width: 100%;
+	float: left;
+	padding: 30px 20px;
+	background-color: #FFFFFF;
+}
+.two-left{
+	float: left;
+}
+.two-right{
+	/*float:left;	 */
+	text-align: left;
+    margin-left: 65px;
+}
+.two-right span{
+
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+.two-right .course-inter{
+	font-size: 12px;
+	color: #666;
+	margin-top: 10px;
+}
+		
+.border-line{
+	border-bottom: 1px solid #eeeeee;
+	width: 80%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 25px;
+}
+/*col-3结束*/
+.col-xs-9 {
+    width: 72.5%;
+}
+/*tab切换部分开始*/
+.tab{ width:100%;}
+.tab-hd {  overflow:hidden; zoom:1;border-bottom:1px solid #eeeeee;margin-bottom: 0px;}
+.tab-hd li{ float:left; width:70px;text-align:center; cursor:pointer;margin-left: 20px;}
+.tab-hd li.active{ border-bottom: 2px solid #47C88A;color: #47C88A;}
+.tab-bd li{display:none; padding:0px; border-top:0 none; font-size:24px;}
+.tab-bd li.thisclass{ display:list-item;}
+.tab-hd li span {font-size: 16px;}
+.tab-hd li{padding: 7px 0px;}
+.tab-hd li span:hover{color: #47C88A;}
+/*tab切换部分结束*/
+/*课程目录开始*/
+
+.section{
+	padding: 0px 20px;
+	height: 50px;
+    line-height: 50px; 
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+    -moz-transition: background-color 0.15s ease-out;
+    -webkit-transition: background-color 0.15s ease-out;
+    transition: background-color 0.15s ease-out;
+}
+.f-f1{
+	width: 62px;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+    float: left;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.f-f2{
+	width: 456px;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+    float: left;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 6px;
+}
+.f-f3{
+	float: right;
+	color: #F39232;
+	text-decoration:none;
+	cursor: pointer;
+	font-size: 14px;
+	display: none;
+}
+.f-f4{
+	float: right;
+	display: block;
+}
+.f-time{
+	width: 40px;
+    line-height: 50px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.f-icon i{
+	width: 40px;
+    line-height: 50px;
+    text-align: right;
+    font-size: 16px;
+    color: #666;
+    float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;	
+}
+/*课程目录结束*/
+
+/*课程介绍开始*/
+.intr-section{
+	float: left;
+	width: 100%;
+	padding: 0px 20px 20px 20px;
+}
+.line-bor{
+	height:20px;
+	line-height: 20px;
+	width: 4px;
+	border-radius: 2px;
+	background-color: #47C88A;
+	float: left;
+}
+
+.teacher-int{
+	font-size: 16px;
+	margin-left: 20px;
+	color: #666; 
+	float: left;
+	display: block;
+}
+.intro-int{
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #666; 
+	float: left;
+	display: block;
+}
+.padding_t20{ padding-top:20px !important; }
+
+.intr-section-l{
+	float: left;
+	height: 110px;
+	width: 70px;
+	position: relative;
+}
+.intr-section-r{
+	float: left;
+	height: 110px;
+	width: 80%;
+}
+
+.intr-section-l img{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+    margin-left: 5px;
+}
+.intr-section-l a{
+	height: 24;
+	line-height: 24PX;
+	background: #47C88A;
+	color: white;
+	font-size: 12px;
+	width: 70px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block; 
+	border-radius: 6px;
+	position: absolute;
+	top: 80PX;
+	left: 0PX;"
+}
+
+
+#dianji{
+	position: relative;
+	z-index: 999;
+}
+#xianshi{
+	font-size: 24px;
+	color: #FF9933;
+	display: none;
+	position: relative;
+	z-index: 1;
+	margin-left: 20px;
+}
+.intr-section .c-i{
+	float: left;
+	display: block;
+	font-size: 14px;
+	color:#666;
+	text-indent: 2em;
+	padding:0px 5px 20px 5px
+}
+/*课程介绍结束*/
+/*相关课程开始*/
+.col-md-03 {
+    width: 27.5%;
+}
+.editin{
+	margin-bottom:20px;
+	margin-left: 35px;
+}
+
+.a-cour{
+	padding: 30px 10px 0px 10px;;
+}
+/*相关课程结束*/

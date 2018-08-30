@@ -1,0 +1,28 @@
+.btn-primary {
+				background-color: #f39232;
+				border: 1px solid #f39232;
+			}
+			
+			.btn-primary:hover {
+				background-color: #ff9933;
+				border: 1px solid #ff9933;
+			}
+			
+			.btn-green {
+				background-color: #47C88A;
+				color: #fff;
+			}
+			
+			.btn-green:hover {
+				background-color: #339966;
+				border: 1px solid #339966;
+				color: #fff;
+			}
+			
+			.d-n {
+				display: none;
+			}
+			
+			.form-group {
+				margin-bottom: 15px;
+			}

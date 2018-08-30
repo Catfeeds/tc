@@ -1,0 +1,89 @@
+.news .news-text .date {
+				height: .24rem;
+				margin-top: .0rem;
+			}
+			
+			.news .news-text h2 {
+				font-size: 0.28rem;
+			}
+			
+			.timer {
+				display: block;
+				font-size: 0.26rem;
+				color: #999;
+				line-height: 0.4rem;
+			}
+			
+			.free {
+				display: block;
+				font-size: 0.26rem;
+				color: #47c88a;
+				line-height: 0.4rem;
+			}
+			
+			input[type=search] {
+				margin-bottom: .0rem;
+			}
+			
+			.search-r {
+				width: 100%;
+				float: left;
+				background-color: #fff;
+				padding: 0.1rem 0.3rem;
+				border-bottom: 1px solid #efefef;
+			}
+			
+			.f-l {
+				float: left;
+			}
+			
+			.f-r {
+				float: right;
+				position: relative;
+			}
+			
+			.news .news-text h2 {
+				min-height: .5rem;
+			}
+			
+			.s-r {
+				color: #F39232;
+			}
+			
+			#s-n {
+				background-color: #fff;
+				border: 1px solid #CCC;
+				text-align: center;
+				border-radius: 4px;
+				position: absolute;
+				right: .1rem;
+				top: 0.6rem;
+				z-index: 9;
+				display: none;
+				width: 2.0rem;
+			}
+			
+			.video {
+				padding: 0.2rem;
+				border-bottom: 1px solid #ccc;				
+			}
+			
+			.live {
+				padding: 0.2rem;
+			}
+			
+			.news-text {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.intro{
+					transform:rotate(180deg);
+					-ms-transform:rotate(180deg); /* Internet Explorer */
+					-moz-transform:rotate(180deg); /* Firefox */
+					-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+					-o-transform:rotate(180deg); /* Opera */
+				}
+		    .iconfont{
+		    	display: inline-block;
+		    }

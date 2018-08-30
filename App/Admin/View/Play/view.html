@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/icon-font/iconfont.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/css/play-interface.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/saibangzi/plugins/boostrap/css/bootstrap.min.css" />
+		<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+		<link rel="shortcut icon" href="__PUBLIC__/Home/saibangzi/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="__PUBLIC__/star/css/style.css" />
+		<!-- If you'd like to support IE8 -->
+		<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+		<title>点播</title>
+		<style>
+		
+			.menu li a:hover {
+				color: red;
+			}
+			
+			.my-video-dimensions {
+				width: 100% !important;
+				height: 100% !important;
+			}
+			
+			.video-js .vjs-big-play-button {
+				position: absolute;
+				left: 50% !important;
+				top: 280px !important;
+			}
+			
+			.head-r span {
+				color: #fff;
+				margin-right: 30px;
+				cursor: pointer;
+			}
+			
+			.modal-header {
+				padding: 5px;
+				padding-left: 20px;
+				background-color: #ddd;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+			}
+			
+			.modal-content {
+				width: 500px;
+			}
+			.stati{
+				font-size: 18px !important;
+				color: #333;
+				text-decoration: none;
+			}
+			.close{
+				padding-right: 10px;
+				opacity:.8;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="head-l">
+				<a  onclick="javascript:history.back(-1);" class="title1"><i class="iconfont">&#xe6af;</i></a>
+				<span class="title2">{$list['name']}</span>
+				<span class="title3">{$list['introduce']}</span>
+				<!-- <span class="title4">分享：<i class="iconfont">&#xe6b3;</i> <i class="iconfont">&#xe6b4;</i> <i class="iconfont">&#xe6a7;</i></span> -->
+			</div>
+			
+		</div>
+
+		<div class="content">
+			<!-- <div id="c-left">
+					<video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+			    <source src="{$list['video_url']}" type='video/mp4'>
+			    <source src="MY_VIDEO.webm" type='video/webm'>
+			    <p class="vjs-no-js">
+			      To view this video please enable JavaScript, and consider upgrading to a web browser that
+			      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+			    </p>
+			  </video>
+				
+			</div> -->
+			<input type="hidden" value="{$list['fileid']}" id="player">
+			<input type="hidden" value="{$list['video_id']}" id="videoid">
+			<!-- <div id="c-right">
+
+				<div class="operator">
+
+					<i class="iconfont">&#xe890;</i>
+					<p>目录</p>
+				</div>
+				<div class="menu">
+
+					<h3>视频目录</h3>
+					<ul>
+						<foreach name="lists" item="v">
+						<a href="{:U('player?id='.$v['video_id'])}">
+						<li><i class="iconfont">&#xe6b2;</i>{$v.name}</li>
+						</a>
+						</foreach>
+					</ul>
+				</div>
+
+			</div> -->
+			<!-- Modal -->
+			
+			<!-- Modal -->
+		</div>
+		<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+		<script src="//qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/jquery-2.1.0.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/js/index.js"></script>
+		<script src="__PUBLIC__/Home/saibangzi/plugins/boostrap/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/star/js/script.js"></script>
+		<script>
+			var url=$('#player').val();
+			var u="https://p.bokecc.com/player?vid="+url+"&siteid=B561FC9EF6720EA1&autoStart=false&width=600&height=490&playerid=9976C4F4790E3063&playertype=1"
+			//alert(u)
+			document.write('<script type="text/javascript" src="https://p.bokecc.com/player?vid='+url+'&siteid='+'B561FC9EF6720EA1'+'&autoStart='+'false'+'&width='+'600'+'&height='+'490'+'&playerid='+'9976C4F4790E3063'+'&playertype='+'1'+'" ></sc'+'ript>')
+		</script>
+	<!-- <script src="https://p.bokecc.com/player?vid=78F612256691A4949C33DC5901307461&siteid=B561FC9EF6720EA1&autoStart=false&width=600&height=490&playerid=9976C4F4790E3063&playertype=1" type="text/javascript"></script>  -->
+	</body>
+
+</html>
