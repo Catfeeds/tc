@@ -49,15 +49,8 @@ class MeController extends CommonController {
         }
         $this->templateApi($data,'200','ok');
     }
-// +----------------------------------------------------------------------
-// | 功能       | 个人资料
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token
-// +----------------------------------------------------------------------
 
-
+    //个人资料
     public function index(){
         if(IS_POST){
             $token=I('post.token');
@@ -156,7 +149,6 @@ class MeController extends CommonController {
         }
     }
 
-
     //修改生日
     public function editbirthday(){
         if(IS_POST){
@@ -184,13 +176,7 @@ class MeController extends CommonController {
         }
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 头像上传
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、file
-// +----------------------------------------------------------------------
+    //头像上传
     public function picupload(){
         if(IS_POST){
             $token=I('post.token');
@@ -218,13 +204,7 @@ class MeController extends CommonController {
         
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 昵称修改
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、name
-// +----------------------------------------------------------------------
+    //昵称修改
     public function modifyname(){
         if(IS_POST){
             $name=Sensitivefilter(I('post.name'));
@@ -275,13 +255,7 @@ class MeController extends CommonController {
 
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 性别修改
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、sex
-// +----------------------------------------------------------------------
+    //性别修改
     public function modifysex(){
         if(IS_POST){
             $sex=I('post.sex');
@@ -334,13 +308,7 @@ class MeController extends CommonController {
         
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 地区修改
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、address
-// +----------------------------------------------------------------------
+    //地区修改
     public function modifyaddress(){
         if(IS_POST){
             $address=I('post.address');
@@ -392,13 +360,7 @@ class MeController extends CommonController {
         
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 个人简介
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、profile
-// +----------------------------------------------------------------------
+    //个人简介
     public function profile(){
         if(IS_POST){
             $token=I('post.token');
@@ -449,13 +411,8 @@ class MeController extends CommonController {
         }
         
     }
-// +----------------------------------------------------------------------
-// | 功能       | 我的收藏
-// +----------------------------------------------------------------------
-// | 请求类型   | GET
-// +----------------------------------------------------------------------
-// | 参数       | token、page
-// +----------------------------------------------------------------------
+
+    //我的收藏
     public function subscribe(){
         if(IS_GET){
             $token=I('get.token');
@@ -529,13 +486,7 @@ class MeController extends CommonController {
 
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 取消收藏
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token，pid
-// +----------------------------------------------------------------------
+    //取消收藏
     public function subscribedel(){
         if(IS_POST){
             $id=I('post.pid');
@@ -564,14 +515,7 @@ class MeController extends CommonController {
 
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 设置支付密码
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、paypass
-// +----------------------------------------------------------------------
-
+    //设置支付密码
     public function paypass(){
         if(IS_POST){
             $token=I('post.token');
@@ -608,14 +552,7 @@ class MeController extends CommonController {
         }
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 修改登录密码
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、oldpass、newpass
-// +----------------------------------------------------------------------
-
+    //修改登录密码
     public function savepass(){
         if(IS_POST){
             $token=I('post.token');
@@ -658,13 +595,7 @@ class MeController extends CommonController {
         }
     }
 
-// +----------------------------------------------------------------------
-// | 功能       | 修改支付密码
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token、oldpaypass
-// +----------------------------------------------------------------------
+    //修改支付密码
     public function savepaypass(){
         if(IS_POST){
             $token=I('post.token');
@@ -700,13 +631,8 @@ class MeController extends CommonController {
             echo json_encode($this->apiTemplate($data,'203','请求类型错误'));
         }
     }
-// +----------------------------------------------------------------------
-// | 功能       | 签到
-// +----------------------------------------------------------------------
-// | 请求类型   | POST
-// +----------------------------------------------------------------------
-// | 参数       | token
-// +----------------------------------------------------------------------
+
+    //签到
     public function sign(){
         if(IS_POST){
             $token=I('post.token');
@@ -970,14 +896,7 @@ class MeController extends CommonController {
         }
     }
 
-// +----------------------------------------------------------------------
-// | 功能         | 绑定手机号
-// +----------------------------------------------------------------------
-// | 请求类型     | POST
-// +----------------------------------------------------------------------
-// | 参数         | phone,verify,token
-// +----------------------------------------------------------------------
-
+    //绑定手机号
     public function bdphone(){
         $data=(object)null;
         if(IS_POST){
@@ -1137,6 +1056,7 @@ class MeController extends CommonController {
 
 
     }
+
     //添加关注
     public function addfollow(){
         if(IS_POST){
@@ -1164,6 +1084,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //我的关注
     public function follow(){
         if(IS_POST){
@@ -1513,6 +1434,7 @@ class MeController extends CommonController {
         $goods=M('goods')->where($where)->count();
         return $goods;
     }
+
     //直播申请
     public function livebapply(){
         if(IS_POST){
@@ -1692,6 +1614,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //可用视频列表
     public function usevideo(){
         if(IS_POST){
@@ -1948,6 +1871,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //我的课程——直播
     public function myclass_liveb(){
         if(IS_POST){
@@ -2007,6 +1931,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //我的课程——预约课
     public function myclass_yue(){
         if(IS_POST){
@@ -2137,6 +2062,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //课程下架
     public function goodsdown(){
         if(IS_POST){
@@ -2426,7 +2352,7 @@ class MeController extends CommonController {
                     }
                     $where['del_status']=0;
                     $count=M('goods')->where($where)->count();
-                    $data=$this->havePage('goods',$where,'time desc',$page,'20','');
+                    $data=$this->havePage('goods',$where,'grounding_time desc',$page,'20','');
                     $pie['now_page']=$data['now_page'];
                     $pie['total_page']=$data['total_page'];
                     unset($data['now_page']);
@@ -2594,11 +2520,7 @@ class MeController extends CommonController {
                     $mvp['money']=$money;
                     $mvp['status']=$good['status'];
                     $mvp['price_status']=$pBuyType;
-                    if(!$discount_money){
-
-                    }else{
-                        $mvp['discount_money']=$discount_money;
-                    }
+                    $mvp['discount_money']=$discount_money;
                     $mvp['group_num']=$groupnum;
                     $mvp['group_time']=$grouptime;
                     M('goods')->where(array('goods_id'=>$pid))->save($mvp);
@@ -2613,6 +2535,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //今天起未来8天的预约课--学生
     public function nextyuelists(){
         if(IS_POST){
@@ -2749,6 +2672,7 @@ class MeController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
     //今天起未来8天的预约课--老师
     public function nextyuelist(){
         if(IS_POST){
@@ -2944,6 +2868,7 @@ class MeController extends CommonController {
 
         $this->templateApi($rel,'200','ok');
     }
+
     //获取套课课节总数
     public function topic_num(){
         $pid=I('post.pid');
@@ -3022,6 +2947,176 @@ class MeController extends CommonController {
                 $data[$k]['profile']=$ud['profile'];
             }
             $this->templateApi($data,'200','ok');
+        }else{
+            $this->templateApi('','203','请求类型错误');
+        }
+    }
+
+    //学习任务列表
+    public function learntask(){
+        if(IS_POST){
+            $token=I('post.token');
+            if($token==''){
+                $this->templateApi('','204','参数错误');exit;
+            }
+            $user=M('user')->where(array('token'=>$token))->find();
+            if($user){
+                $data[0]=array(
+                    'taskid'        =>  '1',
+                    'taskname'      =>  '每日在线观看视频30分钟',
+                    'taskreward'    =>  '20',
+                );
+                $tasksee=M('task')->where(array('uid'=>$user['user_id'],'time'=>array(array('egt',$today),array('elt',$etodya)),'type'=>1))->find();
+                if($tasksee){
+                    $data[0]['taskstatus']='3';
+                }else{
+                    $data[0]['taskstatus']='2';
+                }
+                $today = strtotime(date("Y-m-d"),time());
+                $etoday= $today+86399;
+                $where['time']=array(array('egt',$today),array('elt',$etodya));
+                $where['uid']=$user['user_id'];
+                $where['type']=2;
+                $where['ctype']=array('IN','1,5,6');
+                $buyliveb=M('payrecord')->where($where)->find();
+                $data[1]=array(
+                    'taskid'        =>  '2',
+                    'taskname'      =>  '每日购买直播课一次',
+                    'taskreward'    =>  '20',
+                );
+
+                if($buyliveb){
+                    $taskliveb=M('task')->where(array('uid'=>$user['user_id'],'time'=>array(array('egt',$today),array('elt',$etodya)),'type'=>2))->find();
+                    if($taskliveb){
+                        $data[1]['taskstatus']='3';
+                    }else{
+                        $data[1]['taskstatus']='1';
+                    }
+
+                }else{
+                    $data[1]['taskstatus']='0';
+                }
+                $where['ctype']=array('IN','2,3');
+                $buyvideo=M('payrecord')->where($where)->find();
+                $data[2]=array(
+                    'taskid'        =>  '3',
+                    'taskname'      =>  '每日购买视频课一次',
+                    'taskreward'    =>  '20',
+                );
+                if($buyvideo){
+                    $taskvideo=M('task')->where(array('uid'=>$user['user_id'],'time'=>array(array('egt',$today),array('elt',$etodya)),'type'=>3))->find();
+                    if($taskvideo){
+                        $data[2]['taskstatus']='3';
+                    }else{
+                        $data[2]['taskstatus']='1';
+                    }
+                }else{
+                    $data[2]['taskstatus']='0';
+                }
+                $this->templateApi($data,'200','ok');
+            }else{
+                $this->templateApi('','300','未登录');
+            }
+        }else{
+            $this->templateApi('','203','请求类型错误');
+        }
+    }
+
+    //任务奖励领取
+    public function taskreward(){
+        if(IS_POST){
+            $token=I('post.token');
+            $taskid=I('post.taskid');
+            if($token==''){
+                $this->templateApi('','204','参数错误');exit;
+            }
+            $user=M('user')->where(array('token'=>$token))->find();
+            if($user){
+                $ud=M('userdata');
+                $today = strtotime(date("Y-m-d"),time());
+                $etoday= $today+86399;
+                $where['time']=array(array('egt',$today),array('elt',$etodya));
+                $where['uid']=$user['user_id'];
+                $where['type']=2;
+                if($taskid=='1'){
+
+                }else if($taskid=='2'){
+                    $where['ctype']=array('IN','1,5,6');
+                    $buyliveb=M('payrecord')->where($where)->find();
+                    if(!$buyliveb){
+                        $this->templateApi('','202','条件不足');exit;
+                    }
+                    $taskrel=M('task')->where(array('uid'=>$user['user_id'],'time'=>array(array('egt',$today),array('elt',$etodya)),'type'=>2))->find();
+                    if($taskrel){
+                        $this->templateApi('','202','已领取');exit;
+                    }
+                }else if($taskid=='3'){
+                    $where['ctype']=array('IN','2,3');
+                    $buyvideo=M('payrecord')->where($where)->find();
+                    if(!$buyvideo){
+                        $this->templateApi('','202','条件不足');exit;
+                    }
+                    $taskrel=M('task')->where(array('uid'=>$user['user_id'],'time'=>array(array('egt',$today),array('elt',$etodya)),'type'=>3))->find();
+                    if($taskrel){
+                        $this->templateApi('','202','已领取');exit;
+                    }
+                }
+                $ud->where(array('uid'=>$user['user_id']))->setInc('integral','20');
+                $mvp['uid']=$user['uid'];
+                $mvp['time']=time();
+                $task=M('task')->where(array('uid'=>$user['user_id'],'type'=>$taskid))->find();
+                if($task){
+                    M('task')->where(array('uid'=>$user['user_id']))->save($mvp);
+                }else{
+                    M('task')->add($mvp);
+                }
+                $this->templateApi($data,'200','ok');
+            }else{
+                $this->templateApi('','300','未登录');
+            }
+        }else{
+            $this->templateApi('','203','请求类型错误');
+        }
+    }
+
+    //我的课程 ——定制课
+    public function myclass_demand(){
+        if(IS_POST){
+            $token=I('post.token');
+            $page=I('post.page');
+            if($token==''||$page==''){
+                $this->templateApi('','204','参数错误');exit;
+            }
+            $user=M('user')->where(array('token'=>$token))->find();
+            if($user){
+                $userdata=M('userdata')->where(array('uid'=>$user['user_id']))->find();
+                $where=array(
+                    'uid'      =>  $user['user_id'],
+                    'status'   =>  1,
+                );
+                $count=M('demand')->where($where)->count();
+                $data=$this->havePage('demand',$where,'',$page,'20','');
+                $pie['now_page']=$data['now_page'];
+                $pie['total_page']=$data['total_page'];
+                unset($data['now_page']);
+                unset($data['total_page']);
+                foreach($data as $k=>$v){
+                    $date[$k]['demandid']=$v['demand_id'];
+                    $date[$k]['time']=date('Y.m.d H:i',$v['starttime']).'-'.date('H:i',$v['endtime']);
+                    $cate=M('category')->where(array('cate_id'=>$v['cate_id']))->find();
+                    $date[$k]['catename']=$cate['name'];
+                    $date[$k]['img']=URL.$userdata['image'];
+                    $date[$k]['name']=$user['name'];
+                    $date[$k]['isvip']=$user['is_vip'];
+                }
+                $acc['data']=$this->emptyarray($date);
+                $acc['now_page']=$pie['now_page'];
+                $acc['total_page']=$pie['total_page'];
+                $acc['count']=$count;
+                $this->templateApi($acc,'200','ok');
+            }else{
+                $this->templateApi('','300','未登录');
+            }
         }else{
             $this->templateApi('','203','请求类型错误');
         }

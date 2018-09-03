@@ -51,7 +51,7 @@ class BaseController extends Controller {
 	//验证是否登陆方法
     function getUserLoginInfo()
     {
-        if (! session('?user.id')) {
+        if (!session('user.id')) {
         	//设置登陆后跳转页面
             cookie('url.loginJump', curPageURL(), 3600);
             message('提示', '请先登录', C('LOGIN_URL'));

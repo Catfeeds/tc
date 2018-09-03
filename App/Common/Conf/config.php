@@ -2,11 +2,11 @@
 return array(
 	//'配置项'=>'配置值'
 	/*数据库配置*/
-	'DB_TYPE'   => 'XXXX', 		// 数据库类型
-	'DB_HOST'   => 'XXX', 	// 服务器地址
-	'DB_NAME'   => 'XXXX', 			// 数据库名
-	'DB_USER'   => 'XXXX', 			// 用户名
-	'DB_PWD'    => 'XXXX', 	// 密码
+	'DB_TYPE'   => 'mysql', 		// 数据库类型
+	'DB_HOST'   => '192.168.1.254', 	// 服务器地址
+	'DB_NAME'   => 'wyk_app', 			// 数据库名
+	'DB_USER'   => 'tccm', 			// 用户名
+	'DB_PWD'    => 'tiancheng!@#', 	// 密码	
 	'DB_PORT'   => 3306, 			// 端口
 	'DB_CHARSET'=> 'utf8', 			// 字符集
 	'SHOW_PAGE_TRACE' =>false,

@@ -30,10 +30,10 @@
 		<form class="Huiform" method="post" action="{:U('Apk/showlist')}" target="_self">			
 			<input type="text" placeholder="请输入版本号" name="txtName" class="input-text" style="width:200px">			
 			<input type="submit" value="查询" class="btn btn-success" style="margin:0px 0px 2px 20px;">
-			 <if condition="strpos($res,'41') !== false"> 
+
 			<button type="button" class="btn btn-success Hui-iconfont"  onclick="permissions_add('新增版本','{:U('Apk/add')}','4','','510')" style="text-decoration:none">新增apk</button>
 			<button type="button" class="btn btn-success Hui-iconfont"  onclick="permissions_adddown('新增版本','{:U('Apk/adddown')}','4','','510')" style="text-decoration:none">新增downurl</button>
-			</if>
+
 		</form>		
 	</div>
 	
@@ -64,31 +64,12 @@
 			     	
 			     	
 					<td class="td-manage"> 
-					<!-- <if condition="strpos($res,'41') heq false"> 没有权限
-						</if>
-						
-					<in name="v.pid" value="无">
-					<if condition="strpos($res,'41') !== false"> 	
-									<a title="编辑" href="javascript:;" 
-						onclick="administrator_edit('编辑','{:U('Authorityname/updparent',array('id'=>$v['auth_id']))}','4','','510')" 
-						style="text-decoration:none">
-						<button class="Hui-iconfont" style="padding: 3px 5px;">编辑父类权限</button>
-					</a> 
-					</if>
-					<else/>
-					<if condition="strpos($res,'41') !== false"> 	
-						<a title="编辑" href="javascript:;" 
-						onclick="administrator_edit('编辑','{:U('Authorityname/upd',array('id'=>$v['auth_id']))}','4','','510')" 
-						style="text-decoration:none">
-						<button class="Hui-iconfont" style="padding: 3px 5px;">编辑子类权限</button>
-					</a> 
-					</if>
-					</in>-->
-					<if condition="strpos($res,'36') !== false"> 								
+
+
 					<a title="删除" href="javascript:;" onclick="member_del(this,'{$v.apk_id}')" class="ml-5" style="text-decoration:none">
 						<button class="Hui-iconfont" style="padding: 3px 5px;">删除</button>
 					</a>
-					</if>
+
 					</td>
 				</tr>
 				</foreach>

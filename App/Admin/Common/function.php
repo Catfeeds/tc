@@ -253,7 +253,7 @@
 	    return true;
 	}
     //分页
-    function Pager($count,$page_num='10'){
+    function Pager($count,$page_num='10',$rollPage='5'){
         $Page       = new \Think\Page($count,$page_num);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $Page->lastSuffix=false;
         $Page->setConfig('header','<li class="rows">共<b>%TOTAL_ROW%</b>条记录&nbsp;&nbsp;第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页</li>');
@@ -262,6 +262,7 @@
         $Page->setConfig('last','末页');
         $Page->setConfig('first','首页');
         $Page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
+        $Page->rollPage=$rollPage;//设置展示页码的长度
         $show       = $Page->show();// 分页显示输出
         $limit=$Page->firstRow.','.$Page->listRows;
         $data=[

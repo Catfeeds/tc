@@ -89,7 +89,7 @@ class WxpayController extends CommonController {
 					);
 					$wxpayy= new \Weixinpay();
 					$result=$wxpayy->unifiedOrder($order);
-					$date['code_url']=$result['code_url'];
+					$date['code_url']=urlencode($result['code_url']);
 					$date['order_num']=$order_num;
 					echo json_encode($this->apiTemplate($date,'200','ok'));
 				}else{

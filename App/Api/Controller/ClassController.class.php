@@ -1309,7 +1309,7 @@ class ClassController extends CommonController {
             );
             $date = array();
             foreach ($acc['data'] as $v) {
-                $date[$v['topicNum'] - 1] = $v;
+                $date[$v['topicNum']-1] = $v;
             }
             for($i=0; $i < $classhour['classhour']; $i++) {
                 if (!is_array($date[$i])) {
@@ -1594,7 +1594,7 @@ class ClassController extends CommonController {
                 }
                 $where['del_status']=0;
                 $zcount=M('goods')->where($where)->count();
-                $data=$this->havePage('goods',$where,'time desc',$page,'20','');
+                $data=$this->havePage('goods',$where,'grounding_time desc',$page,'20','');
                 $pie['now_page']=$data['now_page'];
                 $pie['total_page']=$data['total_page'];
                 unset($data['now_page']);

@@ -994,8 +994,8 @@ class OrderController extends CommonController {
                             'classtype' =>  1
 
                         );
-                        $order->add($mvp);
-                        $this->templateApi('','200','ok');
+                        $data['orderid']=$order->add($mvp);
+                        $this->templateApi($data,'200','ok');
                     }else{
                         $this->templateApi('','202','课程信息错误');
                     }

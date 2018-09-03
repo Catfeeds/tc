@@ -62,6 +62,7 @@ class ReportmanageController extends BaseController{
 //          $this->assign('info',$info);
 //          $this->display();
         }else{//正常加载来的
+            // $sql="select r.*,u.name as uname from report as r,user as u where r.uid=u.user_id";
             $info= $report->query($sql);
 			
 			foreach($info as $k=>$v){

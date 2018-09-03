@@ -69,22 +69,20 @@
                     	</eq>
 					</td>
 					<td>
-					<if condition="strpos($res,'29') heq false"> 没有权限
-						</if>
-						<if condition="strpos($res,'29') !== false"> 
+
 						 <eq name="v.status" value="0">
                         <a title="发货"  onclick="tuisong('查看','{:U('Payrecord/adddi',array('id'=>$v['withdraw_id']))}','4','','510')" href="javascript:;" class="ml-5" style="text-decoration:none">
 							<!-- <a title="推送"  href="{:U('dataTuiXiaoxi?id='.$model['tuisong_id'])}" class="ml-5" style="text-decoration:none"> -->
 								<button class="Hui-iconfont" style="padding: 3px 5px;">打款</button>
 							</a>
                     </eq>
-                    </if>
-                    	<if condition="strpos($res,'29') !== false"> 
+
+
                     <eq name="v.status" value="1">
                             <button class="Hui-iconfont" style="padding: 3px 5px;">已打款</button>
                         </a>
                     </eq>
-                    </if>
+
 					</td>							    
 				</tr>
 				</foreach>

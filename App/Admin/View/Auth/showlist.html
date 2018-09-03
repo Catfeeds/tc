@@ -20,7 +20,33 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-
+	<style>
+		/*分页样式 后期分离出去*/
+		#pager {
+			margin: 20px;
+			float: right;
+		}
+		.pager .rows{
+			margin-left: 20px;
+			float: right;
+		}
+		.pager span {
+			background: #18b6c4;
+			color: #fff;
+			border: 1px solid #2a97c4;
+			padding: 3px 10px;
+			margin-left: 8px;
+		}
+		.pager a {
+			border: 1px solid #666666;
+			padding: 3px 10px;
+			margin-left: 8px;
+			text-decoration: none;
+			color: #333;
+			outline: none;
+		}
+		/*分页样式结束*/
+	</style>
 <title>权限管理</title>
 </head>
 <body>   
@@ -35,7 +61,7 @@
 	</div>
 	
 	<div class="mt-20">
-		<table class="table table-border table-bordered table-hover table-bg table-sort">
+		<table class="table table-border table-bordered table-hover table-bg">
 			<thead>
 				<tr class="text-c">
 					<th>权限编号</th>
@@ -66,6 +92,8 @@
 			</tbody>
 		</table>
 	</div>
+	<!--分页-->
+	<ul id="pager" class="paginList pager">{$page}</ul>
 </div>
 
 <!--_footer 作为公共模版分离出去-->

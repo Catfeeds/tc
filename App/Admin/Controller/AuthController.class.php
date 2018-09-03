@@ -17,52 +17,15 @@ class AuthController extends BaseController{
    
     public function showlist(){
         $auth=M('auth');
-        $info=$auth->select();
+        //分页
+        $count      = $auth->count();
+        $data=pager($count);
+        //分页 end
+        $info=$auth ->limit($data['limit'])->select();
         $this->assign('auth_info',$info);
+        // 赋值分页输出
+        $this->assign('page',$data['show']);
         $this->display();
-       /* $auth=D("auth");
-		$sql="select * from  Auth";
-        if(IS_POST){
-            $name=$_POST['txtName'];
-            $sql=$sql." where name like '%$name%'  ";
-            $list=$auth->query($sql);
-            foreach($list as $key=>$val){
-            $rel=$auth->field('name')->where('auth_id='.$val['pid'])->select();
-            //dump($rel);
-            if(count($rel[0]['name'])>0){
-                $list[$key]['pid']=$rel[0]['name'];
-            }else{
-                $list[$key]['pid']='无';
-            }
-        }
-            $this->assign('list',$list);
-            $this->display();
-		}else{
-            $list=$auth->query($sql);
-        foreach($list as $key=>$val){
-            $rel=$auth->field('name')->where('auth_id='.$val['pid'])->select();
-            //dump($rel);
-            if(count($rel[0]['name'])>0){
-                $list[$key]['pid']=$rel[0]['name'];
-            }else{
-                $list[$key]['pid']='无';
-            }
-        }
-        $auth=D('adminrauth');
-            $uid=session('user.id');
-            $lists=$auth->where('admin_id='.$uid)->select();
-            $a="";
-            foreach($lists as $k=>$v){
-                $a.=$v['auth_id'].',';
-            }
-            //dump ($a);
-            $this->assign('res',$a);
-        $this->assign('list',$list);  //数据列表
-//      $this->assign('page',$p->show());
-
-
-        $this->display();//在模版上显示
-    }*/
 }
     public function add(){
         $auth=M("auth");

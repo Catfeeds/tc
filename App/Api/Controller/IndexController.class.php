@@ -686,7 +686,7 @@ class IndexController extends CommonController {
     //pc 最新上架
     public function newclass(){
         $goods=M('goods');
-        $goodrel=$goods->where(array('del_status'=>'0'))->order('time desc')->limit(5)->select();
+        $goodrel=$goods->where(array('del_status'=>'0','status'=>0,'type'=>array('IN','1,2,3,6')))->order('time desc')->limit(5)->select();
         foreach($goodrel as $k=>$v){
             $data[$k]['pid']=(string)$v['goods_id'];
             $data[$k]['pName']=(string)$v['name'];
@@ -885,16 +885,17 @@ class IndexController extends CommonController {
         $type=I('post.type');
         $good=M('goods');
         if($type=='0'){
-            $where['type']=array('IN','3,4');
+            $where['type']=array('IN','2,3');
         }else{
             $where['type']=array('IN','1,6');
         }
         $where['del_status']=0;
         $where['status']=0;
-        $goodrel=$good->where($where)->limit(3)->field('goods_id,name,price_status,money,discount_money,img')->select();
+        $goodrel=$good->where($where)->limit(3)->field('goods_id,name,type,price_status,money,discount_money,img')->select();
         foreach($goodrel as $k=>$v){
             $data['data'][$k]['pid']=$v['goods_id'];
             $data['data'][$k]['pName']=$v['name'];
+            $data['data'][$k]['pType']=$v['type'];
             if($v['price_status']==0){
                 $data['data'][$k]['price']=$v['money'];
             }else{

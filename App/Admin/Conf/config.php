@@ -22,6 +22,9 @@ return array(
         'Notice/dataEdit_Sub',
         'Notice/dataEditXiaoxi_Sub',
         'Notice/dataEditHuodong_Sub',
-        'Notice/dataEditYaotu_Sub'
+        'Notice/dataEditYaotu_Sub',
+        'Admin/add_sub',
+        'Role/role_action',
+        'Payrecord/pass'
     ]
 );

@@ -30,9 +30,9 @@
 		<form class="Huiform" method="post" action="{:U('Xieyi/showlist1')}" target="_self">			
 			<input type="text" placeholder="请输入内容" name="txtName" class="input-text" style="width:200px">			
 			<input type="submit" value="查询" class="btn btn-success" style="margin:0px 0px 2px 20px;">
-			 <if condition="strpos($res,'39') !== false"> 
+
 			<button type="button" class="btn btn-success Hui-iconfont"  onclick="permissions_add('新增问题','{:U('Xieyi/add1')}','4','','510')" style="text-decoration:none">新增问题</button>
-			</if>
+
 		</form>		
 	</div>
 	
@@ -53,20 +53,17 @@
 					<td>{$v.wenti}</td>
 			     	<td width="500px">{$v.answer}</td>			     	
 					<td class="td-manage">
-					<if condition="strpos($res,'39') heq false"> 没有权限
-					</if>
-					<if condition="strpos($res,'39') !== false"> 	
+
+
 						<a title="编辑" href="javascript:;" 
 						onclick="administrator_edit('编辑','{:U('Xieyi/edit1',array('id'=>$v['wenti_id']))}','4','','510')" 
 						style="text-decoration:none">
 						<button class="Hui-iconfont" style="padding: 3px 5px;">编辑</button>
 					</a> 
-					</if>
-						<if condition="strpos($res,'39') !== false"> 								
+
 					<a title="删除" href="javascript:;" onclick="member_del(this,'{$v.wenti_id}')" class="ml-5" style="text-decoration:none">
 						<button class="Hui-iconfont" style="padding: 3px 5px;">删除</button>
 					</a>
-					</if>
 					</td>
 				</tr>
 				</foreach>

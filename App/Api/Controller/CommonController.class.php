@@ -2223,6 +2223,16 @@ class CommonController extends Controller {
         }
     }
 
+    //输入数据为空返回空数组
+    public function emptyarray($data){
+        if($data){
+            return $data;
+        }else{
+            $data=array();
+            return $data;
+        }
+    }
+
 }
 
 

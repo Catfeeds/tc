@@ -411,4 +411,47 @@ class DemandController extends CommonController {
             $this->templateApi('','203','请求类型错误');
         }
     }
+
+    //投标
+    public function bid(){
+        if(IS_POST){
+            $demandid=I('post.demandid');
+            $type=I('post.type');   //类型   1：正常  2：加价
+            $money=I('post.money');     //价格
+            $token=I('post.token');
+            if($demandid==''||$type==''||$money==''||$token==''){
+                $this->templateApi('','204','参数错误');exit;
+            }
+            $user=M('user')->where(array('token'=>$token))->find();
+            if($user){
+                $class=M('class')->where(array('uid'=>$user['user_id']))->find();
+                if($class){
+                    $rel=M('bid')->where(array('class_id'=>$class['class_id'],'demand_id'=>$demandid))->find();
+                    if($rel){
+                        $this->templateApi('','202','已投标');exit;
+                    }
+                    $mvp=array(
+                        'class_id'      =>  $class['class_id'],
+                        'demand_id'     =>  $demandid,
+                        'price'         =>  $money,
+                        'time'          =>  time(),
+                    );
+                    if($type=='1'){
+                        $mvp['status']=0;
+                    }else{
+                        $mvp['status']=1;
+                    }
+                    M('bid')->add($mvp);
+                    $this->templateApi('','200','ok');
+                }else{
+                    $this->templateApi('','202','投标失败');
+                }
+
+            }else{
+                $this->templateApi('','300','未登录');
+            }
+        }else{
+            $this->templateApi('','203','请求类型错误');
+        }
+    }
 }

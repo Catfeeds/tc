@@ -16,9 +16,21 @@ class ClassroomController extends CommonController {
                 $this->templateApi('','204','参数错误');exit;
             }
             $cate=M('category');
-            $caterel=$cate->where(array('pid'=>$cid))->select();
-            foreach($caterel as $k=>$v){
-                $cid.=','.$v['cate_id'];
+            $caterel=$cate->where(array('cate_id'=>$cid))->find();
+            if($caterel['pid']=='0'){
+                $twocate=$cate->where(array('pid'=>$caterel['cate_id']))->select();
+                foreach($twocate as $v){
+                    $cid.=','.$v['cate_id'];
+                    $threecate=$cate->where(array('pid'=>$v['cate_id']))->select();
+                    foreach($threecate as $vv){
+                        $cid.=','.$vv['cate_id'];
+                    }
+                }
+            }else{
+                $twocate=$cate->where(array('pid'=>$caterel['cate_id']))->select();
+                foreach($twocate as $v){
+                    $cid.=','.$v['cate_id'];
+                }
             }
             $where['cate_id']=array('IN',$cid);
             if($isAppointment=='0'){
